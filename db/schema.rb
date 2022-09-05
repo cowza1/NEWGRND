@@ -10,8 +10,79 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 0) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_05_161404) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "carts", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "product_id", null: false
+    t.integer "quantity"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_carts_on_product_id"
+    t.index ["user_id"], name: "index_carts_on_user_id"
+  end
+
+  create_table "designers", force: :cascade do |t|
+    t.string "name"
+    t.string "image"
+    t.text "description"
+    t.string "social"
+    t.string "url"
+    t.string "style"
+    t.string "budget"
+    t.string "colour_palette"
+    t.string "gender"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "matches", force: :cascade do |t|
+    t.bigint "questionnaire_id", null: false
+    t.bigint "designer_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["designer_id"], name: "index_matches_on_designer_id"
+    t.index ["questionnaire_id"], name: "index_matches_on_questionnaire_id"
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "image"
+    t.string "price"
+    t.bigint "designer_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["designer_id"], name: "index_products_on_designer_id"
+  end
+
+  create_table "questionnaires", force: :cascade do |t|
+    t.integer "age"
+    t.string "location"
+    t.string "style"
+    t.string "budget"
+    t.string "color_palette"
+    t.string "gender"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_questionnaires_on_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "carts", "products"
+  add_foreign_key "carts", "users"
+  add_foreign_key "matches", "designers"
+  add_foreign_key "matches", "questionnaires"
+  add_foreign_key "products", "designers"
+  add_foreign_key "questionnaires", "users"
 end
