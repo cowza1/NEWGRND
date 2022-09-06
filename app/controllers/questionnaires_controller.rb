@@ -5,6 +5,7 @@ class QuestionnairesController < ApplicationController
 
   def create
     @questionnaire = Questionnaire.new(questionnaire_params)
+    @questionnaire.user = current_user
     @questionnaire.save!
   end
 
