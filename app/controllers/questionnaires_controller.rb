@@ -4,12 +4,13 @@ class QuestionnairesController < ApplicationController
   end
 
   def create
-    @questionnaire = questionnaire.new(questionnaire_params)
+    @questionnaire = Questionnaire.new(questionnaire_params)
+    @questionnaire.save!
   end
-end
 
-private
+  private
 
-def questionnaire_params
-  params.require(:questionnaire).permit(:age, :location, :style, :budget, :colour_palette, :gender)
+  def questionnaire_params
+    params.require(:questionnaire).permit(:age, :location, :style, :budget, :colour_palette, :gender)
+  end
 end
