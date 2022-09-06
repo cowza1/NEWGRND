@@ -1,1 +1,22 @@
 <h1>Hello!</h1>
+
+<div class="questionnaire-form">
+<%= simple_form_for @questionnaire do |f| %>
+  <%= f.input :gender, collection: ["Male", "Female"]%>
+  <%= f.input :age %>
+  <%= f.input :location %>
+  <%# <%= f.input :style, collection: ["Streetwear", "Sportswear", "Smartwear", "Casual", "Preppy", "Avant-Garde"] %> %>
+  <%= f.input :style,
+                  as: :radio_buttons,
+                  collection_wrapper_tag: 'div',
+                  collection_wrapper_class: 'style-wrapper',
+                  item_wrapper_class: 'style-item',
+                  input_html: {class: 'style-selector'},
+                  collection: ["Streetwear", "Sportswear", "Smartwear", "Casual", "Preppy", "Avant-Garde"]%>
+  <%= f.input :budget, collection:["Low", "Meduim", "High"] %>
+  <%= f.input :colour_palette, collection:["Colourful", "Pastel", "Nutural", "Monochrome"] %>
+  <%= f.button :submit, "Submit"%>
+<% end %>
+
+
+</div>
