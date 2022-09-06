@@ -28,12 +28,71 @@
   padding: 10px 10px 30px 10px;
   border: 1px solid #EAEAEA;
   border-radius: 4px;
+  opacity: 0.8;
+  margin: 0 5px;
 }
-
-// .style-selector .input[value="Streetwear"] {
-//   background-image: url("https://source.unsplash.com/d2s8NQ6WD24");
-// }
 
 .style-selector:checked+label {
   color: white !important;
+  opacity: 1;
 }
+
+.form-check-input[type="radio"] {
+  display: none
+}
+
+.input[value="Streetwear"] label:focus-within {
+  background-color: yellow;
+}
+
+#questionnaire_style_streetwear+label {
+  height: 300px;
+  width: 150px;
+  background-image: url("https://res.cloudinary.com/dpt3b8spa/image/upload/v1662479453/fashion/Off-White_Fall_2019_Menswear_Fashion_Show_u2mq7m.jpg");
+  background-size: cover;
+  background-position: center
+}
+
+#questionnaire_style_sportswear+label {
+  height: 300px;
+  width: 150px;
+  background-image: url("https://res.cloudinary.com/dpt3b8spa/image/upload/v1662479453/fashion/Gosha_Rubchinskiy_Fall_2018_Menswear_Fashion_Show_rslcar.jpg");
+  background-size: cover;
+  background-position: center
+}
+
+#questionnaire_style_smartwear+label {
+  height: 300px;
+  width: 150px;
+  background-image: url("https://res.cloudinary.com/dpt3b8spa/image/upload/v1662479453/fashion/Light_Grey_Stripe_Lazio_Suit___Pure_Tropical_Wool_Three_Piece_qd5xsa.png");
+  background-size: cover;
+  background-position: center
+}
+
+#questionnaire_style_casual+label {
+  height: 300px;
+  width: 150px;
+  background-image: url("https://res.cloudinary.com/dpt3b8spa/image/upload/v1662479453/fashion/Screenshot_2022-09-06_at_11.40.33_hfni6j.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#questionnaire_style_preppy+label {
+  height: 300px;
+  width: 150px;
+  background-image: url("https://res.cloudinary.com/dpt3b8spa/image/upload/v1662481870/fashion/Polo_Ralph_Lauren_Fall_2020_Menswear_Collection_a5ri1f.jpg");
+  background-size: cover;
+  background-position: center
+}
+
+#questionnaire_style_avant-garde+label {
+  height: 300px;
+  width: 150px;
+  background-image: url("https://res.cloudinary.com/dpt3b8spa/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1662479452/fashion/2a68fad5-bb81-46a6-9394-cfc9a60454fb_jtchx4.jpg");
+  background-size: cover;
+  background-position: center
+}
+
+// .style_item > [value="Streetwear"] {
+//   background-image: url("https://res.cloudinary.com/dpt3b8spa/image/upload/v1662479453/fashion/Light_Grey_Stripe_Lazio_Suit___Pure_Tropical_Wool_Three_Piece_qd5xsa.png")
+// }
