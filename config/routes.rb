@@ -7,5 +7,8 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   resources :questionnaires, only: [:create, :new]
+    resources :questionnaires do
+      resources :matches, only: [:create, :show, :index]
+    end
 
 end

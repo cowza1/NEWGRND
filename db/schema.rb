@@ -79,7 +79,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_06_155134) do
     t.string "name"
     t.text "description"
     t.string "image"
-    t.integer "price"
+    t.string "price"
     t.bigint "designer_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -157,7 +157,4 @@ Product.create!(
 
 )
 
-
-
-)
 puts "finished"
