@@ -6,7 +6,7 @@
 <br>
 <div class="questionnaire-form">
 <%= simple_form_for @questionnaire do |f| %>
-  <%= f.input :gender, collection: ["men", "Female"]%>
+  <%= f.input :gender, collection: ["Male", "Female"]%>
   <%= f.input :age, collection: ["18 - 24", "25 - 30", "30 -35" "35 +"] %>
   <%= f.input :location %>
   <%= f.input :style,
@@ -15,7 +15,7 @@
                   collection_wrapper_class: 'style-wrapper',
                   item_wrapper_class: 'style-item',
                   input_html: {class: 'style-selector'},
-                  collection: ["streetwear", "sportswear", "smartwear", "casual", "preppy", "avant-Garde"]%>
+                  collection: ["Streetwear", "Sportswear", "Smartwear", "Casual", "Preppy", "Avant-Garde"]%>
   <%= f.input :budget, collection:["Low", "Meduim", "High"] %>
   <%= f.input :colour_palette, collection:["Colourful", "Pastel", "Nutural", "Monochrome", "Vibrant"] %>
   <%= f.button :submit, "Submit"%>
