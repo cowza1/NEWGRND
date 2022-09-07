@@ -1,0 +1,21 @@
+<div class="result-container">
+<%@questionnaire.matches.each do |match|%>
+
+ <div class="brand-selector">
+ <div class="brand-container">
+        <div class="brand-card">
+            <div class="face face1">
+                <img src="<%=match.designer.image%>">
+            </div>
+            <div class="face face2">
+                <div class="brand-content">
+                 <h3><%=match.designer.name%></h3>
+                    <p><%=match.designer.description%></p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+<%end%>
+</div>
