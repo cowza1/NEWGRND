@@ -1,0 +1,39 @@
+.designer-container {
+  display: flex;
+  background-color: khaki;
+  padding: 15px 0px;
+}
+
+.designer-container img {
+  margin: 0 20px;
+}
+
+.designer-product-container {
+  background-color: white;
+}
+
+.designer-info {
+  padding: 10px 10px 0 15px;
+  border-left: 1px solid black;
+}
+
+.designer-product-info {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  margin: 0 20px
+}
+
+.designer-product-info p {
+  margin: auto 0;
+  border-bottom: 1px solid black;
+}
+
+.designer-product-info img {
+  height: 300px;
+  margin: 50px;
+}
+
+.designer-product-container {
+  align-items: center;
+}

@@ -1,0 +1,18 @@
+<div class="designer-container">
+<img src="<%=@designer.image%>">
+<div class="designer-info">
+<h2><%=@designer.name%></h2>
+<p><%=@designer.description%></P>
+</div>
+</div>
+
+<div class="designer-product-container row">
+<%@designer.product.each do |p|%>
+<div class="designer-product-card col-6 justify-content-center">
+<div class="designer-product-info">
+<img src="<%=p.image%>">
+<p>Price: $<%=p.price%></p>
+</div>
+</div>
+<%end%>
+</div>
