@@ -6,6 +6,9 @@
 
 .designer-container img {
   margin: 0 20px;
+  object-fit: contain;
+  height: 150px;
+  width: 200px;
 }
 
 .designer-product-container {
