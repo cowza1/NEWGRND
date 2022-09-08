@@ -9,6 +9,7 @@
   background-size: cover;
   background-position: center;
   margin: 30px;
+  opacity: .9;
 }
 
 .container {
@@ -16,4 +17,18 @@
   align-items:center;
   object-fit: fill;
   margin-bottom: 20px;
+}
+
+.product-body {
+  background-color: white;
+}
+
+.card {
+  border: none;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.product-img :hover {
+ zoom: 10%;
 }

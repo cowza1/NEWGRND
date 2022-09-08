@@ -1,14 +1,17 @@
 <h1>Men's Products</h1>
 
-<div class="container">
-  <div class="row">
-    <%@products.each do |product|%>
-      <div class="col-3">
-        <div class="card">
-          <div class="product-img" style="background-image: url('<%=product.image%>')">
+<div class="product-body">
+  <div class="container">
+    <div class="row">
+      <%@products.each do |product|%>
+        <div class="col-3">
+          <div class="card">
+            <div class="product-img" style="background-image: url('<%=product.image%>')">
+            </div>
+            <p>£100</p>
           </div>
         </div>
-      </div>
-    <%end%>
+      <%end%>
+    </div>
   </div>
 </div>
