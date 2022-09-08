@@ -10,5 +10,7 @@ Rails.application.routes.draw do
     resources :questionnaires do
       resources :matches, only: [:create, :show, :index]
     end
-
+    resources :designers, only: [:show, :index] do
+      resources :products, only: [:index, :show]
+    end
 end

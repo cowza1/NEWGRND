@@ -7,9 +7,8 @@ class QuestionnairesController < ApplicationController
     @questionnaire = Questionnaire.new(questionnaire_params)
     @questionnaire.user = current_user
     if @questionnaire.save
-
-      @designers = Designer.where(style: params[:questionnaire][:style].downcase,
-                                  gender: params[:questionnaire][:gender].downcase, budget: params[:questionnaire][:budget].downcase, colour_palette: params[:questionnaire][:colour_palette].downcase)
+      @designers = Designer.where(style: params[:questionnaire][:style],
+                                  gender: params[:questionnaire][:gender], budget: params[:questionnaire][:budget], colour_palette: params[:questionnaire][:colour_palette])
       @designers.each do |d|
         Match.create(designer: d, questionnaire: @questionnaire)
       end
