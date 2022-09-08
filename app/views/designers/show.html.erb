@@ -10,7 +10,9 @@
 <%@designer.product.each do |p|%>
 <div class="designer-product-card col-6 justify-content-center">
 <div class="designer-product-info">
-<img src="<%=p.image%>">
+<%=link_to product_path(p) do %>
+        <img src="<%=p.image%>" alt="">
+        <% end %>
 <p>Price: $<%=p.price%></p>
 </div>
 </div>
