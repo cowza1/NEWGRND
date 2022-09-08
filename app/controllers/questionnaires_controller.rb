@@ -1,4 +1,5 @@
 class QuestionnairesController < ApplicationController
+#  skip_before_action :authenticate_user!, only: [:new, :create, :show]
   def new
     @questionnaire = Questionnaire.new
   end
