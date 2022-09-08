@@ -11,4 +11,5 @@ Rails.application.routes.draw do
       resources :matches, only: [:create, :show, :index]
     end
 
+  resources :products, only: [:index, :show]
 end
