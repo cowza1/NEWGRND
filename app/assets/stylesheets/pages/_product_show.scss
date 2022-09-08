@@ -1,0 +1,32 @@
+.product-show-container {
+  display: flex;
+  margin: 20px;
+  background-color: white;
+  width: 70%;
+  padding: 30px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.product-show-card {
+  display: flex;
+
+  height: 400px;
+}
+
+.product-show-card>img {
+  height: 100%;
+}
+
+.product-show-info {
+  margin-left: 20px;
+  border-left: 1px solid black;
+  padding: 10px 10px 0 10px;
+  background-color: beige;
+}
+
+.product-show-description {
+  border-top: 1px solid black;
+  margin: 0 10px;
+  padding-top: 10px;
+}
