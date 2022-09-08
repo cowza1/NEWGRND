@@ -1,4 +1,4 @@
-.product-container{
+.product-container {
   height: 200px;
   width: 200px;
 }
@@ -14,7 +14,7 @@
 
 .container {
   padding-right: 20px;
-  align-items:center;
+  align-items: center;
   object-fit: fill;
   margin-bottom: 20px;
 }
@@ -30,5 +30,10 @@
 }
 
 .product-img :hover {
- zoom: 10%;
+  zoom: 10%;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
 }
