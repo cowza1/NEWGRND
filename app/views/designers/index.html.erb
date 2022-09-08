@@ -1,0 +1,14 @@
+
+<div class="designer-index-container row">
+
+  <%@designers.each do |designer|%>
+
+    <div class="designer-index-card col-4">
+      <div class="designer-index-info">
+      <%=link_to designer_path(designer) do %>
+        <img src="<%=designer.image%>" alt="">
+        <% end %>
+      </div>
+    </div>
+  <%end%>
+</div>

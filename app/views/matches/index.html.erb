@@ -1,6 +1,5 @@
 <div class="result-container">
 <%@questionnaire.matches.each do |match|%>
-
  <div class="brand-selector">
  <div class="brand-container">
         <div class="brand-card">
@@ -11,11 +10,11 @@
                 <div class="brand-content">
                  <h3><%=match.designer.name%></h3>
                     <p><%=match.designer.description%></p>
-                        <a href="#">Read More</a>
+                      <p><%=link_to "Take a closer look", designer_path(match.designer_id)%></p>
                 </div>
             </div>
         </div>
-        </div>
-        </div>
-<%end%>
+       </div>
+    </div>
+  <%end%>
 </div>

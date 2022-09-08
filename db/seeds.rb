@@ -396,11 +396,17 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
       designer: designer2
 
       )
+
       file1 =URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/OLIVEFINAL_1512x.jpg?v=1637893912")
       file2 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/OLIVE2_1512x.jpg?v=1637893912")
       file3 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/back_1512x.jpg?v=1637893912")
 
-      Product.create!(
+  product7.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+  product7.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+  product7.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+  product8 =   Product.create!(
         name: "Grey Utility Trousers" ,
         description: "Our utility combat trouser is the perfect combination of style and functionality.
                       The 4-Way stretch polyester composition ensures the trouser will always retain its structure and hold form;
@@ -410,7 +416,17 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
         price: 150.00,
         designer: designer2
       )
-      Product.create!(
+
+      file1 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/UTILITY-COMBAT-TROUSER-GREY40_720x.jpg?v=1619728850")
+      file2 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/UTILITY-COMBAT-TROUSER-GREY11_720x.jpg?v=1619736210")
+      file3 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/UTILITY-COMBAT-TROUSER-GREY17_720x.jpg?v=1619736210")
+
+      product8.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+  product8.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+  product8.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+     product9 = Product.create!(
         name: "T-shirt" ,
         description: "This t-shirt is constructed using 300GSM heavyweight cotton.
                       It has been garment dyed, pre-shrunk and washed to achieve a
@@ -421,7 +437,16 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
         designer: designer2
       )
 
-        Product.create!(
+      file1 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/SST-SHIRT-THISISACOOBAT-SHIRT_Front1_720x.jpg?v=1631827933")
+      file2 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/SST-SHIRT-THISISACOOBAT-SHIRT_Back_720x.jpg?v=1631828001")
+      file3 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/rsz_1ss_t-shirt_-_this_is_a_cooba_t-shirt_side_full_body_720x.jpg?v=1631861837")
+
+    product9.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+    product9.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+    product9.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+      product10 =  Product.create!(
           name: "Mint Green Shorts" ,
           description: "Made from 300GSM 100% cotton, our sweat shorts feature elongated strings and a slightly cropped raw hem.
                         As well as incorporating a detailed patch logo outlining our manifesto. These shorts have been garment dyed using a reactive process to achieve a wash that is available in three different colour-ways.",
@@ -430,7 +455,17 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
           designer: designer2
       )
 
-      Product.create!(
+
+      file1 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/RAWHEMSHORTS-GREEN_F_720x.jpg?v=1631838278")
+      file2 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/rsz_raw_hem_shorts_-_green_s_full_body_720x.jpg?v=1631838278")
+      file3 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/rsz_raw_hem_shorts_-_green_s_720x.jpg?v=1631838278")
+
+      product10.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+    product10.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+    product10.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+      product11 = Product.create!(
         name: "Manifesto T-Shirt" ,
         description: "This t-shirt is constructed using 300GSM heavyweight cotton. It has been garment dyed, pre-shrunk
                       and washed to achieve a marshmallow white colour-way indicative of the early 90's era.
@@ -440,7 +475,17 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
         designer: designer2
     )
 
-    Product.create!(
+    file1 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/SST-SHIRT-CREATINGOUTOFBODYAWARENESS_F_720x.jpg?v=1631830540")
+      file2 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/rsz_1ss_t-shirt_-_creating_out_of_body_awareness_s_2_720x.jpg?v=1631830540")
+      file3 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/SST-SHIRT-CREATINGOUTOFBODYAWARENESS_B_720x.jpg?v=1631830540")
+
+      product11.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+    product11.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+    product11.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+
+    product12 = Product.create!(
       name: "Grey Hoodie" ,
       description: "Crafted from 535GSM heavyweight 100% organic loopback cotton,
                     this grey marl hoodie is the culmination of luxury and comfort.
@@ -452,7 +497,18 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
       designer: designer2
   )
 
-  Product.create!(
+
+  file1 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/GH_720x.jpg?v=1637900933")
+  file2 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/GH2_720x.jpg?v=1637900933")
+  file3 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/GREYHOODIE19_720x.jpg?v=1637900933")
+
+  product12.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+    product12.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+    product12.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+
+  product13 = Product.create!(
     name: "CB Bulldog T-Shirt" ,
     description: "Our newly developed luxury-weight 350 GSM single jersey T-shirt in our updated silhouette with our brand
                   new Buxton Gym Bulldog print. This graphic is reminiscent of
@@ -464,7 +520,17 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
     designer: designer3
 )
 
-Product.create!(
+file1 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB_BULLDOG_T-SHIRT_WHITE_720x.jpg?v=1661451772")
+file2 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CBBulldogCollection21002_720x.jpg?v=1661453545")
+file3 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CBBulldogCollection21004_720x.jpg?v=1661453546")
+
+product13.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+    product13.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+    product13.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+
+product14 = Product.create!(
   name: "CB Resort Pants" ,
   description: "Introducing our brand new resort pants - inspired by high-end lounge wear these pants
                 are cut from a custom Cole Buxton branded jacquard-woven cupro and
@@ -473,7 +539,18 @@ Product.create!(
   price: 125.00,
   designer: designer3
 )
-Product.create!(
+
+file1 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/baby-blue-resort-pants_720x.jpg?v=1662060604")
+file2 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CBBlackScripttee21061_d45c975b-b0c0-4220-9ed7-9f1216c2680f_720x.jpg?v=1662060604")
+file3 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CBBlackScripttee21065_720x.jpg?v=1662060604")
+
+product14.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+    product14.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+    product14.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+
+product15 = Product.create!(
   name: "Double Sports Logo Tech Shorts" ,
   description: "New for SS22, these tech shorts are cut from a luxurious Italian-woven
                 crinkled nylon thats been specially finished
@@ -483,7 +560,12 @@ Product.create!(
   price: 95.00,
   designer: designer3
 )
-Product.create!(
+
+file1 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB-DOUBLE-LOG-TECH-SHORTS_720x.jpg?v=1658932526")
+product15.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+
+
+product16 = Product.create!(
   name: "Double Sports Logo Zipped Hoodie" ,
   description: "An updated version of our classic zipped hoodie featuring a
                 ribbed edge kangaroo pocket and finished with a Swiss-made 2 way Riri zipper.
@@ -492,7 +574,16 @@ Product.create!(
   price: 165.00,
   designer: designer3
 )
-Product.create!(
+file1 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/DOUBLE_LOGO_ZIPPED_HOODIE_GREY_720x.jpg?v=1657115966")
+file2 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB6thJuly37_720x.jpg?v=1658937547")
+file3 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB6thJuly38_720x.jpg?v=1658937547")
+
+product16.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+    product16.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+    product16 .photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+product17 = Product.create!(
   name: "Denim Jacket" ,
   description: "A nod to classic Americana, this is our take on the ever timeless type 3 trucker jacket.
                 The silhouette is wide and boxy with sloped shoulders to compliment
@@ -502,7 +593,16 @@ Product.create!(
   designer: designer3
 )
 
-Product.create!(
+file1 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB-DENIM-JACKET-BLUE-FRONT_720x.jpg?v=1658930445")
+file2 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB-DENIM-JACKET-BLUE-BACK_720x.jpg?v=1658930445")
+file3 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB6thJuly124_720x.jpg?v=1658936595")
+
+product17.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+    product17.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+    product17.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+product18 = Product.create!(
   name: "Athletic Small Branded T-Shirt" ,
   description: "
   - Color Risk Red (red)
@@ -514,18 +614,41 @@ Product.create!(
   price: 75.00,
   designer: designer4
 )
-Product.create!(
-  name: "Athletic Small Branded T-Shirt" ,
+
+
+file1 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B1112.1050_HIGH_20RISK_20RED_01_1100x.png?v=1654687894")
+file2 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B1112.1050_HIGH_20RISK_20RED_02_750x.png?v=1655390221")
+file3 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1112.1050.611_101_750x.jpg?v=1655390221")
+
+
+product18.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+    product18.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+    product18.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+product19 = Product.create!(
+  name: "Jean Raglan Vest" ,
   description: "
   - Colour: High Risk Red
   - Model: Straight fit
   - Logo on the chest
   - 62% Polyester, 38% Cotton," ,
   image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/B1387.1016.611_101.jpg?v=1659529996",
-  price: 199.00,
+  price: 200.00,
   designer: designer4
 )
-Product.create!(
+
+file1 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/B1387.1016.611_101.jpg?v=1659529996")
+file2 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B1412.1017_High_20Risk_20Red_103_1_750x.png?v=1655201345")
+file3 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B1412.1017_High_20Risk_20Red_103_2_36f12afb-15b3-4281-a73e-07a0affbbb54_750x.png?v=1655201290")
+
+product19.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+    product19.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+    product19.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+
+product20 = Product.create!(
   name: "Metal Badge Track Pants" ,
   description: "
   - Colour: Elm Green
@@ -537,30 +660,82 @@ Product.create!(
   price: 155.00,
   designer: designer4
 )
-Product.create!(
-  name: "Metal Badge Track Pants" ,
+
+file1 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_121_750x.jpg?v=1658157627")
+file2 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_123_750x.jpg?v=1659531567")
+file3 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_124_750x.jpg?v=1659531567")
+
+product20.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+    product20.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+    product20.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+
+
+product21 = Product.create!(
+  name: "Metal Badge Cap" ,
   description: "
-  - Colour: Elm Green
-  - Model: Straight fit
-  - Track visuals on the side
-  - Subtle metal BALR. logo on the front
-  - 65% Polyester, 30% Viscose, 5% Elastane",
-  image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567",
+  - Colour White Pepper (beige/brown)
+  - BALR. Metal Badge on the front
+  - Adjustable backstrap
+  - 100% Polyester Woven Oxford",
+  image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B6110.1041_WHITE_20PEPPER_02_750x.png?v=1654860949",
   price: 155.00,
   designer: designer4
 )
-Product.create!(
-  name: "Metal Badge Track Pants" ,
+file1 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B6110.1041_WHITE_20PEPPER_02_750x.png?v=1654860949")
+file2 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B6110.1041_WHITE_20PEPPER_03_750x.png?v=1654860949")
+file3 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B6110.1041_WHITE_20PEPPER_04_750x.png?v=1654860949")
+
+    product21.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+    product21.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+    product21.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+
+product22 = Product.create!(
+  name: "Track Long Puffer" ,
   description: "
-  - Colour: Elm Green
-  - Model: Straight fit
-  - Track visuals on the side
-  - Subtle metal BALR. logo on the front
-  - 65% Polyester, 30% Viscose, 5% Elastane",
+  - Colour: Jet Black
+  - Model: Long
+  - Branded reflected patron
+  - 100% Polyester, Linning: 100% Nylon, Filling 90% Down, 10% Feather",
   image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567",
-  price: 155.00,
+  price: 355.00,
   designer: designer4
 )
+
+file1= URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1382.1007.102_128_750x.jpg?v=1659529492")
+file2 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567")
+file3 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1382.1007.102_127_750x.jpg?v=1659529492")
+
+product22.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+    product22.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+    product22.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+    product23 = Product.create!(
+      name: "Track Long Puffer" ,
+      description: "
+      - Colour: Jet Black
+      - Model: Long
+      - Branded reflected patron
+      - 100% Polyester, Linning: 100% Nylon, Filling 90% Down, 10% Feather",
+      image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567",
+      price: 355.00,
+      designer: designer4
+    )
+
+    file1= URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1382.1007.102_128_750x.jpg?v=1659529492")
+    file2 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567")
+    file3 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1382.1007.102_127_750x.jpg?v=1659529492")
+
+    product23.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+        product23.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+        product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+
 
 
 
