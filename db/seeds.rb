@@ -27,7 +27,7 @@ designer2 = Designer.create!(
                 incorporating both ready-to-wear and fully bespoke pieces, this is the answer to affordable luxury.",
   social: "https://www.instagram.com/coobalondon/",
   url: "https://www.coobalondon.co.uk/",
-  style: "casual",
+  style: "Casual",
   budget: "Medium",
   colour_palette: "Nutural",
   gender: "Male"

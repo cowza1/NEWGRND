@@ -46,6 +46,7 @@
   transform: translateY(100px);
   background-position: center;
   background-size: contain;
+  height: 230px;
 }
 
 .brand-container .brand-card:hover .face.face1 {
@@ -71,6 +72,8 @@
 .brand-container .brand-card .face.face1 .brand-content img {
   background-position: center;
   background-size: contain;
+  object-fit: contain;
+  height: 100%;
 }
 
 .brand-container .brand-card .face.face1 .brand-content h3 {
