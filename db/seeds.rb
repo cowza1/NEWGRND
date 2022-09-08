@@ -1,9 +1,5 @@
 require "open-uri"
 
-
-
-
-
 puts "destroying products"
 Product.destroy_all
 
@@ -18,10 +14,10 @@ designer1 = Designer.create!(
                 ensuring the most classic yet stylish pieces you can find.",
   social: "https://www.instagram.com/albertclothing/?hl=en",
   url: "https://albertclothing.com/",
-  style: "preppy",
-  budget: "high",
-  colour_palette: "monochrome",
-  gender: "men"
+  style: "Preppy",
+  budget: "High",
+  colour_palette: "Vibrant",
+  gender: "Male"
 )
 designer2 = Designer.create!(
   name: "Cooba",
@@ -32,11 +28,11 @@ designer2 = Designer.create!(
   social: "https://www.instagram.com/coobalondon/",
   url: "https://www.coobalondon.co.uk/",
   style: "casual",
-  budget: "mid",
-  colour_palette: "monochrome",
-  gender: "men"
+  budget: "Medium",
+  colour_palette: "Nutural",
+  gender: "Male"
 )
-designer3= Designer.create!(
+designer3 = Designer.create!(
   name: "Cole Buxton",
   image: "https://cdn.shopify.com/s/files/1/0055/1023/4230/files/Logo.png?v=1614321543",
   description: " The Cole Buxton brand is a collection of daily essentials. the concept started in 2014 with the idea to
@@ -45,10 +41,10 @@ designer3= Designer.create!(
                  core garment collection intended for everyday use.",
   social: "https://www.instagram.com/cole_buxton/?hl=en",
   url: "https://www.colebuxton.com/?gclid=Cj0KCQjw39uYBhCLARIsAD_SzMSCRF8kwqBWt96Hv_elcLbKmpaP8wzRxsYVIfmm3QTEsKMCWQVrsjYaAvCWEALw_wcB",
-  style: "casual",
-  budget: "medium",
-  colour_palette: "neutral",
-  gender: "men"
+  style: "Streetwear",
+  budget: "Medium",
+  colour_palette: "Nutural",
+  gender: "Male"
 )
 designer4 = Designer.create!(
   name: "BALR.",
@@ -57,10 +53,10 @@ designer4 = Designer.create!(
                 BALR. aims to make the life of a professional football player accessible to a wider audience",
   social: "https://www.instagram.com/balr/?hl=en",
   url: "https://www.balr.com/?gclid=Cj0KCQjw39uYBhCLARIsAD_SzMSTd-9mszjDu79kSdb4GPvh-3iCXw0y22CyZQ8D7L0rOIEf7_bXHeUaAqh3EALw_wcB",
-  style: "sportswear",
-  budget: "medium",
-  colour_palette: "monochrome",
-  gender: "men"
+  style: "Sportswear",
+  budget: "Medium",
+  colour_palette: "Nutural",
+  gender: "Male"
 )
 designer5 = Designer.create!(
   name: "PREVU",
@@ -71,10 +67,10 @@ designer5 = Designer.create!(
                 hoodies, polos, trousers and shorts, alongside accessories including hats and fragrances.",
   social: "https://www.instagram.com/prevustudio/?hl=en",
   url: "https://www.prevustudio.com/",
-  style: "preppy",
-  budget: "medium",
-  colour_palette: "monochrome",
-  gender: "men"
+  style: "Casual",
+  budget: "Medium",
+  colour_palette: "Monochrome",
+  gender: "Male"
 )
 designer6 = Designer.create!(
   name: "Daniel Diyepriye",
@@ -83,10 +79,10 @@ designer6 = Designer.create!(
                 Envisioned by Tubonimi Nkari Dokubo, who sadly passed away in April of 2020.",
   social: "https://www.instagram.com/danieldiyepriye/?hl=en",
   url: "https://www.danieldiyepriye.com/",
-  style: "casual",
-  budget: "high",
-  colour_palette: "monochrome",
-  gender: "men"
+  style: "Casual",
+  budget: "High",
+  colour_palette: "Monochrome",
+  gender: "Male"
 )
 designer7 = Designer.create!(
   name: "Daily Paper",
@@ -98,10 +94,10 @@ designer7 = Designer.create!(
                 growing the brand into a household name.",
   social: "https://www.instagram.com/dailypaper/?hl=en",
   url: "https://us.dailypaperclothing.com/",
-  style: "streetwear",
-  budget: "medium",
-  colour_palette: "pastel",
-  gender: "men"
+  style: "Streetwear",
+  budget: "Medium",
+  colour_palette: "Nutural",
+  gender: "Male"
 )
 designer8 = Designer.create!(
   name: "Private",
@@ -109,10 +105,10 @@ designer8 = Designer.create!(
   description: "A Private Co. is a European-based fashion and lifestyle brand serving the youth since 2016." ,
   social: "https://www.instagram.com/aprivateco/?hl=en",
   url: "https://aprivate.co/",
-  style: "streetwear",
-  budget: "medium",
-  colour_palette: "pastel",
-  gender: "men"
+  style: "Streetwear",
+  budget: "Medium",
+  colour_palette: "Pastel",
+  gender: "Male"
 )
 designer9 = Designer.create!(
   name: "Bode",
@@ -123,10 +119,10 @@ designer9 = Designer.create!(
                 and appliqué shape the collections. each piece tells a story and is tailor-made.",
   social: "https://www.instagram.com/bode/?hl=en",
   url: "https://www.bodenewyork.com/",
-  style: "casual",
-  budget: "high",
-  colour_palette: "pastel",
-  gender: "men"
+  style: "Casual",
+  budget: "High",
+  colour_palette: "Pastel",
+  gender: "Male"
 )
 
 designer10 = Designer.create!(
@@ -139,10 +135,10 @@ designer10 = Designer.create!(
                 designed for him as he learns and develops along the way, showcasing his knowledge of quality and meticulous design.",
   social: "https://www.instagram.com/duediligence/",
   url: "https://duediligenceapparel.com/",
-  style: "streetwear",
-  budget: "high",
-  colour_palette: "pastel",
-  gender: "men"
+  style: "Streetwear",
+  budget: "High",
+  colour_palette: "Pastel",
+  gender: "Male"
 )
 designer11 = Designer.create!(
   name: "Lemaire",
@@ -152,10 +148,10 @@ designer11 = Designer.create!(
                 the wardrobe is eminently modular—the supple silhouettes and soft color palette allow LEMAIRE outfits to be restyled and accented over time.",
   social: "https://www.instagram.com/lemaire_official/",
   url: "https://uk.lemaire.fr/",
-  style: "casual",
-  budget: "high",
-  colour_palette: "neutral",
-  gender: "men"
+  style: "Casual",
+  budget: "High",
+  colour_palette: "Nutural",
+  gender: "Male"
 )
 designer12 = Designer.create!(
   name: "Husbands",
@@ -164,10 +160,10 @@ designer12 = Designer.create!(
                 More than paying tribute to the past, Husbands brings a new perspective to classic wardrobe staples, using the highest standard of cuts, fabrics and detailing.",
   social: "https://www.instagram.com/husbandsparis/",
   url: "https://husbands-paris.com/en/#",
-  style: "smartwear",
-  budget: "high",
-  colour_palette: "neutral",
-  gender: "men"
+  style: "Smartwear",
+  budget: "High",
+  colour_palette: "Nutural",
+  gender: "Male"
 )
 designer13 = Designer.create!(
   name: "Walter Van Beirendonck",
@@ -176,10 +172,10 @@ designer13 = Designer.create!(
                 Striking separates are crafted from lustrous fabrics and experimental textiles.",
   social: "https://www.instagram.com/waltervanbeirendonckofficial/",
   url: "https://www.waltervanbeirendonck.com/",
-  style: "avant garde",
-  budget: "high",
-  colour_palette: "vibrant",
-  gender: "men"
+  style: "Avant-Garde",
+  budget: "High",
+  colour_palette: "Vibrant",
+  gender: "Male"
 )
 designer14 = Designer.create!(
   name: "Monot",
@@ -189,10 +185,10 @@ designer14 = Designer.create!(
                 His daring selection of statuesque eveningwear makes up a carefully curated collection inspired by art and architecture.",
   social: "https://www.instagram.com/monotofficial/",
   url: "https://monot.co/",
-  style: "avant garde",
-  budget: "high",
-  colour_palette: "monochrome",
-  gender: "women"
+  style: "Avant-Garde",
+  budget: "High",
+  colour_palette: "Monochrome",
+  gender: "Female"
 )
 designer15 = Designer.create!(
   name: "Raey",
@@ -202,48 +198,63 @@ designer15 = Designer.create!(
                 starting with the use of innovative recycled fibres, closed-loop manufacturers and production audits.",
   social: "https://www.instagram.com/raeyofficial/",
   url: "https://likeshop.me/raeyofficial",
-  style: "avant garde",
-  budget: "high",
-  colour_palette: "monochrome",
-  gender: "women"
+  style: "Avant-Garde",
+  budget: "High",
+  colour_palette: "Monochrome",
+  gender: "Female"
 )
 designer16 = Designer.create!(
-  name: "",
-  image: "data:image/png;base64,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",
-  description: "Lebanese designer Eli Mizrahi explores dramatic dressing through a sultry lens for his label Mônot, founded in New York in 2019 following a career in luxury consultancy.
-                His daring selection of statuesque eveningwear makes up a carefully curated collection inspired by art and architecture, the works of 20th century creators Lucio Fontana and Eero Saarinen in particular. ",
-  social: "https://www.instagram.com/monotofficial/",
-  url: "https://monot.co/",
-  style: "avant garde",
-  budget: "high",
-  colour_palette: "monochrome",
-  gender: "women"
+  name: "The Upside",
+  image: "data:image/png;base64,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",
+  description: "For dynamic activewear that works just as well out of the gym, look to The Upside.
+                The brainchild of Australian designer and yogi Jodhi Meares,
+                who believes that versatile and stylish apparel is integral to a great workout.
+                Expect contemporary prints, directional materials and clever, practical details.",
+  social: "https://www.instagram.com/the_upside/",
+  url: "https://international.theupside.com/",
+  style: "Sportswear",
+  budget: "Medium",
+  colour_palette: "Nutural",
+  gender: "Female"
 )
 designer17 = Designer.create!(
-  name: "Monot",
-  image: "https://monot.co/assets/main/thumbfb.png",
-  description: "Lebanese designer Eli Mizrahi explores dramatic dressing through a sultry lens for his label Mônot, founded in New York in 2019 following a career in luxury consultancy.
-                His daring selection of statuesque eveningwear makes up a carefully curated collection inspired by art and architecture, the works of 20th century creators Lucio Fontana and Eero Saarinen in particular. ",
-  social: "https://www.instagram.com/monotofficial/",
-  url: "https://monot.co/",
-  style: "avant garde",
-  budget: "high",
-  colour_palette: "monochrome",
-  gender: "women"
+  name: "Ahluwalia",
+  image: "data:image/png;base64,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",
+  description: "Ahluwalia is the brainchild of Priya Ahluwalia, who explores cultural diaspora through upcycled and deadstock textiles.
+                The designers Nigerian-Indian heritage and London roots have informed a multicultural upbringing which is reflected through the use of eclectic patterns,
+                traditional dyeing processes and artisanal beading techniques.",
+  social: "https://www.instagram.com/ahluwalia/",
+  url: "https://ahluwalia.world/",
+  style: "Avant-Garde",
+  budget: "High",
+  colour_palette: "Vibrant",
+  gender: "Female"
 )
 designer18 = Designer.create!(
-  name: "Monot",
-  image: "https://monot.co/assets/main/thumbfb.png",
-  description: "Lebanese designer Eli Mizrahi explores dramatic dressing through a sultry lens for his label Mônot, founded in New York in 2019 following a career in luxury consultancy.
-                His daring selection of statuesque eveningwear makes up a carefully curated collection inspired by art and architecture, the works of 20th century creators Lucio Fontana and Eero Saarinen in particular. ",
-  social: "https://www.instagram.com/monotofficial/",
-  url: "https://monot.co/",
-  style: "avant garde",
-  budget: "high",
-  colour_palette: "monochrome",
-  gender: "women"
+  name: "Rendoll",
+  image: "data:image/png;base64,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",
+  description: "Established in June 2019,  Rendoll is a Nigerian womenswear brand founded by Fashion and beauty Entrepreneur,
+                Reni (Abina) Kekere-Ekun (LLB, MBA). We create attainable luxury pieces intended to be treasured for a lifetime.",
+  social: "https://www.instagram.com/rendolllagos/",
+  url: "https://www.rendoll.com/",
+  style: "Casual",
+  budget: "Low",
+  colour_palette: "Vibrant",
+  gender: "Female"
 )
-
+designer19 = Designer.create!(
+  name: "Girlfriend Collective",
+  image: "data:image/png;base64,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",
+  description: "Girlfriend Collective is an activewear label created by and for a community of individuals who want to align their wardrobe to their values.
+                It was created by Seattle-based wife and husband duo Ellie and Quang Dinh with a minimalist,
+                refined aesthetic rooted in a genuine commitment to environmental and social sustainability.",
+  social: "https://www.instagram.com/girlfriend/",
+  url: "https://girlfriend.com/",
+  style: "Sportswear",
+  budget: "Low",
+  colour_palette: "Nutural",
+  gender: "Female"
+)
 
 
 
