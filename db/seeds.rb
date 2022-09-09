@@ -162,7 +162,7 @@ designer12 = Designer.create!(
   url: "https://husbands-paris.com/en/#",
   style: "Smartwear",
   budget: "High",
-  colour_palette: "Nutural",
+  colour_palette: "Neutral",
   gender: "Male"
 )
 designer13 = Designer.create!(
