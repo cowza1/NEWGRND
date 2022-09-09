@@ -29,7 +29,7 @@ designer2 = Designer.create!(
   url: "https://www.coobalondon.co.uk/",
   style: "Casual",
   budget: "Medium",
-  colour_palette: "Nutural",
+  colour_palette: "Neutral",
   gender: "Male"
 )
 designer3 = Designer.create!(
@@ -43,7 +43,7 @@ designer3 = Designer.create!(
   url: "https://www.colebuxton.com/?gclid=Cj0KCQjw39uYBhCLARIsAD_SzMSCRF8kwqBWt96Hv_elcLbKmpaP8wzRxsYVIfmm3QTEsKMCWQVrsjYaAvCWEALw_wcB",
   style: "Casual",
   budget: "Medium",
-  colour_palette: "Nutural",
+  colour_palette: "Neutral",
   gender: "Male"
 )
 designer4 = Designer.create!(
@@ -150,7 +150,7 @@ designer11 = Designer.create!(
   url: "https://uk.lemaire.fr/",
   style: "Casual",
   budget: "High",
-  colour_palette: "Nutural",
+  colour_palette: "Neutral",
   gender: "Male"
 )
 designer12 = Designer.create!(
