@@ -13,5 +13,8 @@ Rails.application.routes.draw do
   resources :designers, only: [:show, :index] do
       resources :products, only: [:index, :show]
     end
+    resources :products, only:[:show] do
+      resources :designers, only:[:show]
+    end
   resources :products, only: [:index, :show]
 end
