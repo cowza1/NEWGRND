@@ -29,7 +29,7 @@ designer2 = Designer.create!(
   url: "https://www.coobalondon.co.uk/",
   style: "Casual",
   budget: "Medium",
-  colour_palette: "Neutral",
+  colour_palette: "Nutural",
   gender: "Male"
 )
 designer3 = Designer.create!(
@@ -41,9 +41,9 @@ designer3 = Designer.create!(
                  core garment collection intended for everyday use.",
   social: "https://www.instagram.com/cole_buxton/?hl=en",
   url: "https://www.colebuxton.com/?gclid=Cj0KCQjw39uYBhCLARIsAD_SzMSCRF8kwqBWt96Hv_elcLbKmpaP8wzRxsYVIfmm3QTEsKMCWQVrsjYaAvCWEALw_wcB",
-  style: "Streetwear",
+  style: "Casual",
   budget: "Medium",
-  colour_palette: "Neutral",
+  colour_palette: "Nutural",
   gender: "Male"
 )
 designer4 = Designer.create!(
@@ -150,7 +150,7 @@ designer11 = Designer.create!(
   url: "https://uk.lemaire.fr/",
   style: "Casual",
   budget: "High",
-  colour_palette: "Neutral",
+  colour_palette: "Nutural",
   gender: "Male"
 )
 designer12 = Designer.create!(
@@ -265,7 +265,7 @@ designer19 = Designer.create!(
 
 puts "creating products"
 product1 = Product.create!(
-  name: " Blazer" ,
+  name: "Blazer",
   description: "Moss Green blazer made from a beautiful Seersucker cloth this jacket is a perfect marriage between style and comfort.
   The versatility of this jacket is endless as it can be dressed up or down depending on the occasion.
   Perfect for keeping you cool in hot temperatures.",
@@ -273,6 +273,7 @@ product1 = Product.create!(
   price: 210,
   designer: designer1
 )
+puts "product created"
 
 file1 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image.webp?v=1661178529")
 file2 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_0e1f68fe-7641-4c21-b72b-8749df86605b_720x.jpg?v=1661178529")
@@ -284,7 +285,7 @@ product1.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
 
 # product 2
 product2 = Product.create!(
-  name: "Pants" ,
+  name: "Pants",
   description: "Moss Green Alban Seersucker Pants
   are an essential for any fashion forward mans wardrobe.
   Made from a beautiful Cotton Seersucker cloth these pants give you the best of both worlds of street style & sartorial.
@@ -295,6 +296,7 @@ product2 = Product.create!(
   price:131.25 ,
   designer: designer1
 )
+puts "product created"
 file1 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_808f1ad1-80a8-4c7b-8a64-34ff07eaf76c_720x.webp?v=1661178664")
 file2 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_e2e59974-3108-4e0a-8742-d8a015a70023_720x.jpg?v=1661178664")
 file3 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_27b8d95d-4fbe-4e07-b773-4b42f2e73f04_720x.jpg?v=1661178664")
@@ -306,14 +308,14 @@ product2.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
 #product3
 
 product3= Product.create!(
-  name: "Bellagio Shawl Suit" ,
-  description: "
-  Made from 100% Irish Linen cloth this blue suit is a perfect marriage between style and comfort.
+  name: "Bellagio Shawl Suit",
+  description: "Made from 100% Irish Linen cloth this blue suit is a perfect marriage between style and comfort.
   Perfect for a summers day as it can be dressed up or down depending on the occasion.",
   image: "https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9259_534ef530-2d37-4317-84a2-6a849868e364_720x.jpg?v=1644835300",
   price: 425.00,
   designer: designer1
 )
+puts "product created"
 
 file1 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9259_534ef530-2d37-4317-84a2-6a849868e364_720x.jpg?v=1644835300")
 file2 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/Untitled-design-63_aa21a841-f4c5-421c-9870-ef43414b8370_460x.jpg?v=1644835300")
@@ -335,6 +337,7 @@ product4 = Product.create!(
   designer: designer1
 
 )
+puts "product created"
 
 
 file1 =URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/86CBB048-7B99-4D4A-8DAC-35724B0FC272-2_720x.jpg?v=1654587643")
@@ -355,6 +358,7 @@ product5 = Product.create!(
   designer: designer1
 
   )
+  puts "product created"
 
   file1 =URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9082_1_720x.jpg?v=1656285021")
   file2 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_a40538e7-fe72-45fb-8932-f62fb9427173_720x.jpg?v=1656287926")
@@ -375,6 +379,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
     designer: designer1
 
     )
+    puts "product created"
 
     file1 =URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9092_1_720x.jpg?v=1656285813")
     file2 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_aa289009-e734-44ac-92ad-d4aea99bf3a0_720x.jpg?v=1656286912")
@@ -396,6 +401,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
       designer: designer2
 
       )
+      puts "product created"
 
       file1 =URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/OLIVEFINAL_1512x.jpg?v=1637893912")
       file2 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/OLIVE2_1512x.jpg?v=1637893912")
@@ -416,6 +422,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
         price: 150.00,
         designer: designer2
       )
+      puts "product created"
 
       file1 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/UTILITY-COMBAT-TROUSER-GREY40_720x.jpg?v=1619728850")
       file2 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/UTILITY-COMBAT-TROUSER-GREY11_720x.jpg?v=1619736210")
@@ -436,6 +443,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
         price: 85.00,
         designer: designer2
       )
+      puts "product created"
 
       file1 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/SST-SHIRT-THISISACOOBAT-SHIRT_Front1_720x.jpg?v=1631827933")
       file2 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/SST-SHIRT-THISISACOOBAT-SHIRT_Back_720x.jpg?v=1631828001")
@@ -454,6 +462,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
           price: 70.00,
           designer: designer2
       )
+      puts "product created"
 
 
       file1 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/RAWHEMSHORTS-GREEN_F_720x.jpg?v=1631838278")
@@ -474,6 +483,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
         price: 85.00,
         designer: designer2
     )
+    puts "product created"
 
     file1 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/SST-SHIRT-CREATINGOUTOFBODYAWARENESS_F_720x.jpg?v=1631830540")
       file2 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/rsz_1ss_t-shirt_-_creating_out_of_body_awareness_s_2_720x.jpg?v=1631830540")
@@ -496,6 +506,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
       price: 125.00,
       designer: designer2
   )
+  puts "product created"
 
 
   file1 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/GH_720x.jpg?v=1637900933")
@@ -705,424 +716,422 @@ product22 = Product.create!(
   designer: designer4
 )
 
-file1= URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1382.1007.102_128_750x.jpg?v=1659529492")
+file1 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1382.1007.102_128_750x.jpg?v=1659529492")
 file2 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567")
 file3 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1382.1007.102_127_750x.jpg?v=1659529492")
 
 product22.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-    product22.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-    product22.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+product22.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+product22.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
 
-    product23 = Product.create!(
-      name: "Straight BALR. Satin Embro Crewneck" ,
-      description: "
-      - Colour : Yellow; Grey Heather
-      - Straight Fit
-      - Satin Logo on the front Round neck
-      - 88% cotton, 12% polyester (350 g/m2 brushback )",
-      image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567",
-      price: 355.00,
-      designer: designer4
-    )
+product23 = Product.create!(
+  name: "Straight BALR. Satin Embro Crewneck" ,
+  description: "
+  - Colour : Yellow; Grey Heather
+  - Straight Fit
+  - Satin Logo on the front Round neck
+  - 88% cotton, 12% polyester (350 g/m2 brushback )",
+  image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567",
+  price: 355.00,
+  designer: designer4
+)
 
-    file1= URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/B1262.1035_GreyMelange_101_1_750x.jpg?v=1660210106")
-    file2 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/B1262.1035_GreyMelang_101_2_750x.jpg?v=1660210106")
-    file3 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/B1262.1035_GreyMelang_103_750x.jpg?v=1660210106")
+file1= URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/B1262.1035_GreyMelange_101_1_750x.jpg?v=1660210106")
+file2 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/B1262.1035_GreyMelang_101_2_750x.jpg?v=1660210106")
+file3 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/B1262.1035_GreyMelang_103_750x.jpg?v=1660210106")
 
-    product23.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-        product23.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-        product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
-
-
+product23.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+product23.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
 
-            product24 = Product.create!(
-              name: "Hoody" ,
+        product24 = Product.create!(
+          name: "Hoody" ,
+          description: "
+          Dusty Blue Signature Core Embroidered Hoody. Slim fit.
+          Interlock jersey" ,
+          image:  "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567" ,
+          price: 70.00,
+          designer: designer5
+        )
+
+        file1= URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH1-002-452flatfront_900x.jpg?v=1643644314")
+        file2 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH1-002-452modelfront_900x.jpg?v=1643987328")
+        file3 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH1-002-452modelback_900x.jpg?v=1643987328")
+
+        product24.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+            product24.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+            product24.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+            product25 = Product.create!(
+              name: "Black Maurizio SS Shirt " ,
               description: "
-              Dusty Blue Signature Core Embroidered Hoody. Slim fit.
-              Interlock jersey" ,
-              image:  "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567" ,
-              price: 70.00,
+              - Regular Fit
+              - Printed Woven
+              - Short Sleeve
+              - Button Through Front
+              - Revere Collar
+              - Straight Hem
+              - Button Cuffs" ,
+              image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=16613515877" ,
+              price: 130.00,
               designer: designer5
             )
 
-            file1= URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH1-002-452flatfront_900x.jpg?v=1643644314")
-            file2 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH1-002-452modelfront_900x.jpg?v=1643987328")
-            file3 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH1-002-452modelback_900x.jpg?v=1643987328")
+            file1= URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=1661351587")
+            file2 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/Maurizo_SS_front2_900x.jpg?v=1661351587")
+            file3 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/Maurizo_SS_back2_900x.jpg?v=1661351587")
 
-            product24.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                product24.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                product24.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+            product25.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                product25.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                product25.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                product25 = Product.create!(
-                  name: "Black Maurizio SS Shirt " ,
+                product26 = Product.create!(
+                  name: "Brown Antrim Trousers " ,
                   description: "
-                  - Regular Fit
-                  - Printed Woven
-                  - Short Sleeve
-                  - Button Through Front
-                  - Revere Collar
+                  - Tapered Fit
+                  - Cotton Twill
+                  - Branded Zip Fly Fastening
+                  - Side Entry Pockets
                   - Straight Hem
-                  - Button Cuffs" ,
+                  - Prevu Branding" ,
                   image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=16613515877" ,
                   price: 130.00,
                   designer: designer5
                 )
 
-                file1= URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=1661351587")
-                file2 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/Maurizo_SS_front2_900x.jpg?v=1661351587")
-                file3 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/Maurizo_SS_back2_900x.jpg?v=1661351587")
+                file1= URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH2-021-258modelfront_900x.jpg?v=1650360144")
+                file2 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH2-022-258modelfullfront_f499f7a0-c9a5-4bcd-8899-d368d4750fb6_900x.jpg?v=1650360143")
+                file3 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH2-021-258modelback_900x.jpg?v=1650360144")
 
-                product25.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                    product25.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                    product25.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                product26.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    product26.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                    product26.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                    product26 = Product.create!(
-                      name: "Brown Antrim Trousers " ,
+                    product27 = Product.create!(
+                      name: "Orange Hutton LS Shirt",
+
                       description: "
-                      - Tapered Fit
-                      - Cotton Twill
-                      - Branded Zip Fly Fastening
-                      - Side Entry Pockets
+                      - Regular Fit
+                      - Printed Woven
+                      - Long Sleeve
+                      - Button Through Front
+                      - Revere Collar
                       - Straight Hem
-                      - Prevu Branding" ,
+                      Button Cuffs" ,
+
                       image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=16613515877" ,
-                      price: 130.00,
+                      price: 150.00,
                       designer: designer5
                     )
 
-                    file1= URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH2-021-258modelfront_900x.jpg?v=1650360144")
-                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH2-022-258modelfullfront_f499f7a0-c9a5-4bcd-8899-d368d4750fb6_900x.jpg?v=1650360143")
-                    file3 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH2-021-258modelback_900x.jpg?v=1650360144")
+                    file1= URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-099-813flatback_900x.jpg?v=1661350980")
+                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/Hutton_Ls_shirt_900x.jpg?v=1661350980")
+                    file3 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/Hutton_Ls_shirt_detail_900x.jpg?v=1661350980")
 
-                    product26.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product26.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product26.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                    product27.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    product27.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                    product27.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                        product27 = Product.create!(
-                          name: "Orange Hutton LS Shirt",
-
-                          description: "
-                          - Regular Fit
-                          - Printed Woven
-                          - Long Sleeve
-                          - Button Through Front
-                          - Revere Collar
-                          - Straight Hem
-                          Button Cuffs" ,
+                    product28 = Product.create!(
+                      name: "White Annecy Leather Shoes",
 
-                          image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=16613515877" ,
-                          price: 150.00,
-                          designer: designer5
-                        )
+                      description: "
+                      - Leather uppers
+                      - Leather lining
+                      - Silver foil branding
+                      - Lace up
+                      - Perforated detailing" ,
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-099-813flatback_900x.jpg?v=1661350980")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/Hutton_Ls_shirt_900x.jpg?v=1661350980")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/Hutton_Ls_shirt_detail_900x.jpg?v=1661350980")
+                      image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/191022_PREVU_STUDIO1_E2369_900x.jpg?v=1639046330" ,
+                      price: 140.00,
+                      designer: designer5
+                    )
 
-                        product27.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product27.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product27.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                    file1= URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/191022_PREVU_STUDIO1_E2369_900x.jpg?v=1639046330")
+                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRB1-501-111back_900x.jpg?v=1639046330")
+                    file3 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/191022_PREVU_STUDIO1_E2369_2_900x.jpg?v=1639046330")
 
-                        product28 = Product.create!(
-                          name: "White Annecy Leather Shoes",
+                    product28.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    product28.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                    product28.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                          description: "
-                          - Leather uppers
-                          - Leather lining
-                          - Silver foil branding
-                          - Lace up
-                          - Perforated detailing" ,
 
-                          image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/191022_PREVU_STUDIO1_E2369_900x.jpg?v=1639046330" ,
-                          price: 140.00,
-                          designer: designer5
-                        )
+                    product29 = Product.create!(
+                      name: "Ajax Pre-Match Hoody",
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/191022_PREVU_STUDIO1_E2369_900x.jpg?v=1639046330")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRB1-501-111back_900x.jpg?v=1639046330")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/191022_PREVU_STUDIO1_E2369_2_900x.jpg?v=1639046330")
+                      description: "
+                      A tribute to Amsterdam, the city Ajax calls home. This comfortable hoody is part of our collaboration with adidas.
+                      The large embroidery on the front is a remixes of Amsterdam's coat of arms in the Pan-African colour way, to reflect the city's diverse culture. The hoody is a soft French terry which makes this a comfortable collectible item." ,
 
-                        product28.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product28.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product28.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                      image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/191022_PREVU_STUDIO1_E2369_900x.jpg?v=1639046330" ,
+                      price: 110.00,
 
+                      designer: designer7
+                    )
 
-                        product29 = Product.create!(
-                          name: "Ajax Pre-Match Hoody",
+                    file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_09_1122.jpg?v=1662631312")
+                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_09_1097.jpg?v=1662631312")
+                    file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_09_1143.jpg?v=1662631312")
 
-                          description: "
-                          A tribute to Amsterdam, the city Ajax calls home. This comfortable hoody is part of our collaboration with adidas.
-                          The large embroidery on the front is a remixes of Amsterdam's coat of arms in the Pan-African colour way, to reflect the city's diverse culture. The hoody is a soft French terry which makes this a comfortable collectible item." ,
+                    product29.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    product29.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                    product29.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                          image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/191022_PREVU_STUDIO1_E2369_900x.jpg?v=1639046330" ,
-                          price: 110.00,
 
-                          designer: designer7
-                        )
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_09_1122.jpg?v=1662631312")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_09_1097.jpg?v=1662631312")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_09_1143.jpg?v=1662631312")
+                    product30 = Product.create!(
+                      name: "Ajax Pre-Match Jersey",
 
-                        product29.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product29.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product29.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                      description: "
+                      This adidas football jersey is worn by Ajax players during warm up before kick off. Its intricate design fuses the colours of the Pan-African flag and the unique facade of Daily Paper's New York flagship store.
+                        AEROREADY wicks moisture to keep you comfortable. Made with 100% recycled materials" ,
+                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899" ,
+                      price: 110.00,
 
+                      designer: designer7
+                    )
+                    puts "product 30 created"
 
+                    file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899")
+                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_766.jpg?v=1662559899")
+                    file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/Pre-Match-Jersey-Front.jpg?v=1662559899")
 
-                        product30 = Product.create!(
-                          name: "Ajax Pre-Match Jersey",
+                    product30.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    product30.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                    product30.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                          description: "
-                          This adidas football jersey is worn by Ajax players during warm up before kick off. Its intricate design fuses the colours of the Pan-African flag and the unique facade of Daily Paper's New York flagship store.
-                           AEROREADY wicks moisture to keep you comfortable. Made with 100% recycled materials" ,
-                          image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899" ,
-                          price: 110.00,
+                    product31 = Product.create!(
+                      name: "Black Nevin Jacket",
 
-                          designer: designer7
-                        )
+                      description: "
+                      Crafted from premium real leather, the Nevin jacket is a timeless outerwear piece. The jacket
+                      fits hip-length and comes with branded snapbuttons,
+                      a classic collar and slanted welt pockets.
+                        Daily Paper emblem embroideries decorate front and back alongside an artwork representing the 3 founders, symbolised by 3 animals." ,
+                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899" ,
+                      price: 435.00,
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_766.jpg?v=1662559899")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/Pre-Match-Jersey-Front.jpg?v=1662559899")
+                      designer: designer7,
+                    )
 
-                        product30.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product30.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product30.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                    file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/BLACKNEVINJACKETMENREARjpg.jpg?v=1662643970")
+                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/BLACKNEVINJACKETMENFRONT.jpg?v=1662643970")
+                    file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/BLACKNEVINJACKETMENDETAIL.jpg?v=1662643970")
 
-                        product31 = Product.create!(
-                          name: "Black Nevin Jacket",
+                    product31.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    product31.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                    product31.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                          description: "
-                          Crafted from premium real leather, the Nevin jacket is a timeless outerwear piece. The jacket
-                          fits hip-length and comes with branded snapbuttons,
-                          a classic collar and slanted welt pockets.
-                           Daily Paper emblem embroideries decorate front and back alongside an artwork representing the 3 founders, symbolised by 3 animals." ,
-                          image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899" ,
-                          price: 435.00,
 
-                          designer: designer7,
-                        )
+                    product32 = Product.create!(
+                      name: "Fiery Brick Red Nakato Hoody",
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/BLACKNEVINJACKETMENREARjpg.jpg?v=1662643970")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/BLACKNEVINJACKETMENFRONT.jpg?v=1662643970")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/BLACKNEVINJACKETMENDETAIL.jpg?v=1662643970")
+                      description: "
+                      The Nakato hoody is made from soft, brushed fleece and comes in two seasonal colourways.
+                      The style is equipped with a drawstring hood and a classic kangaroo pocket.
+                      A special Daily Paper artwork featuring a shield logo and the 3 animals that represent the 3 founders decorates the front of the hoodie." ,
+                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899" ,
+                      price: 115.00,
 
-                        product31.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product31.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product31.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                      designer: designer7,
+                    )
 
+                    file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-hoody-front_0fe25917-8806-44e7-b182-8eda6f35f111.jpg?v=1662640856")
+                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-hoody-back_c1f36be9-2dad-4deb-9cae-dad0513eb508.jpg?v=1662640856")
 
-                        product32 = Product.create!(
-                          name: "Fiery Brick Red Nakato Hoody",
 
-                          description: "
-                          The Nakato hoody is made from soft, brushed fleece and comes in two seasonal colourways.
-                          The style is equipped with a drawstring hood and a classic kangaroo pocket.
-                          A special Daily Paper artwork featuring a shield logo and the 3 animals that represent the 3 founders decorates the front of the hoodie." ,
-                          image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899" ,
-                          price: 115.00,
+                    product32.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    product32.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
 
-                          designer: designer7,
-                        )
+                    product33 = Product.create!(
+                      name: "White Nakato T-Shirt",
+                      description: "The Nakato crewneck tee is crafted from a premium jersey fabric and comes in two seasonal colourways. A special Daily Paper artwork featuring a shield logo and the 3 animals that represent the 3 founders decorates the front of the tee." ,
+                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225",
+                      price: 60.00,
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-hoody-front_0fe25917-8806-44e7-b182-8eda6f35f111.jpg?v=1662640856")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-hoody-back_c1f36be9-2dad-4deb-9cae-dad0513eb508.jpg?v=1662640856")
+                      designer: designer7,
+                    )
+                    puts "product 33 created"
 
+                    file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-tee-white-front_aeab443e-f4d6-4c88-b2cb-02c06776ff10.jpg?v=1662645225")
+                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-tee-white-back.jpg?v=1662645225")
+                    file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225")
 
-                        product32.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product32.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                    product33.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    product33.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                    product33.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                        product33 = Product.create!(
-                          name: "White Nakato T-Shirt",
+                    product34 = Product.create!(
+                      name: "Black Neno Beanie",
 
-                          description: "
-                          The Nakato crewneck tee is crafted from a premium jersey fabric and comes in two seasonal colourways. A special Daily Paper artwork featuring a shield logo and the 3 animals that represent the 3 founders decorates the front of the tee.
-" ,
-                          image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
-                          price: 60.00,
+                      description: "
+                      Stay cosy with our seasonal beanie styles. The Neno Beanie is made from a ribbed knit and has a single fold. A recycled microfibre patch with the Daily Paper logo decorates the forehead. Available in two seasonal colourways. Pair with a matching Nescarf for a complete look.",
+                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
+                      price: 45.00,
 
-                          designer: designer7,
-                        )
+                      designer: designer7,
+                    )
+                    puts "product 34 created"
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-tee-white-front_aeab443e-f4d6-4c88-b2cb-02c06776ff10.jpg?v=1662645225")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-tee-white-back.jpg?v=1662645225")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225") ,
+                    file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/neno-hat-front.jpg?v=1662467910")
+                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nenohat-back.jpg?v=1662467910")
+                    file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/NENOBEANIEDETAIL.jpg?v=1662467910")
 
-                        product33.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product33.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product33.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                    product34.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    product34.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                    product34.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                        product34 = Product.create!(
-                          name: "Black Neno Beanie",
 
-                          description: "
-                          Stay cosy with our seasonal beanie styles. The Neno Beanie is made from a ribbed knit and has a single fold. A recycled microfibre patch with the Daily Paper logo decorates the forehead. Available in two seasonal colourways. Pair with a matching Nescarf for a complete look.",
-                          image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
-                          price: 45.00,
 
-                          designer: designer7,
-                        )
+                    product35 = Product.create!(
+                      name: "Green Black Yellow Povan Shirt
+                      ",
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/neno-hat-front.jpg?v=1662467910")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nenohat-back.jpg?v=1662467910")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/NENOBEANIEDETAIL.jpg?v=1662467910") ,
+                      description: "
+                      Designed with an all-over Protect Paradise print, the Povan shirt is made from a lightweight
+                      cotton fabric with a button-up closure in white and a classic camp collar.
+                        A Protect Paradise flower print decorates the back. Available in two different colourways.",
+                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
+                      price: 120.00,
 
-                        product34.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product34.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product34.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                      designer: designer7,
+                    )
 
+                    file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/2213132_2213118_male_front_1.jpg?v=1661869939")
+                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/2213132_2213118_male_back_1.jpg?v=1661869939")
+                    file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/2213132_front.jpg?v=1661869939")
 
+                    product35.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    product35.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                    product35.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                        product35 = Product.create!(
-                          name: "Green Black Yellow Povan Shirt
-                          ",
 
-                          description: "
-                          Designed with an all-over Protect Paradise print, the Povan shirt is made from a lightweight
-                          cotton fabric with a button-up closure in white and a classic camp collar.
-                           A Protect Paradise flower print decorates the back. Available in two different colourways.",
-                          image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
-                          price: 120.00,
+                    product36 = Product.create!(
+                      name: "All Day Double Hoodie
+                      ",
 
-                          designer: designer7,
-                        )
+                      description: "
+                      Hooded cotton blend sweatshirt in cobalt blue.
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/2213132_2213118_male_front_1.jpg?v=1661869939")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/2213132_2213118_male_back_1.jpg?v=1661869939")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/2213132_front.jpg?v=1661869939") ,
+                      Gender-free sizing, designed for relaxed fit.
 
-                        product35.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product35.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product35.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                      Super soft fabric.
 
+                      Composition: 90% Cotton, 10% Polyester.
 
-                        product36 = Product.create!(
-                          name: "All Day Double Hoodie
-                          ",
+                      Made in Europe.",
+                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
+                      price: 105.00,
 
-                          description: "
-                          Hooded cotton blend sweatshirt in cobalt blue.
+                      designer: designer8,
+                    )
 
-                          Gender-free sizing, designed for relaxed fit.
+                    file1= URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/hoodie-back-1_cdca70fd-1c5e-47bd-905a-4a945dbd3d45_832x1024.jpg?v=1648635814")
+                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/hoodie-front_0eed3b93-7c5e-4de9-a098-f7522003f1e0_832x1024.jpg?v=1648635814")
+                    file3 = URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/full-boy_832x1024.jpg?v=1648635814")
 
-                          Super soft fabric.
 
-                          Composition: 90% Cotton, 10% Polyester.
+                    product36.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    product36.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                    product36.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                          Made in Europe.",
-                          image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
-                          price: 105.00,
 
-                          designer: designer8,
-                        )
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/hoodie-back-1_cdca70fd-1c5e-47bd-905a-4a945dbd3d45_832x1024.jpg?v=1648635814")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/hoodie-front_0eed3b93-7c5e-4de9-a098-f7522003f1e0_832x1024.jpg?v=1648635814")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/full-boy_832x1024.jpg?v=1648635814"),
 
 
-                        product36.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product36.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product36.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
+                    product37 = Product.create!(
+                      name: "All Day Sweatpants",
 
 
+                      description: "
+                      Cotton blend sweatpants in baby blue.
 
+                      Gender-free sizing, designed for relaxed fit.
 
+                      Elasticized waistband and ankle cuffs.
 
-                        product37 = Product.create!(
-                          name: "All Day Sweatpants",
+                      Two side pockets.
 
+                      Super soft fabric.
 
-                          description: "
-                          Cotton blend sweatpants in baby blue.
+                      Composition: 90% Cotton, 10% Polyester.
 
-                          Gender-free sizing, designed for relaxed fit.
+                      Made in Europe.",
+                      image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/set-baby-pants_832x1024.jpg?v=1647264742" ,
+                      price: 80,
 
-                          Elasticized waistband and ankle cuffs.
+                      designer: designer8,
+                    )
 
-                          Two side pockets.
+                    file1= URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/set-baby-pants_832x1024.jpg?v=1647264742")
+                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/set-baby-boi_38f338ed-715a-4143-86bd-1571bb1e4118_832x1024.jpg?v=1647265526")
 
-                          Super soft fabric.
+                    product37.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    product37.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
 
-                          Composition: 90% Cotton, 10% Polyester.
+                    product38 = Product.create!(
+                      name: "All Day T-Shirt ",
 
-                          Made in Europe.",
-                          image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/set-baby-pants_832x1024.jpg?v=1647264742" ,
-                          price: 80,
 
-                          designer: designer8,
-                        )
+                      description: "
+                      Short sleeve cotton jersey T-shirt in forest green.
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/set-baby-pants_832x1024.jpg?v=1647264742")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/set-baby-boi_38f338ed-715a-4143-86bd-1571bb1e4118_832x1024.jpg?v=1647265526")
+                      Gender-free sizing, designed for oversized fit.
 
-                        product37.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product37.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                      Super soft fabric.
 
-                        product38 = Product.create!(
-                          name: "All Day T-Shirt ",
+                      Composition: 100% Cotton.
 
+                      Made in Europe..",
+                      image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/set-baby-pants_832x1024.jpg?v=1647264742" ,
+                      price: 50,
 
-                          description: "
-                          Short sleeve cotton jersey T-shirt in forest green.
+                      designer: designer8,
+                    )
 
-                          Gender-free sizing, designed for oversized fit.
+                    file1= URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-forest-1_832x1024.jpg?v=1648296090")
+                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-forest-0_f49690ae-5344-479e-9b60-a59ddc2ad49e_832x1024.jpg?v=1657022373")
 
-                          Super soft fabric.
+                    product38.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    product38.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
 
-                          Composition: 100% Cotton.
+                    product39 = Product.create!(
+                      name: "All Day T-Shirt ",
 
-                          Made in Europe..",
-                          image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/set-baby-pants_832x1024.jpg?v=1647264742" ,
-                          price: 50,
 
-                          designer: designer8,
-                        )
+                      description: "
+                      Short sleeve cotton jersey T-shirt in cream.
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-forest-1_832x1024.jpg?v=1648296090")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-forest-0_f49690ae-5344-479e-9b60-a59ddc2ad49e_832x1024.jpg?v=1657022373")
+                      Gender-free sizing, designed for oversized fit.
 
-                        product38.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product38.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                      Super soft fabric.
 
-                        product39 = Product.create!(
-                          name: "All Day T-Shirt ",
+                    Composition: 100% Cotton.
 
+                    Made in Europe.
 
-                          description: "
-                          Short sleeve cotton jersey T-shirt in cream.
+    ",
+                      image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-starlight-cream-0_832x1024.jpg?v=1657547241" ,
+                      price: 50,
 
-                          Gender-free sizing, designed for oversized fit.
+                      designer: designer8,
+                    )
 
-                          Super soft fabric.
+                    file1= URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-starlight-cream-0_832x1024.jpg?v=1657547241")
+                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-starlight-cream-1_832x1024.jpg?v=1657547241")
 
-                        Composition: 100% Cotton.
+                    product39.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    product39.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
 
-                        Made in Europe.
+                    product40 = Product.create!(
+                      name: "Bomber Jacket ",
 
-        ",
-                          image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-starlight-cream-0_832x1024.jpg?v=1657547241" ,
-                          price: 50,
 
-                          designer: designer8,
-                        )
-
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-starlight-cream-0_832x1024.jpg?v=1657547241")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-starlight-cream-1_832x1024.jpg?v=1657547241")
-
-                        product39.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product39.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-
-                        product40 = Product.create!(
-                          name: "Bomber Jacket ",
-
-
-                          description: "
-                          Longsleeve insulated bomber jacket in military green
+                      description: "
+                      Longsleeve insulated bomber jacket in military green
 
 ·                         Gender-free sizing, designed for relaxed fit
 
@@ -1136,83 +1145,39 @@ product22.photos.attach(io: file1 , filename: "nes.png", content_type: "image/pn
 
 ·                         Zip pocket at sleeve
 
-        ",
-                          image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/green-pack-front_832x1024.jpg?v=1648646424" ,
-                          price: 280.00,
+    ",
+                      image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/green-pack-front_832x1024.jpg?v=1648646424" ,
+                      price: 280.00,
 
-                          designer: designer8,
-                        )
+                      designer: designer8,
+                    )
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/green-pack-back_f9103e40-84f9-4dfb-bd8e-867e0d6a93d5_832x1024.jpg?v=1648646424")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/green-pack-front_832x1024.jpg?v=1648646424")
+                    file1= URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/green-pack-back_f9103e40-84f9-4dfb-bd8e-867e0d6a93d5_832x1024.jpg?v=1648646424")
+                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/green-pack-front_832x1024.jpg?v=1648646424")
 
-                        product40.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product40.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                    product40.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    product40.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
 
-                        product41 = Product.create!(
-                          name: "Killington Stripe Hat
-                          ",
+                    product41 = Product.create!(
+                      name: "Killington Stripe Hat
+                      ",
 
-                          description: "
-                          THIS HAT IS INSPIRED BY STRIP-WOVEN CLOTH FROM CÔTE D'IVOIRE, CIRCA 1960S. IT FEATURES A BROAD STRIPE PATTERN IN BLUE AND BURGUNDY AND AN EMBROIDERED BODE LOGO.",
-                          image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
-                          price: 270.00,
-
-
-                          designer: designer9,
-                        )
-
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__KILLINGTONSTRIPEHAT_031_720x.jpg?v=1654880661")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__KILLINGTONSTRIPEHAT_041_720x.jpg?v=1654880661"),
+                      description: "
+                      THIS HAT IS INSPIRED BY STRIP-WOVEN CLOTH FROM CÔTE D'IVOIRE, CIRCA 1960S. IT FEATURES A BROAD STRIPE PATTERN IN BLUE AND BURGUNDY AND AN EMBROIDERED BODE LOGO.",
+                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
+                      price: 270.00,
 
 
+                      designer: designer9,
+                    )
 
-                        product41.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product41.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product41.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                    file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__KILLINGTONSTRIPEHAT_031_720x.jpg?v=1654880661")
+                    file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__KILLINGTONSTRIPEHAT_041_720x.jpg?v=1654880661")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    product41.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    product41.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
 
 
 
