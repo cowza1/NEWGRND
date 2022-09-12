@@ -43,12 +43,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_12_111709) do
   end
 
   create_table "cart_items", force: :cascade do |t|
-    t.bigint "user_id", null: false
+    t.bigint "order_id", null: false
     t.bigint "product_id", null: false
+    t.integer "quantity", default: 1, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["order_id"], name: "index_cart_items_on_order_id"
     t.index ["product_id"], name: "index_cart_items_on_product_id"
-    t.index ["user_id"], name: "index_cart_items_on_user_id"
   end
 
   create_table "carts", force: :cascade do |t|
@@ -138,8 +139,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_12_111709) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "cart_items", "orders"
   add_foreign_key "cart_items", "products"
-  add_foreign_key "cart_items", "users"
   add_foreign_key "carts", "products"
   add_foreign_key "carts", "users"
   add_foreign_key "matches", "designers"
