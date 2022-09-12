@@ -6,7 +6,6 @@
 }
 
 .brand-selector {
-  // margin: 0 10px;
   padding: 0;
   min-height: 100vh;
   display: flex;
@@ -36,6 +35,11 @@
   background-size: contain;
 }
 
+.brand-container .brand-card .face h1 {
+  font-size: 60px;
+  font-family: 'Antonio', sans-serif;
+}
+
 .brand-container .brand-card .face.face1 {
   position: relative;
   background: #333;
@@ -46,14 +50,25 @@
   transform: translateY(100px);
   background-position: center;
   background-size: contain;
+  height: 230px;
+}
+
+.brand-container .brand-card .face.face1 {
+  font-size: 60px;
+
 }
 
 .brand-container .brand-card:hover .face.face1 {
-  background: #ff0057;
+  background: #F0E68C;
   transform: translateY(0);
   background-position: center;
   background-size: contain;
 }
+
+.brand-container .brand-card:hover .face.face1>h1 {
+  font-size: 60px;
+}
+
 
 .brand-container .brand-card .face.face1 .brand-content {
   opacity: 0.2;
@@ -71,6 +86,8 @@
 .brand-container .brand-card .face.face1 .brand-content img {
   background-position: center;
   background-size: contain;
+  object-fit: contain;
+  height: 100%;
 }
 
 .brand-container .brand-card .face.face1 .brand-content h3 {

@@ -1,5 +1,5 @@
 class QuestionnairesController < ApplicationController
-#  skip_before_action :authenticate_user!, only: [:new, :create, :show]
+  #  skip_before_action :authenticate_user!, only: [:new, :create, :show]
   def new
     @questionnaire = Questionnaire.new
   end
@@ -8,8 +8,8 @@ class QuestionnairesController < ApplicationController
     @questionnaire = Questionnaire.new(questionnaire_params)
     @questionnaire.user = current_user
     if @questionnaire.save
-      @designers = Designer.where(style: params[:questionnaire][:style],
-                                  gender: params[:questionnaire][:gender], budget: params[:questionnaire][:budget], colour_palette: params[:questionnaire][:colour_palette])
+      @designers = Designer.where(gender: params[:questionnaire][:gender], style: params[:questionnaire][:style],
+                                  budget: params[:questionnaire][:budget], colour_palette: params[:questionnaire][:colour_palette])
       @designers.each do |d|
         Match.create(designer: d, questionnaire: @questionnaire)
       end

@@ -3,10 +3,10 @@
 
   <%@designers.each do |designer|%>
 
-    <div class="designer-index-card col-4">
+    <div class="designer-index-card d-flex col-4">
       <div class="designer-index-info">
       <%=link_to designer_path(designer) do %>
-        <img src="<%=designer.image%>" alt="">
+        <h1><%=designer.name%></h1>
         <% end %>
       </div>
     </div>

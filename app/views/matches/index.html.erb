@@ -4,11 +4,10 @@
  <div class="brand-container">
         <div class="brand-card">
             <div class="face face1">
-                <img src="<%=match.designer.image%>">
+                <h1><%=match.designer.name%></h1>
             </div>
             <div class="face face2">
                 <div class="brand-content">
-                 <h3><%=match.designer.name%></h3>
                     <p><%=match.designer.description%></p>
                       <p><%=link_to "Take a closer look", designer_path(match.designer_id)%></p>
                 </div>

@@ -22,11 +22,27 @@
   margin-left: 20px;
   border-left: 1px solid black;
   padding: 10px 10px 0 10px;
-  background-color: beige;
+  background-color: #F0E68C;
 }
 
 .product-show-description {
   border-top: 1px solid black;
-  margin: 0 10px;
   padding-top: 10px;
+  margin-top: 20px;
+}
+
+.add-to-cart-btn {
+  padding: 4px 8px;
+  border: 2px solid black;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+.product-show-info h2 {
+  color: black;
+}
+
+.product-show-info a {
+  text-decoration: none;
 }
