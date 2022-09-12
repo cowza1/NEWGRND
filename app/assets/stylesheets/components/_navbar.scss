@@ -58,6 +58,7 @@
 
 .nav-item {
   margin: 5px;
+  margin-right: 40px;
 }
 
 .fa-heart {
@@ -67,4 +68,9 @@
 .brand-logo h1 {
   font-family: 'Antonio', sans-serif;
   font-weight: bold;
+}
+
+#logo {
+  text-decoration: none;
+  color: black;
 }
