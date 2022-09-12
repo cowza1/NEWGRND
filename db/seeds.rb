@@ -529,22 +529,19 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
 
 
   product13 = Product.create!(
-    name: "CB Bulldog T-Shirt" ,
-    description: "Our newly developed luxury-weight 350 GSM single jersey T-shirt in our updated silhouette with our brand
-                  new Buxton Gym Bulldog print. This graphic is reminiscent of
-                  old school “spit & sawdust” bodybuilding culture and
-                  has been printed using a hand-cracked thick plastisol ink
-                  which will only get better with wear..",
-    image: "https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB_BULLDOG_T-SHIRT_WHITE_720x.jpg?v=1661451772",
+    name: "CB Sportswear T-shirt" ,
+    description: "Our newly developed luxury-weight 380 GSM single jersey Tshirt in our updated silhouette with the CB
+                  sportswear designer graphic inspired by national athletic teams.",
+    image: "https://cdn.shopify.com/s/files/1/0055/1023/4230/products/SPORTSWEAR_TSHIRT_WHITE_900x.jpg?v=1653052906",
     price_cents: 8500,
     designer: designer3
 )
 
-file1 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB_BULLDOG_T-SHIRT_WHITE_720x.jpg?v=1661451772")
-file2 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CBBulldogCollection21002_720x.jpg?v=1661453545")
-file3 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CBBulldogCollection21004_720x.jpg?v=1661453546")
+file1 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/SPORTSWEAR_TSHIRT_WHITE_900x.jpg?v=1653052906")
+file2 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/SPORTSWEAR_TSHIRT_WHITE_BACK_1080x.jpg?v=1653052907")
+file3 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CBSportswearWhitetee1.jpg?v=1653597582")
 
-product13.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+  product13.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
     product13.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
     product13.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
@@ -1199,7 +1196,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                         product41.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
                         product41.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
 
-                        
+
 
                         product42 = Product.create!(
                           name: "Gym Green Shorts",
@@ -1249,7 +1246,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         product43.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
                         product43.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product43.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                        #product43.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                         product44 = Product.create!(
                           name: "Double Breasted Cardigan - Black
@@ -1790,7 +1787,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                           designer: designer11,
                         )
 
-                        file1= URI.open("   https://cdn.shopify.com/s/files/1/0267/6051/1530/products/FO313_LL185_BK999_PS2_1600x.jpg?v=1658931153")
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/FO313_LL185_BK999_PS2_1600x.jpg?v=1658931153")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/FO313_LL185_BK999_PS3_1600x.jpg?v=1658931153")
                         file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/FO313_LL185_BK999_PS4_1600x.jpg?v=1658931153")
 
@@ -1818,7 +1815,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                           designer: designer12,
                         )
 
-                        file1= URI.open("   https://husbands-paris.com/wp-content/uploads/2022/05/COSTUME-CROISE-EN-LIN-BLEU-VERT_2.jpg")
+                        file1= URI.open("https://husbands-paris.com/wp-content/uploads/2022/05/COSTUME-CROISE-EN-LIN-BLEU-VERT_2.jpg")
                         file2 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/05/COSTUME-CROISE-EN-LIN-BLEU-VERT_3.jpg")
                         file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/05/COSTUME-CROISE-EN-LIN-BLEU-VERT_4.jpg")
 
@@ -1848,7 +1845,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                           designer: designer12,
                         )
 
-                        file1= URI.open("   https://husbands-paris.com/wp-content/uploads/2022/06/COSTUME-DROIT-EN-GABARDINE-DE-COTON-BEIGE-MIEL_3-1.jpg")
+                        file1= URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/COSTUME-DROIT-EN-GABARDINE-DE-COTON-BEIGE-MIEL_3-1.jpg")
                         file2 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/COSTUME-DROIT-EN-GABARDINE-DE-COTON-BEIGE-MIEL_4.jpg")
                         file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/6-1.jpg")
 
@@ -1873,7 +1870,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                           designer: designer12,
                         )
 
-                        file1= URI.open("  https://husbands-paris.com/wp-content/uploads/2022/05/VESTE-DROITE-EN-LAINE-SOIE-ET-LIN-IVOIRE-A%CC%80-RAYURES-BLEUES_2-scaled.jpg")
+                        file1= URI.open("https://husbands-paris.com/wp-content/uploads/2022/05/VESTE-DROITE-EN-LAINE-SOIE-ET-LIN-IVOIRE-A%CC%80-RAYURES-BLEUES_2-scaled.jpg")
                         file2 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/05/VESTE-DROITE-EN-LAINE-SOIE-ET-LIN-IVOIRE-A%CC%80-RAYURES-BLEUES_3-scaled.jpg")
                         file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/05/VESTE-DROITE-EN-LAINE-SOIE-ET-LIN-IVOIRE-A%CC%80-RAYURES-BLEUES_6-scaled.jpg")
 
@@ -1900,7 +1897,7 @@ handmade detailing: Australian mother-of-pearl sewn in zampa di gallina.",
                           designer: designer12,
                         )
 
-                        file1= URI.open("  https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-COL-CLASSIQUE-EN-SERGE%CC%81-BLANCHE-A%CC%80-RAYURES-BLUE-PA%CC%82LE_2.jpg")
+                        file1= URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-COL-CLASSIQUE-EN-SERGE%CC%81-BLANCHE-A%CC%80-RAYURES-BLUE-PA%CC%82LE_2.jpg")
                         file2 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-COL-CLASSIQUE-EN-SERGE%CC%81-BLANCHE-A%CC%80-RAYURES-BLUE-PA%CC%82LE_3.jpg")
                         file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-COL-CLASSIQUE-EN-SERGE%CC%81-BLANCHE-A%CC%80-RAYURES-BLUE-PA%CC%82LE_6.jpg")
 
@@ -1930,7 +1927,7 @@ handmade detailing: Australian mother-of-pearl sewn in zampa di gallina.",
                           designer: designer12,
                         )
 
-                        file1= URI.open("  https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-WESTERN-EN-DENIM-SELVEDGE-BLEU-DE%CC%81LAVE%CC%81_2-1.jpg")
+                        file1= URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-WESTERN-EN-DENIM-SELVEDGE-BLEU-DE%CC%81LAVE%CC%81_2-1.jpg")
                         file2 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-WESTERN-EN-DENIM-SELVEDGE-BLEU-DE%CC%81LAVE%CC%81_3-1.jpg")
                         file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-WESTERN-EN-DENIM-SELVEDGE-BLEU-DE%CC%81LAVE%CC%81_6-1.jpg")
 
@@ -1961,7 +1958,7 @@ Wear it as a tunic to expose the right side slit and convenient left side pocket
                           designer: designer14,
                         )
 
-                        file1= URI.open("  https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M011c.jpg?v=1639459327")
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M011c.jpg?v=1639459327")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M011d.jpg?v=1639459327")
                         file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling11.jpg?v=1639459327")
 
@@ -1995,9 +1992,9 @@ Each shirt comes with a pearl pin to secure the collar if you find it too low.
                           designer: designer14,
                         )
 
-                        file1= URI.open("  https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M0110a.jpg?v=1639460362")
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M0110a.jpg?v=1639460362")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling33.jpg?v=1639460362")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling32_cc1b543b-eb11-4a17-8959-76836a0f27c9.jpg?v=1639460362"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling32_cc1b543b-eb11-4a17-8959-76836a0f27c9.jpg?v=1639460362")
 
 
                         product73.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -2027,9 +2024,9 @@ Unlike typical tanks, this one drapes over your form with comfortable ease provi
                           designer: designer14,
                         )
 
-                        file1= URI.open("  https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M018a.jpg?v=1638440627")
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M018a.jpg?v=1638440627")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling7.jpg?v=1638440627")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling3.jpg?v=1638440679"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling3.jpg?v=1638440679")
 
 
                         product74.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -2058,9 +2055,9 @@ Unlike typical tanks, this one drapes over your form with comfortable ease provi
                           designer: designer14,
                         )
 
-                        file1= URI.open("  https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M0115d_e21d5d26-e560-4d5a-b067-a619c9927f0b.jpg?v=1638422925")
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M0115d_e21d5d26-e560-4d5a-b067-a619c9927f0b.jpg?v=1638422925")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M0115a_d24ad50b-33e2-4874-8523-16e6f80d085e.jpg?v=1638422925")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M0115f_7cbe7767-8228-4810-aded-c6ca059b71b5.jpg?v=1638422924"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M0115f_7cbe7767-8228-4810-aded-c6ca059b71b5.jpg?v=1638422924")
 
 
                         product75.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -2089,9 +2086,9 @@ Fully lined, the panel cut and side pockets give these shorts a chic feel, simpl
                           designer: designer14,
                         )
 
-                        file1= URI.open("  https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012a.jpg?v=1638204215")
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012a.jpg?v=1638204215")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012b_a01e2357-8555-403d-8ead-87a11e4fc8db.jpg?v=1638204215")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012c.jpg?v=1638204212"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012c.jpg?v=1638204212")
 
 
                         product76.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -2122,7 +2119,7 @@ Fully lined, the panel cut and side pockets give these shorts a chic feel, simpl
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012a.jpg?v=1638204215")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012b_a01e2357-8555-403d-8ead-87a11e4fc8db.jpg?v=1638204215")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012c.jpg?v=1638204212"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012c.jpg?v=1638204212")
 
 
                         product77.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -2150,7 +2147,7 @@ Fully lined, the panel cut and side pockets give these shorts a chic feel, simpl
 
                         file1= URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503156_2.jpg")
                         file2 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503156_3.jpg")
-                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503156_5.jpg"),
+                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503156_5.jpg")
 
 
                         product78.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -2178,7 +2175,7 @@ Fully lined, the panel cut and side pockets give these shorts a chic feel, simpl
 
                         file1= URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503277_2.jpg")
                         file2 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503277_3.jpg")
-                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503277_5.jpg"),
+                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503277_5.jpg")
 
 
                         product79.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -2206,7 +2203,7 @@ Fully lined, the panel cut and side pockets give these shorts a chic feel, simpl
 
                         file1= URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503596_2.jpg")
                         file2 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503596_3.jpg")
-                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503596_5.jpg"),
+                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503596_5.jpg")
 
 
                         product80.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -2233,7 +2230,7 @@ Fully lined, the panel cut and side pockets give these shorts a chic feel, simpl
 
                         file1= URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1445047_2.jpg")
                         file2 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1445047_3.jpg")
-                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1445047_5.jpg"),
+                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1445047_5.jpg")
 
 
                         product81.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -2261,7 +2258,7 @@ Fully lined, the panel cut and side pockets give these shorts a chic feel, simpl
 
                         file1= URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1517034_2.jpg")
                         file2 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1517034_3.jpg")
-                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1517034_4.jpg"),
+                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1517034_4.jpg")
 
 
                         product82.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -2289,7 +2286,7 @@ Fully lined, the panel cut and side pockets give these shorts a chic feel, simpl
 
                         file1= URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1504008_2.jpg")
                         file2 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1504008_3.jpg")
-                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1504008_4.jpg"),
+                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1504008_4.jpg")
 
 
                         product83.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -2322,7 +2319,7 @@ Fully lined, the panel cut and side pockets give these shorts a chic feel, simpl
 
                         file1= URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2528/12077/USW322095_GREEN_02__55376.1656465582.jpg?c=1")
                         file2 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2528/12174/USW322095_GREEN_03__53385.1656465615.jpg?c=1")
-                        file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2528/12082/USW322095_GREEN_04__32034.1656465583.jpg?c=1"),
+                        file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2528/12082/USW322095_GREEN_04__32034.1656465583.jpg?c=1")
 
 
                         product84.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -2355,7 +2352,7 @@ Fully lined, the panel cut and side pockets give these shorts a chic feel, simpl
 
                         file1= URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2526/13700/USW322017_GREEN_02__22471.1659397370.jpg?c=1")
                         file2 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2526/13724/USW322017_GREEN_03__50799.1659397376.jpg?c=1")
-                        file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2526/13648/USW322017_GREEN_04__85814.1659397353.jpg?c=1"),
+                        file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2526/13648/USW322017_GREEN_04__85814.1659397353.jpg?c=1")
 
 
                         product85.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -2388,7 +2385,7 @@ Fully lined, the panel cut and side pockets give these shorts a chic feel, simpl
 
                         file1= URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2228/12194/USW022012_BLACK_02__26209.1656650735.jpg?c=1")
                         file2 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2228/12197/USW022012_BLACK_03__60919.1656650735.jpg?c=1")
-                        file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2228/12196/USW022012_BLACK_04__60616.1656650735.jpg?c=1"),
+                        file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2228/12196/USW022012_BLACK_04__60616.1656650735.jpg?c=1")
 
 
                         product86.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -2420,7 +2417,7 @@ Fully lined, the panel cut and side pockets give these shorts a chic feel, simpl
 
                         file1= URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2481/11984/USW322082_NATURAL_02__39548.1656465569.jpg?c=1")
                         file2 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2481/11997/USW322082_NATURAL_03__44781.1656465571.jpg?c=1")
-                        file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2481/12004/USW322082_NATURAL_04__64345.1656465571.jpg?c=1"),
+                        file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2481/12004/USW322082_NATURAL_04__64345.1656465571.jpg?c=1")
 
 
                         product87.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -2452,7 +2449,7 @@ Fully lined, the panel cut and side pockets give these shorts a chic feel, simpl
 
                         file1= URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2364/9649/USW222005_NATURAL_02__83227.1648987932.jpg?c=1")
                         file2 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2364/9657/USW222005_NATURAL_03__96985.1648987940.jpg?c=1")
-                        file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2364/9658/USW222005_NATURAL_05__61924.1648987940.jpg?c=1"),
+                        file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2364/9658/USW222005_NATURAL_05__61924.1648987940.jpg?c=1")
 
 
                         product88.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -2506,7 +2503,7 @@ Featuring the national flag of India, the top panel is of Saffron colour reflect
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/Priyafittedjacket_768x.jpg?v=1661124759")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2835_768x.jpg?v=1661124759")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2836_768x.jpg?v=1661124754"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2836_768x.jpg?v=1661124754")
 
 
 
@@ -2533,7 +2530,7 @@ Featuring the national flag of India, the top panel is of Saffron colour reflect
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/Hardingtailoredcoat_768x.jpg?v=1661123646")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2468_768x.jpg?v=1661123646")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2469_768x.jpg?v=1661123646"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2469_768x.jpg?v=1661123646")
 
 
 
@@ -2562,7 +2559,7 @@ Featuring the national flag of India, the top panel is of Saffron colour reflect
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/Tosinblazer_768x.jpg?v=1661126021")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_4051_768x.jpg?v=1661126015")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_4052_768x.jpg?v=1661126015"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_4052_768x.jpg?v=1661126015")
 
 
 
@@ -2592,7 +2589,7 @@ Featuring the national flag of India, the top panel is of Saffron colour reflect
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/Ranicroppedpolovest_768x.jpg?v=1656610698")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2688_768x.jpg?v=1656610698")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2690_768x.jpg?v=1656610698"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2690_768x.jpg?v=1656610698")
 
 
 
@@ -2623,7 +2620,7 @@ Featuring the national flag of India, the top panel is of Saffron colour reflect
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/Lateoshirt_768x.jpg?v=1661272728")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_3513_768x.jpg?v=1661272728")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_3498_768x.jpg?v=1661272728"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_3498_768x.jpg?v=1661272728")
 
 
 
@@ -2665,7 +2662,7 @@ To minimise wastage of fabric and in a bid to be more sustainable, we will not b
 
                         file1= URI.open("https://static.wixstatic.com/media/c5ebfd_144b9185c23f438a8b5c4c5d84a01255~mv2.jpg/v1/fill/w_407,h_611,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_144b9185c23f438a8b5c4c5d84a01255~mv2.jpg")
                         file2 = URI.open("https://static.wixstatic.com/media/c5ebfd_f965f987f4954745a25bdcc66d7ad696~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_f965f987f4954745a25bdcc66d7ad696~mv2.webp")
-                        file3 = URI.open("https://static.wixstatic.com/media/c5ebfd_cc7029ca3c0043d19013845c459736b1~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_cc7029ca3c0043d19013845c459736b1~mv2.webp"),
+                        file3 = URI.open("https://static.wixstatic.com/media/c5ebfd_cc7029ca3c0043d19013845c459736b1~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_cc7029ca3c0043d19013845c459736b1~mv2.webp")
 
 
 
@@ -2694,7 +2691,7 @@ To minimise wastage of fabric and in a bid to be more sustainable, we will not b
 
                         file1= URI.open("https://static.wixstatic.com/media/c5ebfd_13a3944eea1f468ebca9b817689264b2~mv2.png/v1/fill/w_500,h_667,al_c,q_90,usm_0.66_1.00_0.01/c5ebfd_13a3944eea1f468ebca9b817689264b2~mv2.webp")
                         file2 = URI.open("https://static.wixstatic.com/media/c5ebfd_9065fa014e8345e28246dd8ceb58859c~mv2.jpg/v1/fill/w_500,h_667,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_9065fa014e8345e28246dd8ceb58859c~mv2.webp")
-                        file3 = URI.open("https://static.wixstatic.com/media/c5ebfd_8e2b07a1d61a4446a71f02971c6e03d3~mv2.jpg/v1/fill/w_500,h_667,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_8e2b07a1d61a4446a71f02971c6e03d3~mv2.webp"),
+                        file3 = URI.open("https://static.wixstatic.com/media/c5ebfd_8e2b07a1d61a4446a71f02971c6e03d3~mv2.jpg/v1/fill/w_500,h_667,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_8e2b07a1d61a4446a71f02971c6e03d3~mv2.webp")
 
 
 
@@ -2749,16 +2746,16 @@ Corset features a zip up back.
                           designer: designer18,
                         )
 
-                        file1= URI.open("https://static.wixstatic.com/media/c5ebfd_13a3944eea1f468ebca9b817689264b2~mv2.png/v1/fill/w_500,h_667,al_c,q_90,usm_0.66_1.00_0.01/c5ebfd_13a3944eea1f468ebca9b817689264b2~mv2.webp")
+                        file1 = URI.open("https://static.wixstatic.com/media/c5ebfd_13a3944eea1f468ebca9b817689264b2~mv2.png/v1/fill/w_500,h_667,al_c,q_90,usm_0.66_1.00_0.01/c5ebfd_13a3944eea1f468ebca9b817689264b2~mv2.webp")
                         file2 = URI.open("https://static.wixstatic.com/media/c5ebfd_9065fa014e8345e28246dd8ceb58859c~mv2.jpg/v1/fill/w_500,h_667,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_9065fa014e8345e28246dd8ceb58859c~mv2.webp")
-                        file3 = URI.open("https://static.wixstatic.com/media/c5ebfd_b35288448e9a4cc19f696ea9cd52fd4c~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_b35288448e9a4cc19f696ea9cd52fd4c~mv2.webp"),
+                        #file3 = URI.open("https://static.wixstatic.com/media/c5ebfd_b35288448e9a4cc19f696ea9cd52fd4c~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_b35288448e9a4cc19f696ea9cd52fd4c~mv2.webp")
 
 
 
 
                         product98.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
                         product98.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product98.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                        #product98.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                         product99 = Product.create!(
                           name: "ZENA SET
@@ -2783,7 +2780,7 @@ To minimise wastage of fabric and in a bid to be more sustainable, we will not b
 
                         file1= URI.open("https://static.wixstatic.com/media/c5ebfd_35623b236f624372845b8a6a5f8fac4f~mv2.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_35623b236f624372845b8a6a5f8fac4f~mv2.webp")
                         file2 = URI.open("https://static.wixstatic.com/media/c5ebfd_4a663499a044430e9378dd4298833d82~mv2.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_4a663499a044430e9378dd4298833d82~mv2.webp")
-                        file3 = URI.open("https://static.wixstatic.com/media/c5ebfd_d870a5bb26ab48f59dd12459398265d3~mv2.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_d870a5bb26ab48f59dd12459398265d3~mv2.webp"),
+                        file3 = URI.open("https://static.wixstatic.com/media/c5ebfd_d870a5bb26ab48f59dd12459398265d3~mv2.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_d870a5bb26ab48f59dd12459398265d3~mv2.webp")
 
 
 
@@ -2811,7 +2808,7 @@ To minimise wastage of fabric and in a bid to be more sustainable, we will not b
 
                         file1= URI.open("https://static.wixstatic.com/media/c5ebfd_1978f807c06942fca37f6c1938ce8c86~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_1978f807c06942fca37f6c1938ce8c86~mv2.webp")
                         file2 = URI.open("https://static.wixstatic.com/media/c5ebfd_fb6ef138d77249ca8f7ffb35574d195b~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_fb6ef138d77249ca8f7ffb35574d195b~mv2.webp")
-                        file3 = URI.open("https://static.wixstatic.com/media/c5ebfd_6cf01478692e43ebafb88328bb9eb2ba~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_6cf01478692e43ebafb88328bb9eb2ba~mv2.webp"),
+                        file3 = URI.open("https://static.wixstatic.com/media/c5ebfd_6cf01478692e43ebafb88328bb9eb2ba~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_6cf01478692e43ebafb88328bb9eb2ba~mv2.webp")
 
 
 
@@ -2847,7 +2844,7 @@ To minimise wastage of fabric and in a bid to be more sustainable, we will not b
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/6157_BioHummingbirdWindbreaker_JasmineGreen_2.jpg?v=1660595409")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/6157_BioHummingbirdWindbreaker_JasmineGreen_3.jpg?v=1660595409")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/6157_BioHummingbirdWindbreaker_JasmineGreen_4.jpg?v=1660595409"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/6157_BioHummingbirdWindbreaker_JasmineGreen_4.jpg?v=1660595409")
 
                         product101.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
                         product101.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
@@ -2875,7 +2872,7 @@ To minimise wastage of fabric and in a bid to be more sustainable, we will not b
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4067_BioHRPocketLegging_scubaBlue_1.jpg?v=1660595376")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4067_BioHRPocketLegging_scubaBlue_3.jpg?v=1660595376")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4067_BioHRPocketLegging_scubaBlue_4.jpg?v=1660595376"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4067_BioHRPocketLegging_scubaBlue_4.jpg?v=1660595376")
 
 
 
@@ -2904,7 +2901,7 @@ To minimise wastage of fabric and in a bid to be more sustainable, we will not b
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/1067_AndySplitStrapBra_Black_Front.jpg?v=1661190028")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/1067_AndySplitStrapBra_Black_28653.jpg?v=1661190028")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/1067_AndySplitStrapBra_Black_28675.jpg?v=1661190028"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/1067_AndySplitStrapBra_Black_28675.jpg?v=1661190028")
 
 
 
@@ -2933,7 +2930,7 @@ To minimise wastage of fabric and in a bid to be more sustainable, we will not b
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_1.jpg?v=1660595406")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_3.jpg?v=1660595406")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_4.jpg?v=1660595406"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_4.jpg?v=1660595406")
 
 
 
@@ -2962,7 +2959,7 @@ To minimise wastage of fabric and in a bid to be more sustainable, we will not b
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_1.jpg?v=1660595406")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_3.jpg?v=1660595406")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_4.jpg?v=1660595406"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_4.jpg?v=1660595406")
 
                         product105.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
                         product105.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
