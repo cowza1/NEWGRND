@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_06_155134) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_12_111709) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -40,6 +40,16 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_06_155134) do
     t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
+  end
+
+  create_table "cart_items", force: :cascade do |t|
+    t.bigint "order_id", null: false
+    t.bigint "product_id", null: false
+    t.integer "quantity", default: 1, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["order_id"], name: "index_cart_items_on_order_id"
+    t.index ["product_id"], name: "index_cart_items_on_product_id"
   end
 
   create_table "carts", force: :cascade do |t|
@@ -75,6 +85,19 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_06_155134) do
     t.index ["questionnaire_id"], name: "index_matches_on_questionnaire_id"
   end
 
+  create_table "orders", force: :cascade do |t|
+    t.string "state"
+    t.string "product_sku"
+    t.string "checkout_session_id"
+    t.integer "price_cents", default: 0
+    t.bigint "user_id", null: false
+    t.bigint "product_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_orders_on_product_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.text "description"
@@ -83,6 +106,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_06_155134) do
     t.bigint "designer_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "price_cents", default: 0, null: false
     t.index ["designer_id"], name: "index_products_on_designer_id"
   end
 
@@ -115,10 +139,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_06_155134) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "cart_items", "orders"
+  add_foreign_key "cart_items", "products"
   add_foreign_key "carts", "products"
   add_foreign_key "carts", "users"
   add_foreign_key "matches", "designers"
   add_foreign_key "matches", "questionnaires"
+  add_foreign_key "orders", "products"
+  add_foreign_key "orders", "users"
   add_foreign_key "products", "designers"
   add_foreign_key "questionnaires", "users"
 end

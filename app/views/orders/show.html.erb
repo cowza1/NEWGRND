@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row py-4">
+  <h1>Order #<%= @order.id %></h1>
+  <%@order.cart_items.each do |cart_item|%>
+    <div class="col-md-3"><%= cl_image_tag cart_item.product.photos.first.key, width: '100%' %></div>
+    <div class="col">
+       <small><span class="badge badge-primary"><%= @order.state %></span></small>
+      <ul class="list-unstyled">
+        <li><strong>ISSUED ON</strong> <%= @order.created_at.to_date %></li>
+        <li><strong>Product:</strong> <%= cart_item.product.name %></li>
+        <li><strong>TOTAL</strong> <%= humanized_money_with_symbol cart_item.product.price * cart_item.quantity %></li>
+        <li><%= link_to "Delete", cart_item_path(cart_item), data: {turbo_method: :delete} %></li>
+      </ul>
+      <% end %>
+      <p>Estimated delivery in <strong>2 business days</strong></p>
+    </div>
+  </div>
+</div>

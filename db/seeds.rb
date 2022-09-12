@@ -270,7 +270,9 @@ product1 = Product.create!(
   The versatility of this jacket is endless as it can be dressed up or down depending on the occasion.
   Perfect for keeping you cool in hot temperatures.",
   image:"https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image.webp?v=1661178529",
-  price: 210,
+
+  price_cents: 21000,
+
   designer: designer1
 )
 puts "product created"
@@ -293,7 +295,7 @@ product2 = Product.create!(
 
   ",
   image:"https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_808f1ad1-80a8-4c7b-8a64-34ff07eaf76c_720x.webp?v=1661178664",
-  price:131.25 ,
+  price_cents: 13100,
   designer: designer1
 )
 puts "product created"
@@ -312,7 +314,7 @@ product3= Product.create!(
   description: "Made from 100% Irish Linen cloth this blue suit is a perfect marriage between style and comfort.
   Perfect for a summers day as it can be dressed up or down depending on the occasion.",
   image: "https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9259_534ef530-2d37-4317-84a2-6a849868e364_720x.jpg?v=1644835300",
-  price: 425.00,
+  price_cents: 42500,
   designer: designer1
 )
 puts "product created"
@@ -333,7 +335,7 @@ product4 = Product.create!(
                  A navy gold button jacket will always be useful in the modern mans wardrobe,
                 when designing this piece we drew inspiration from the IV League preppy look.",
   image: "https://cdn.shopify.com/s/files/1/0582/5921/0426/products/86CBB048-7B99-4D4A-8DAC-35724B0FC272-2_720x.jpg?v=1654587643",
-  price: 210.00,
+  price_cents: 21000,
   designer: designer1
 
 )
@@ -354,7 +356,7 @@ product5 = Product.create!(
   description: "Made from 100% Linen cloth this jacket is a perfect marriage between style and comfort.
                 Perfect for a summers day as it can be dressed up or down depending on the occasion.",
   image: "https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9082_1_720x.jpg?v=1656285021",
-  price: 210.00,
+  price_cents: 21000,
   designer: designer1
 
   )
@@ -375,7 +377,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
                   Made from an electric blue linen cloth these pants give you the best of both worlds of street style & sartorial.
                   Can be dressed up with a well tailored blazer & shirt or dressed down with a t-shirt, perfect for warmer temperatures.",
     image: "https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9092_1.jpg?v=1656285813",
-    price: 210.00,
+    price_cents: 21000,
     designer: designer1
 
     )
@@ -397,7 +399,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
                     the durability of the shell, minimalistic design and versatility of the product not only makes it
                     ideal for autumn/winter but ensures that the garment can be enjoyed for many years to come.",
       image: "https://cdn.shopify.com/s/files/1/0278/7452/5262/products/OLIVEFINAL_1512x.jpg?v=1637893912",
-      price: 240.00,
+      price_cents: 24000,
       designer: designer2
 
       )
@@ -419,7 +421,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
                       with aesthetic detailing ranging from pleated pockets,
                       high shine zips to velcro tabs – This trouser can be styled at will in line with casual tailoring or streetwear.",
         image: "https://cdn.shopify.com/s/files/1/0278/7452/5262/products/UTILITY-COMBAT-TROUSER-GREY40_720x.jpg?v=1619728850",
-        price: 150.00,
+        price_cents: 15000,
         designer: designer2
       )
       puts "product created"
@@ -440,7 +442,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
                       aged black colour-way indicative of the early 90's era.
                       With a box fit silhouette incorporating subtle branding and graphic imagery - It is ideal for a relaxed look.",
         image: "https://cdn.shopify.com/s/files/1/0278/7452/5262/products/SST-SHIRT-THISISACOOBAT-SHIRT_Front1_720x.jpg?v=1631827933",
-        price: 85.00,
+        price_cents: 8500,
         designer: designer2
       )
       puts "product created"
@@ -459,7 +461,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
           description: "Made from 300GSM 100% cotton, our sweat shorts feature elongated strings and a slightly cropped raw hem.
                         As well as incorporating a detailed patch logo outlining our manifesto. These shorts have been garment dyed using a reactive process to achieve a wash that is available in three different colour-ways.",
           image: "https://cdn.shopify.com/s/files/1/0278/7452/5262/products/RAWHEMSHORTS-GREEN_F_1512x.jpg?v=1631838278",
-          price: 70.00,
+          price_cents: 7000,
           designer: designer2
       )
       puts "product created"
@@ -480,7 +482,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
                       and washed to achieve a marshmallow white colour-way indicative of the early 90's era.
                       with a box fit silhouette incorporating subtle branding and graphic imagery - it is ideal for a relaxed look.",
         image: "https://cdn.shopify.com/s/files/1/0278/7452/5262/products/SST-SHIRT-CREATINGOUTOFBODYAWARENESS_F_720x.jpg?v=1631830540",
-        price: 85.00,
+        price_cents: 8500,
         designer: designer2
     )
     puts "product created"
@@ -503,7 +505,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
                     this hoodie as a staple piece within our ongoing collections as such the design had to be timeless, contemporary and above all comfortable. Through the relaxed cropped hem, deep hood and durable choice fabric - we deliver on those points, as well as an unrivalled silhouette. The garment also features a minimalistic patch label on the left sleeve, outlining our manifesto and brand ethos.
                     Recommend dry clean only.",
       image: "https://cdn.shopify.com/s/files/1/0278/7452/5262/products/GH_720x.jpg?v=1637900933",
-      price: 125.00,
+      price_cents: 12500,
       designer: designer2
   )
   puts "product created"
@@ -527,7 +529,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
                   has been printed using a hand-cracked thick plastisol ink
                   which will only get better with wear..",
     image: "https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB_BULLDOG_T-SHIRT_WHITE_720x.jpg?v=1661451772",
-    price: 85.00,
+    price_cents: 8500,
     designer: designer3
 )
 
@@ -547,7 +549,7 @@ product14 = Product.create!(
                 are cut from a custom Cole Buxton branded jacquard-woven cupro and
                 double lined to add structure and create a truly luxury drape.",
   image: "https://cdn.shopify.com/s/files/1/0055/1023/4230/products/baby-blue-resort-pants_720x.jpg?v=1662060604",
-  price: 125.00,
+  price_cents: 12500,
   designer: designer3
 )
 
@@ -568,7 +570,7 @@ product15 = Product.create!(
                 and dyed to achieve a light refracting patina.
                 The stand out detail on these shorts is the oversized double logo print on each leg.",
   image: "https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB-DOUBLE-LOG-TECH-SHORTS_720x.jpg?v=1658932526",
-  price: 95.00,
+  price_cents: 9500,
   designer: designer3
 )
 
@@ -582,7 +584,7 @@ product16 = Product.create!(
                 ribbed edge kangaroo pocket and finished with a Swiss-made 2 way Riri zipper.
                 We have printed this one with our brand new Double Sports Logo screen print across the chest.",
   image: "https://cdn.shopify.com/s/files/1/0055/1023/4230/products/DOUBLE_LOGO_ZIPPED_HOODIE_GREY_720x.jpg?v=1657115966",
-  price: 165.00,
+  price_cents: 16500,
   designer: designer3
 )
 file1 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/DOUBLE_LOGO_ZIPPED_HOODIE_GREY_720x.jpg?v=1657115966")
@@ -600,7 +602,7 @@ product17 = Product.create!(
                 The silhouette is wide and boxy with sloped shoulders to compliment
                 the curve of the signature outer arm seam. We’ve heavily washed this jacket and subtly distressed the collar, pockets and cuffs for a broken in feel. Finished with Cole Buxton branded Cobrax buttons.",
   image: "https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB-DENIM-JACKET-BLUE-FRONT_720x.jpg?v=1658930445",
-  price: 245.00,
+  price_cents: 24500,
   designer: designer3
 )
 
@@ -622,7 +624,7 @@ product18 = Product.create!(
   - Short sleeves
   - Soft cotton 95% Organic Cotton, 5% Elastan",
   image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B1112.1050_HIGH_20RISK_20RED_01_1100x.png?v=1654687894",
-  price: 75.00,
+  price_cents: 7500,
   designer: designer4
 )
 
@@ -645,7 +647,7 @@ product19 = Product.create!(
   - Logo on the chest
   - 62% Polyester, 38% Cotton," ,
   image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/B1387.1016.611_101.jpg?v=1659529996",
-  price: 200.00,
+  price_cents: 20000,
   designer: designer4
 )
 
@@ -668,7 +670,7 @@ product20 = Product.create!(
   - Subtle metal BALR. logo on the front
   - 65% Polyester, 30% Viscose, 5% Elastane",
   image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567",
-  price: 155.00,
+  price_cents: 15500,
   designer: designer4
 )
 
@@ -691,7 +693,7 @@ product21 = Product.create!(
   - Adjustable backstrap
   - 100% Polyester Woven Oxford",
   image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B6110.1041_WHITE_20PEPPER_02_750x.png?v=1654860949",
-  price: 155.00,
+  price_cents: 15500,
   designer: designer4
 )
 file1 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B6110.1041_WHITE_20PEPPER_02_750x.png?v=1654860949")
@@ -711,8 +713,10 @@ product22 = Product.create!(
   - Model: Long
   - Branded reflected patron
   - 100% Polyester, Linning: 100% Nylon, Filling 90% Down, 10% Feather",
+
   image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567",
-  price: 355.00,
+  price_cents: 35500,
+
   designer: designer4
 )
 
@@ -733,7 +737,7 @@ product23 = Product.create!(
   - Satin Logo on the front Round neck
   - 88% cotton, 12% polyester (350 g/m2 brushback )",
   image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567",
-  price: 355.00,
+  price_cents: 35500,
   designer: designer4
 )
 
@@ -752,7 +756,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
           Dusty Blue Signature Core Embroidered Hoody. Slim fit.
           Interlock jersey" ,
           image:  "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567" ,
-          price: 70.00,
+          price_cents: 7000,
           designer: designer5
         )
 
@@ -775,7 +779,12 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
               - Straight Hem
               - Button Cuffs" ,
               image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=16613515877" ,
-              price: 130.00,
+
+              price_cents: 13000,
+
+
+
+
               designer: designer5
             )
 
@@ -797,7 +806,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                   - Straight Hem
                   - Prevu Branding" ,
                   image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=16613515877" ,
-                  price: 130.00,
+                  price_cents: 13000,
                   designer: designer5
                 )
 
@@ -822,7 +831,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       Button Cuffs" ,
 
                       image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=16613515877" ,
-                      price: 150.00,
+                      price_cents: 15000,
                       designer: designer5
                     )
 
@@ -845,7 +854,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       - Perforated detailing" ,
 
                       image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/191022_PREVU_STUDIO1_E2369_900x.jpg?v=1639046330" ,
-                      price: 140.00,
+                      price_cents: 14000,
                       designer: designer5
                     )
 
@@ -866,7 +875,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       The large embroidery on the front is a remixes of Amsterdam's coat of arms in the Pan-African colour way, to reflect the city's diverse culture. The hoody is a soft French terry which makes this a comfortable collectible item." ,
 
                       image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/191022_PREVU_STUDIO1_E2369_900x.jpg?v=1639046330" ,
-                      price: 110.00,
+                      price_cents: 11000,
 
                       designer: designer7
                     )
@@ -888,7 +897,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       This adidas football jersey is worn by Ajax players during warm up before kick off. Its intricate design fuses the colours of the Pan-African flag and the unique facade of Daily Paper's New York flagship store.
                         AEROREADY wicks moisture to keep you comfortable. Made with 100% recycled materials" ,
                       image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899" ,
-                      price: 110.00,
+                      price_cents: 11000,
 
                       designer: designer7
                     )
@@ -911,7 +920,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       a classic collar and slanted welt pockets.
                         Daily Paper emblem embroideries decorate front and back alongside an artwork representing the 3 founders, symbolised by 3 animals." ,
                       image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899" ,
-                      price: 435.00,
+                      price_cents: 43500,
 
                       designer: designer7,
                     )
@@ -933,7 +942,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       The style is equipped with a drawstring hood and a classic kangaroo pocket.
                       A special Daily Paper artwork featuring a shield logo and the 3 animals that represent the 3 founders decorates the front of the hoodie." ,
                       image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899" ,
-                      price: 115.00,
+                      price_cents: 11500,
 
                       designer: designer7,
                     )
@@ -949,7 +958,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       name: "White Nakato T-Shirt",
                       description: "The Nakato crewneck tee is crafted from a premium jersey fabric and comes in two seasonal colourways. A special Daily Paper artwork featuring a shield logo and the 3 animals that represent the 3 founders decorates the front of the tee." ,
                       image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225",
-                      price: 60.00,
+                      price_cents: 6000,
 
                       designer: designer7,
                     )
@@ -969,7 +978,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       description: "
                       Stay cosy with our seasonal beanie styles. The Neno Beanie is made from a ribbed knit and has a single fold. A recycled microfibre patch with the Daily Paper logo decorates the forehead. Available in two seasonal colourways. Pair with a matching Nescarf for a complete look.",
                       image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
-                      price: 45.00,
+                      price_cents: 4500,
 
                       designer: designer7,
                     )
@@ -994,7 +1003,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       cotton fabric with a button-up closure in white and a classic camp collar.
                         A Protect Paradise flower print decorates the back. Available in two different colourways.",
                       image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
-                      price: 120.00,
+                      price_cents: 12000,
 
                       designer: designer7,
                     )
@@ -1023,7 +1032,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                       Made in Europe.",
                       image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
-                      price: 105.00,
+                      price_cents: 10500,
 
                       designer: designer8,
                     )
@@ -1061,7 +1070,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                       Made in Europe.",
                       image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/set-baby-pants_832x1024.jpg?v=1647264742" ,
-                      price: 80,
+                      price_cents: 8000,
 
                       designer: designer8,
                     )
@@ -1087,8 +1096,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                       Made in Europe..",
                       image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/set-baby-pants_832x1024.jpg?v=1647264742" ,
-                      price: 50,
-
+                      price_cents: 5000,
                       designer: designer8,
                     )
 
@@ -1115,8 +1123,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
     ",
                       image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-starlight-cream-0_832x1024.jpg?v=1657547241" ,
-                      price: 50,
-
+                      price_cents: 5000,
                       designer: designer8,
                     )
 
@@ -1144,50 +1151,1811 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 ·                         Welt inside pocket
 
 ·                         Zip pocket at sleeve
+",
 
-    ",
+
                       image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/green-pack-front_832x1024.jpg?v=1648646424" ,
-                      price: 280.00,
+                      price_cents: 28000,
 
-                      designer: designer8,
-                    )
 
-                    file1= URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/green-pack-back_f9103e40-84f9-4dfb-bd8e-867e0d6a93d5_832x1024.jpg?v=1648646424")
-                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/green-pack-front_832x1024.jpg?v=1648646424")
+                          designer: designer8,
+                        )
 
-                    product40.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                    product40.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/green-pack-back_f9103e40-84f9-4dfb-bd8e-867e0d6a93d5_832x1024.jpg?v=1648646424")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/green-pack-front_832x1024.jpg?v=1648646424")
 
-                    product41 = Product.create!(
-                      name: "Killington Stripe Hat
-                      ",
+                        product40.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product40.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+
+                        product41 = Product.create!(
+                          name: "Killington Stripe Hat
+                          ",
+
 
                       description: "
                       THIS HAT IS INSPIRED BY STRIP-WOVEN CLOTH FROM CÔTE D'IVOIRE, CIRCA 1960S. IT FEATURES A BROAD STRIPE PATTERN IN BLUE AND BURGUNDY AND AN EMBROIDERED BODE LOGO.",
                       image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
-                      price: 270.00,
-
-
-                      designer: designer9,
-                    )
-
-                    file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__KILLINGTONSTRIPEHAT_031_720x.jpg?v=1654880661")
-                    file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__KILLINGTONSTRIPEHAT_041_720x.jpg?v=1654880661")
+                      price_cents: 27000,
 
 
 
-                    product41.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                    product41.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                          designer: designer9,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__KILLINGTONSTRIPEHAT_031_720x.jpg?v=1654880661")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__KILLINGTONSTRIPEHAT_041_720x.jpg?v=1654880661"),
+
+
+
+                        product41.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product41.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product41.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product42 = Product.create!(
+                          name: "Gym Green Shorts",
+
+
+                          description: "
+                          THESE RUGBY SHORTS ARE INSPIRED BY MEN'S ATHLETIC SHORTS, CIRCA 1960S.
+                           THIS SILHOUETTE IS REMINISCENT OF TRADITIONAL
+                            RUGBY SHORTS WORN THROUGHOUT CANADA BY WAY OF ENGLAND.
+
+",
+                          image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GYMRUGBYSHORTSGREEN_01_720x.jpg?v=1652192166" ,
+                          price_cents: 50000,
+
+
+                          designer: designer9,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GYMRUGBYSHORTSGREEN_01_720x.jpg?v=1652192166")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__DELIVERY1_TEST_52_720x.jpg?v=1654188965"),
+
+
+
+                        product42.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product42.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product42.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product43 = Product.create!(
+                          name: "Mosaic Shirt",
+
+
+                          description: "
+                          THIS SHORT-SLEEVE SHIRT IS INSPIRED BY A DOMESTIC TABLECLOTH, CIRCA 1940S.
+                          THIS IS A HISTORICAL REPRODUCTION OF A TABLECLOTH-EMBROIDERED MOSAIC MOTIF THAT IS COMMONLY SEEN IN VARIOUS EASTERN EUROPEAN CULTURES.
+",
+                          image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__EASTERNMOSAICSSSHIRT_02_720x.jpg?v=1652454575" ,
+                          price_cents: 65000,
+
+
+                          designer: designer9,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__EASTERNMOSAICSSSHIRT_02_720x.jpg?v=1652454575")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__LOOK35_03_720x.jpg?v=1654203134"),
+
+
+
+                        product43.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product43.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product43.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product44 = Product.create!(
+                          name: "Double Breasted Cardigan - Black
+                          ",
+
+                          description: "
+                          THIS DOUBLE-BREASTED CARDIGAN IS INSPIRED BY CHILDREN'S CLOTHING, CIRCA 1960S-1970S. THE ORIGINAL TEXTILE WAS MADE FROM A POLYESTER BLEND FOR NOVELTY CHILDREN’S CLOTHING. WE REIMAGINED THE FABRIC IN MORE DESIRABLE COTTON.
+
+                          -CLASSIC FIT
+                          -100% COTTON
+                          -MADE IN PERU
+                          -DRY CLEAN ONLY.",
+                          image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__CROCHETTOTEBLACK_0081_720x.jpg?v=1659041472" ,
+                          price_cents: 10500,
+
+                          designer: designer9,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__DOUBLEBREASTEDCARDIGANBLACK_014_720x.jpg?v=1659041472")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__CROCHETTOTEBLACK_0081_720x.jpg?v=1659041472")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__DOUBLEBREASTEDCARDIGANBLACK_0161_2fd5c78d-9e81-4a00-b2c2-399bdcd24879_720x.jpg?v=1659041472"),
+
+
+                        product44.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product44.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product44.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product45 = Product.create!(
+                          name: "Circle Embroidered Jacket
+                          ",
+
+                          description: "
+                          THIS JACKET IS INSPIRED BY BEDDING, CIRCA 1940S. THIS HEAVILY EMBROIDERED STYLE FEATURES A CROSS-STITCH GRID, SATIN STITCH, AND CHAIN STITCH CIRCLES.
+
+                          - OVERSIZED FIT
+                          - FIVE FRONT BUTTONS
+                          - THREE FRONT POCKETS
+                          - MADE IN INDIA
+                          - DRY CLEAN ON",
+                          image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__LOOK16_03_720x.jpg?v=1654196707" ,
+                          price_cents: 130000,
+
+                          designer: designer9,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__CIRCLEEMBROIDEREDJACKET_011_720x.jpg?v=1652455385")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__LOOK16_01_720x.jpg?v=1654196711")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__CIRCLEEMBROIDEREDJACKET_031_720x.jpg?v=1654196711"),
+
+
+                        product45.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product45.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product45.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product46 = Product.create!(
+                          name: "Purple Gym Track Pants
+                          ",
+
+                          description: "
+                          THESE TRACK PANTS ARE INSPIRED BY MEN'S SPORTING PANTS, CIRCA 1960S. THE SILHOUETTE IS REMINISCENT OF TRADITIONAL JERSEY SWEATPANTS WORN FOR SPORT.
+
+                          -ELASTIC WAIST
+                          -TWO FRONT POCKETS
+                          -ONE BACK POCKET
+                          -100% COTTON
+                          -MADE IN INDIA
+                          -DRY CLEAN ONLY",
+                          image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GYMTRACKPANTSPURPLE_06_720x.jpg?v=1654184004" ,
+                          price_cents: 61500,
+
+                          designer: designer9,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GYMTRACKPANTSPURPLE_07_720x.jpg?v=1652192048")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__LOOK2_03_720x.jpg?v=1654184004")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GYMTRACKPANTSPURPLE_06_720x.jpg?v=1654184004"),
+
+
+                        product46.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product46.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product46.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product47 = Product.create!(
+                          name: "Green Suede Shoes
+                          ",
+
+                          description: "
+                          THE BODE HOUSE SHOE IS MADE BY A THIRD-GENERATION ITALIAN SHOE FACTORY THAT WAS ONCE A SMALL ARTISAN SHOP. THIS STYLE IS MADE FROM GREEN SUEDE. THE BODE HOUSE SHOE IS MADE TO BE WORN OUTDOORS BUT INSPIRED BY LIFE WITHIN THE DOMESTIC SPACE AND TRADITIONAL HOUSE SHOES.
+
+                          - 100% SUEDE LEATHER
+                          - LEATHER SOLE
+                          - MADE IN ITALY
+",
+                          image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__BLACKCOUNTYCLAIRESHOE_32_720x.jpg?v=1652474478" ,
+                          price_cents: 80500,
+
+                          designer: designer9,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_041_720x.jpg?v=1652474473")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_04_720x.jpg?v=1652474473")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_21_720x.jpg?v=1652474481"),
+
+
+                        product47.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product47.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product47.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product49 = Product.create!(
+                          name: "PERFORATED LEATHER TRACK JACKET
+                          ",
+
+                          description: "
+                          Cream coloured Leather Jacket",
+                          image:  "https://cdn.shopify.com/s/files/1/0020/3361/4892/products/016_Front_823x.jpg?v=1656509523" ,
+                          price_cents: 80500,
+
+                          designer: designer10,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/perforated-leather-jacket-lookbook-01_823x.jpg?v=1656509523")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/016_Back_823x.jpg?v=16565010013")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_21_720x.jpg?v=1652474481"),
+
+
+                        product49.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product49.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product49.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product50 = Product.create!(
+                          name: "PERFORATED LEATHER TRACK JACKET
+                          ",
+
+                          description: "
+                          Cream coloured Leather Jacket",
+                          image:  "https://cdn.shopify.com/s/files/1/0020/3361/4892/products/016_Front_823x.jpg?v=1656509523" ,
+                          price_cents: 132500,
+
+                          designer: designer10,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/perforated-leather-jacket-lookbook-01_823x.jpg?v=1656509523")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/016_Back_823x.jpg?v=16565010013")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_21_720x.jpg?v=1652474481"),
+
+
+                        product50.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product50.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product50.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product51 = Product.create!(
+                          name: "MID WASH JEANS
+
+                          ",
+
+                          description: "
+                          Jeans",
+                          image:  "https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26660copy_823x.jpg?v=1645458459" ,
+                          price_cents: 59000,
+
+                          designer: designer10,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26662copy_823x.jpg?v=1645458459")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26666copy_823x.jpg?v=1645458459")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26671copy_2_823x.jpg?v=1645459358"),
+
+
+                        product51.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product51.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product51.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product52 = Product.create!(
+                          name: "Hand Drawn Print T-Shirt
+
+                          ",
+
+                          description: "
+                          T-Shirt with Slogan",
+                          image:  "https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-black-motto-tee-model_1100x.jpg?v=1656515933" ,
+                          price_cents: 21000,
+
+                          designer: designer10,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-black-motto-tee-front_823x.jpg?v=1656515933")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-black-motto-tee-back_823x.jpg?v=1656515933")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-black-motto-tee-detail_823x.jpg?v=1656515933"),
+
+
+                        product52.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product52.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product52.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product53 = Product.create!(
+                          name: "Due Diligence Varsity Jacket
+
+                          ",
+
+                          description: "
+                          Due Diligence Varsity Jacket",
+                          image:  "https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-varsity-jacket-in-red.jpg?v=1648811211" ,
+                          price_cents: 21000,
+
+                          designer: designer10,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKSEVEN20775copy_1.jpg?v=1648811211")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKSEVEN20755copy.jpg?v=1648811211")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKSEVEN20790copy.jpg?v=1648811211"),
+
+
+                        product53.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product53.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product53.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product54 = Product.create!(
+                          name: "PINK LEATHER SHIRT
+
+
+                          ",
+
+                          description: "
+                          A Nice Pink shirt
+",
+                          image:  "https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKEIGHT20865copy_1.jpg?v=1645097855" ,
+                          price_cents: 80000,
+
+                          designer: designer10,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKEIGHT20878copy_1.jpg?v=1645097854")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKEIGHT20880copy_1.jpg?v=1645097855")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKEIGHT20854copy_2.jpg?v=1645097854"),
+
+
+                        product54.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product54.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product54.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product55 = Product.create!(
+                          name: "PRINTED SHORTS IN VISCOSE
+
+
+                          ",
+
+                          description: "
+                          Printed shorts in a viscose colour
+",
+                          image:  "https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-print-short-front_823x.jpg?v=1656516502" ,
+                          price_cents: 40000,
+
+                          designer: designer10,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-print-shorts-model_1100x.jpg?v=1656516502")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-print-short-back_1100x.jpg?v=1656516502")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-print-short-back-detail_1100x.jpg?v=1656516504"),
+
+
+                        product55.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product55.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product55.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product56 = Product.create!(
+                          name: "HAWAIIAN SHIRT IN SILK
+
+
+                          ",
+
+                          description: "
+                          Hawaian Shirt In Silk
+",
+                          image:  "https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-black-silk-shirt-front_823x.jpg?v=1656522950" ,
+                          price_cents: 80000,
+
+                          designer: designer10,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-black-silk-shirt-model_823x.jpg?v=1656522950")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/black-due-diligence-shirt-back_823x.jpg?v=1656522949")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/black-due-diligence-shirt-detail_823x.jpg?v=1656522949"),
+
+
+                        product56.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product56.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product56.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product57 = Product.create!(
+                          name: "PINK BUCKET HAT
+
+
+                          ",
+
+                          description: "
+                          Pink 90s Retro Bucket Hat
+",
+                          image:  "https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-reversible-bucket-hat-pink_823x.jpg?v=1656509387" ,
+                          price_cents: 80000,
+
+                          designer: designer10,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-pink-bucket-hat_823x.jpg?v=1656509387")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-reversible-bucket-hat-pink_823x.jpg?v=1656509387"),
+
+
+
+                        product57.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product57.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+
+                        product58 = Product.create!(
+                          name: "OVERSIZED REVERSIBLE CHECK SHIRT
+
+
+
+                          ",
+
+                          description: "
+                          Reversible Check Shirt
+",
+                          image:  "https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKEIGHT20804copy_823x.jpg?v=1645098139" ,
+                          price_cents: 49000,
+
+                          designer: designer10,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKEIGHT20792copy_823x.jpg?v=1645098139")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKEIGHT20842copy_823x.jpg?v=1645098139")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKEIGHT20813copy_823x.jpg?v=1645098139"),
+
+
+                        product58.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product58.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product58.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product59 = Product.create!(
+                          name: "GREEN KNITTED CARDIGAN
+
+
+
+
+                          ",
+
+                          description: "
+                         A Green Knitted Cardigan
+",
+                          image:  "https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAW_DESIGN26730_V2_copy_823x.jpg?v=1645540525" ,
+                          price_cents: 74000 ,
+
+                          designer: designer10,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26736v2copy_823x.jpg?v=1645540526")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26744v2copy_823x.jpg?v=1645540526")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26758v2copy_823x.jpg?v=1645540526"),
+
+
+                        product59.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product59.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product59.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product60 = Product.create!(
+                          name: "Dispatch Jacket
+
+
+
+
+                          ",
+
+                          description: "
+                          This unisex jacket is made of a garment-dyed denim - a classic Lemaire fabric with a thick, round hand. It has a straight, boxy fit that is topped with a large, convertible notched lapel. Its practical details are workwear inspired, and include a large buttoned patch pocket on the chest and adjustable fastening tabs on the back.
+
+
+",
+                          image:  "https://cdn.shopify.com/s/files/1/0267/6051/1530/products/OW334_LD086_BR418_2_1600x.jpg?v=1655740722" ,
+                          price_cents: 49500,
+
+                          designer: designer11,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/OW334_LD086_BR418_1_1600x.jpg?v=1655740555")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/OW334_LD086_BR418_5_1600x.jpg?v=1655740049")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/OW334_LD086_BR418_9_1600x.jpg?v=1655740755"),
+
+
+                        product60.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product60.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product60.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product61 = Product.create!(
+                          name: "Dispatch Jacket
+
+
+
+
+                          ",
+
+                          description: "
+                          This unisex jacket is made of a garment-dyed denim - a classic Lemaire fabric with a thick, round hand. It has a straight, boxy fit that is topped with a large, convertible notched lapel. Its practical details are workwear inspired, and include a large buttoned patch pocket on the chest and adjustable fastening tabs on the back.
+
+
+",
+                          image:  "https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_1_1600x.jpg?v=1655740264" ,
+                          price_cents: 49500,
+
+                          designer: designer11,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_2_1600x.jpg?v=1655739890")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_3_1600x.jpg?v=1655740411")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_4_1600x.jpg?v=1655740195"),
+
+
+                        product61.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product61.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product61.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product62 = Product.create!(
+                          name: "Dispatch Jacket
+
+
+
+
+                          ",
+
+                          description: "
+                          This unisex jacket is made of dry silk, a classic Lemaire fabric with a soft hand and tonic texture. This Lemaire staple is worn loose, with a convertible shawl collar and matching belt to adjust its volume at the waist. The shoulders are long and the sleeves are slightly ironed.
+
+",
+                          image:  "https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_1_1600x.jpg?v=1655740264" ,
+                          price_cents: 84000,
+
+                          designer: designer11,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_2_1600x.jpg?v=1655739890")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_3_1600x.jpg?v=1655740411")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_4_1600x.jpg?v=1655740195"),
+
+
+                        product62.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product62.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product62.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product63 = Product.create!(
+                          name: "Dispatch Jacket
+
+
+                          ",
+
+                          description: "
+                          This unisex jacket is made of dry silk, a classic Lemaire fabric with a soft hand and tonic texture. This Lemaire staple is worn loose, with a convertible shawl collar and matching belt to adjust its volume at the waist. The shoulders are long and the sleeves are slightly ironed.
+
+",
+                          image:  "https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_1_1600x.jpg?v=1655740264" ,
+                          price_cents: 84000,
+
+                          designer: designer11,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_2_1600x.jpg?v=1655739890")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_3_1600x.jpg?v=1655740411")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_4_1600x.jpg?v=1655740195"),
+
+
+                        product63.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product63.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product63.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product64 = Product.create!(
+                          name: "Seamless Jeans
+
+
+
+
+                          ",
+
+                          description: "
+                          These pants are made of a garment-dyed denim - a classic Lemaire fabric with a thick, round hand. The fit is regular and mid-rise with a tapered, slightly rounded leg with no side seam. Denim-inspired details include a back yoke, metal rivets and studs and five pockets including a ticket pocket on the front.",
+
+                          image:  "https://cdn.shopify.com/s/files/1/0267/6051/1530/products/PA330_LD086_WH015_1_1600x.jpg?v=1655740401" ,
+                          price_cents: 84000,
+
+                          designer: designer11,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/PA330_LD086_WH015_2_1600x.jpg?v=1655740216")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/PA330_LD086_WH015_3_1600x.jpg?v=1655740355")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/PA330_LD086_WH015_4_1600x.jpg?v=1655740039"),
+
+
+                        product64.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product64.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product64.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product65 = Product.create!(
+                          name: "CREW NECK T-SHIRT
+
+
+
+
+                          ",
+
+                          description: "
+                          This t-shirt is made of a lightweight ribbed jersey with a dry hand. This classic Lemaire style has a relaxed fit, slightly dropped shoulders and short sleeves with minimal finishings.
+                           The open crew neck is finished with a ribbed binding detail.",
+
+                          image:  "https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JE310_LJ089_BR425_1_1600x.jpg?v=1655740308" ,
+                          price_cents: 12000,
+
+                          designer: designer11,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JE310_LJ089_BR425_3_1600x.jpg?v=1655740025")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JE310_LJ089_BR425_4_1600x.jpg?v=1655740424")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JE310_LJ089_BR425_PS1_1600x.jpg?v=1655740399"),
+
+
+                        product65.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product65.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product65.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product66 = Product.create!(
+                          name: "CHELSEA BOOTS
+
+
+
+
+                          ",
+
+                          description: "
+                          These boots are made of soft vegetable-tanned leather with a natural light grain. The western-inspired shape features a rounded square toe and an elasticated side panel sheathed in leather that extends slightly past the ankle to facilitate an easy slip-in. Their thick leather soles are welted for a more lasting wear.",
+
+                          image:  "https://cdn.shopify.com/s/files/1/0267/6051/1530/products/FO313_LL185_BK999_PS1_1600x.jpg?v=1658931153" ,
+                          price_cents: 78000,
+
+                          designer: designer11,
+                        )
+
+                        file1= URI.open("   https://cdn.shopify.com/s/files/1/0267/6051/1530/products/FO313_LL185_BK999_PS2_1600x.jpg?v=1658931153")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/FO313_LL185_BK999_PS3_1600x.jpg?v=1658931153")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/FO313_LL185_BK999_PS4_1600x.jpg?v=1658931153"),
+
+
+                        product66.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product66.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product66.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product67 = Product.create!(
+                          name: "DOUBLE-BREASTED LINEN SUIT – BLUE-GREEN
+
+
+
+                          ",
+
+                          description: "
+                          full canvas construction, cut and assembled in Padua, Italy, double-breasted, fully lined, 6-button suit
+                          in blue-green Irish linen (350 g), 9 cm (3.5”) peak lapels, straight shoulder, straight pockets, 6 cm (2.4”) pocket flaps, chest pocket, 2 inside pockets, natural horn buttons made in Italy, 31 cm (12.2”) double back vents, high-waisted trousers, flared leg, side-adjusters, after dinner split
+
+                          handmade detailing: collar and lining felled seam, milanese button hole (2 last
+                          buttonholes closed with the possibility to be opened), bar tack in silk thread (called travetti) on side pockets, sleeve cuffs, after dinner split and chest pocket",
+                          image:  "https://husbands-paris.com/wp-content/uploads/2022/05/COSTUME-CROISE-EN-LIN-BLEU-VERT_1.jpg" ,
+                          price_cents: 139000,
+
+                          designer: designer12,
+                        )
+
+                        file1= URI.open("   https://husbands-paris.com/wp-content/uploads/2022/05/COSTUME-CROISE-EN-LIN-BLEU-VERT_2.jpg")
+                        file2 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/05/COSTUME-CROISE-EN-LIN-BLEU-VERT_3.jpg")
+                        file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/05/COSTUME-CROISE-EN-LIN-BLEU-VERT_4.jpg"),
+
+
+                        product67.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product67.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product67.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product68 = Product.create!(
+                          name: "SINGLE-BREASTED COTTON GABARDINE SUIT – HONEY BEIGE
+
+
+
+
+                          ",
+
+                          description: "
+                          full canvas construction, cut and assembled in Padua, Italy, single-breasted, fully lined, 2-button suit in honey beige cotton gabardine
+                          (270 g), 11 cm (4.3”) notch lapels, straight shoulder,
+                          chest pocket, 2 inside pockets, natural horn buttons made in
+                          Italy, 33 cm (13”) single back vent, high-waisted trousers, straight leg, belt loops, after dinner split
+
+",
+                          image:  "https://husbands-paris.com/wp-content/uploads/2022/06/COSTUME-DROIT-EN-GABARDINE-DE-COTON-BEIGE-MIEL_1.jpg" ,
+                          price_cents: 139000,
+
+                          designer: designer12,
+                        )
+
+                        file1= URI.open("   https://husbands-paris.com/wp-content/uploads/2022/06/COSTUME-DROIT-EN-GABARDINE-DE-COTON-BEIGE-MIEL_3-1.jpg")
+                        file2 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/COSTUME-DROIT-EN-GABARDINE-DE-COTON-BEIGE-MIEL_4.jpg")
+                        file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/6-1.jpg"),
+
+
+                        product68.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product68.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product68.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product69 = Product.create!(
+                          name: "SINGLE-BREASTED WOOL, SILK AND LINEN JACKET – IVORY WITH BLUE STRIPES
+
+
+
+
+                          ",
+
+                          description: "
+                          veste droite laine soie lin ivoire rayures profilveste droite laine soie lin ivoire rayures dosveste droite laine soie lin ivoire rayures faceveste droite laine soie lin ivoire rayures detailveste droite en laine soie lin ivoire rayures style",
+                          image:  "https://husbands-paris.com/wp-content/uploads/2022/05/VESTE-DROITE-EN-LAINE-SOIE-ET-LIN-IVOIRE-A%CC%80-RAYURES-BLEUES_1-scaled.jpg" ,
+                          price_cents: 118000,
+
+                          designer: designer12,
+                        )
+
+                        file1= URI.open("  https://husbands-paris.com/wp-content/uploads/2022/05/VESTE-DROITE-EN-LAINE-SOIE-ET-LIN-IVOIRE-A%CC%80-RAYURES-BLEUES_2-scaled.jpg")
+                        file2 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/05/VESTE-DROITE-EN-LAINE-SOIE-ET-LIN-IVOIRE-A%CC%80-RAYURES-BLEUES_3-scaled.jpg")
+                        file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/05/VESTE-DROITE-EN-LAINE-SOIE-ET-LIN-IVOIRE-A%CC%80-RAYURES-BLEUES_6-scaled.jpg"),
+
+
+                        product69.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product69.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product69.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product70 = Product.create!(
+                          name: "TWILL CLASSIC COLLAR SHIRT – WHITE WITH PALE BLUE STRIPES
+
+
+
+
+                          ",
+
+                          description: "
+                          German manufactured, 8,2 cm (3.2”) classic collar shirt in white cotton twill with pale blue stripes, simple cuff, French placket, misalignment under the armscye, split yoke, hem gussets, French seams: 7 stitches per cm
+
+handmade detailing: Australian mother-of-pearl sewn in zampa di gallina.",
+                          image:  "https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-COL-CLASSIQUE-EN-SERGE%CC%81-BLANCHE-A%CC%80-RAYURES-BLUE-PA%CC%82LE_1.jpg" ,
+                          price_cents: 139000,
+
+                          designer: designer12,
+                        )
+
+                        file1= URI.open("  https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-COL-CLASSIQUE-EN-SERGE%CC%81-BLANCHE-A%CC%80-RAYURES-BLUE-PA%CC%82LE_2.jpg")
+                        file2 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-COL-CLASSIQUE-EN-SERGE%CC%81-BLANCHE-A%CC%80-RAYURES-BLUE-PA%CC%82LE_3.jpg")
+                        file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-COL-CLASSIQUE-EN-SERGE%CC%81-BLANCHE-A%CC%80-RAYURES-BLUE-PA%CC%82LE_6.jpg"),
+
+
+                        product70.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product70.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product70.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product71 = Product.create!(
+                          name: "SELVEDGE DENIM WESTERN SHIRT – BLUE STONE WASHED
+
+
+
+
+
+                          ",
+
+                          description: "
+                          Italian manufactured, western shirt in blue stone washed Japanese selvedge denim (230 g), 8,5 cm (3.3”) classic collar, western yokes on front and back, chest pockets with functional flaps, snap buttons made in Italy
+
+                          handmade detailing: Australian mother-of-pearl collar stand button
+
+                          .",
+                          image:  "https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-WESTERN-EN-DENIM-SELVEDGE-BLEU-DE%CC%81LAVE%CC%81_1-1.jpg" ,
+                          price_cents: 28000,
+
+                          designer: designer12,
+                        )
+
+                        file1= URI.open("  https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-WESTERN-EN-DENIM-SELVEDGE-BLEU-DE%CC%81LAVE%CC%81_2-1.jpg")
+                        file2 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-WESTERN-EN-DENIM-SELVEDGE-BLEU-DE%CC%81LAVE%CC%81_3-1.jpg")
+                        file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-WESTERN-EN-DENIM-SELVEDGE-BLEU-DE%CC%81LAVE%CC%81_6-1.jpg"),
+
+
+                        product71.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product71.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product71.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product72 = Product.create!(
+                          name: "RINK SIDE SLIT TOP
+
+
+
+
+
+                          ",
+
+                          description: "
+                          When you find the perfect top that goes with almost everything in your wardrobe, you’ve found a garment that you can depend on for any occasion. With its flattering square neckline and hidden back zipper, this medium-weight blouse made from a durable cotton-polyester blend begs to be paired with pants, a jacket, or even shorts.
+
+Wear it as a tunic to expose the right side slit and convenient left side pocket, or tuck it neatly in slacks or a skirt for a more sleek and casual business look. It adapts to your style with so much ease you’ll wonder how you ever lived without it.
+
+
+                          .",
+                          image:  "https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M011a.jpg?v=1639459326" ,
+                          price_cents: 4900,
+
+                          designer: designer14,
+                        )
+
+                        file1= URI.open("  https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M011c.jpg?v=1639459327")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M011d.jpg?v=1639459327")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling11.jpg?v=1639459327"),
+
+
+                        product72.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product72.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product72.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product73 = Product.create!(
+                          name: "SOVAL SASH TIE SHIRT
+
+
+
+
+
+                          ",
+
+                          description: "
+                          Made of medium-weight cotton spun into minimalistic beauty; this button-front blouse with a notched collar is so unassuming. It’s so stylish and functional it will fill that gap in your wardrobe that you didn’t even know was there.
+
+Wear it with the sash over your favourite pants or skirt for that perfect work look or open front over a tank top for a more casual day. The elbow-length kimono-like sleeves are comfortable and airy and create a unique and classic look you’ll love. From the office to an outdoor concert in the park, this shirt adds a look of relaxed elegance to almost any outfit. 
+
+Each shirt comes with a pearl pin to secure the collar if you find it too low.
+
+
+
+                          .",
+                          image:  "https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling30.jpg?v=1639460362" ,
+                          price_cents: 6800,
+
+                          designer: designer14,
+                        )
+
+                        file1= URI.open("  https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M0110a.jpg?v=1639460362")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling33.jpg?v=1639460362")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling32_cc1b543b-eb11-4a17-8959-76836a0f27c9.jpg?v=1639460362"),
+
+
+                        product73.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product73.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product73.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product74 = Product.create!(
+                          name: "KIS 2 WAY TWIST TANK - APRICOT
+
+
+
+
+
+                          ",
+
+                          description: "
+                          Simplicity at its finest in a soft, textured, cotton-polyester crepe tank that brings a twist to your wardrobe. Delicate, lightweight styling that offers you two looks in one. It is understated yet brings so much to your shape with its high neckline, accentuating your shoulders no matter how you wear it.
+
+Unlike typical tanks, this one drapes over your form with comfortable ease providing a halter shape. This top can stand alone but pairs well with a jacket or open blouse and even adds a sophisticated touch when worn with shorts.
+
+
+
+                          .",
+                          image:  "https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M016d.jpg?v=1638204035" ,
+                          price_cents: 6800,
+
+                          designer: designer14,
+                        )
+
+                        file1= URI.open("  https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M018a.jpg?v=1638440627")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling7.jpg?v=1638440627")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling3.jpg?v=1638440679"),
+
+
+                        product74.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product74.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product74.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product75 = Product.create!(
+                          name: "MUNI TEXTURED SHIFT DRESS - CLOUD
+
+
+
+
+
+                          ",
+
+                          description: "
+                          What can we say about this dress that you can’t see with your own eyes? It’s the perfect go anywhere and do almost anything dress. V-neck style and heavy-weight cotton, polyester, spandex blend crepe material have come together to give you comfort, refinement, and style, all in one little dress. It even has that one outstanding feature we all love—pockets!
+
+                            Loose-fitting comfort with a hidden back zipper makes it move with your body without being revealing and drapes perfectly over your form. Pair it with a blazer for a more dressy look or just slip it on and go for a casual and fun day out with friends and family.
+
+
+                          .",
+                          image:  "https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M0115c_734e1738-f2de-45fa-afe9-606d7e5ab4c8.jpg?v=1638422924" ,
+                          price_cents: 6800,
+
+                          designer: designer14,
+                        )
+
+                        file1= URI.open("  https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M0115d_e21d5d26-e560-4d5a-b067-a619c9927f0b.jpg?v=1638422925")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M0115a_d24ad50b-33e2-4874-8523-16e6f80d085e.jpg?v=1638422925")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M0115f_7cbe7767-8228-4810-aded-c6ca059b71b5.jpg?v=1638422924"),
+
+
+                        product75.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product75.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product75.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product76 = Product.create!(
+                          name: "MILES HIGH WAIST SHORTS - BLACK
+
+
+
+
+
+                          ",
+
+                          description: "
+                          Every wardrobe needs a pair of naturally classic shorts that pair with anything. Constructed of a cotton-linen blend with herringbone weave suiting fabric and concealed back zipper, you can easily wear these shorts for a picnic or add a blazer for evening out on the town with friends.
+
+Fully lined, the panel cut and side pockets give these shorts a chic feel, simplistic details that make this garment so versatile. The high-waist and flattering fit are just the cherries on top, so you’ll not only feel good wearing them, you’ll look amazing too.
+
+
+                          .",
+                          image:  "https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling10_0bf1ff4e-c8d1-4029-8e67-1db6bb567dbb.jpg?v=1638204215" ,
+                          price_cents: 4600,
+
+                          designer: designer14,
+                        )
+
+                        file1= URI.open("  https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012a.jpg?v=1638204215")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012b_a01e2357-8555-403d-8ead-87a11e4fc8db.jpg?v=1638204215")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012c.jpg?v=1638204212"),
+
+
+                        product76.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product76.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product76.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product77 = Product.create!(
+                          name: "MILES HIGH WAIST SHORTS - BLACK
+
+
+
+
+
+                          ",
+
+                          description: "
+                          Every wardrobe needs a pair of naturally classic shorts that pair with anything. Constructed of a cotton-linen blend with herringbone weave suiting fabric and concealed back zipper, you can easily wear these shorts for a picnic or add a blazer for evening out on the town with friends.
+
+Fully lined, the panel cut and side pockets give these shorts a chic feel, simplistic details that make this garment so versatile. The high-waist and flattering fit are just the cherries on top, so you’ll not only feel good wearing them, you’ll look amazing too.
+
+
+                          .",
+                          image:  "https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling10_0bf1ff4e-c8d1-4029-8e67-1db6bb567dbb.jpg?v=1638204215" ,
+                          price_cents: 4600,
+
+                          designer: designer14,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012a.jpg?v=1638204215")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012b_a01e2357-8555-403d-8ead-87a11e4fc8db.jpg?v=1638204215")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012c.jpg?v=1638204212"),
+
+
+                        product77.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product77.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product77.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product78 = Product.create!(
+                          name: "Daffodil & lily-print knot-front silk day dress
+
+
+
+
+
+                          ",
+
+                          description: "
+                          Raey patterns this black day dress with a daffodil and lily print for a charming note. It’s made in the UK from smooth silk with a V-neckline and self-tie belt, which tempers the fluid shape.
+
+                          ",
+                          image:  "https://assetsprx.matchesfashion.com/img/product/1300/1503156_1.jpg" ,
+                          price_cents: 59500,
+
+                          designer: designer15,
+                        )
+
+                        file1= URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503156_2.jpg")
+                        file2 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503156_3.jpg")
+                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503156_5.jpg"),
+
+
+                        product78.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product78.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product78.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product79 = Product.create!(
+                          name: "V-neck silk-satin maxi dress
+
+
+
+
+
+                          ",
+
+                          description: "
+                          Shaped in the UK to a panelled construction, this black maxi dress from Raey characterises the label's low-key elegance. Crafted from silk satin, it has a V-neckline and slender straps for a sophisticated mood.
+
+                          ",
+                          image:  "https://assetsprx.matchesfashion.com/img/product/1300/1503277_1.jpg" ,
+                          price_cents: 59500,
+
+                          designer: designer15,
+                        )
+
+                        file1= URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503277_2.jpg")
+                        file2 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503277_3.jpg")
+                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503277_5.jpg"),
+
+
+                        product79.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product79.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product79.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product80 = Product.create!(
+                          name: "Crew-neck blouson cashmere sweater
+
+
+
+
+
+                          ",
+
+                          description: "
+                          Raey’s navy sweater is knitted from a textured blend of boiled recycled cashmere, shaped to an oversized fit with raglan sleeves and a gathered hem.
+
+                          ",
+                          image:  "https://assetsprx.matchesfashion.com/img/product/1300/1503596_1.jpg" ,
+                          price_cents: 52500,
+
+                          designer: designer15,
+                        )
+
+                        file1= URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503596_2.jpg")
+                        file2 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503596_3.jpg")
+                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1503596_5.jpg"),
+
+
+                        product80.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product80.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product80.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product81 = Product.create!(
+                          name: "Recycled-yarn pencil midi skirt
+
+
+
+
+
+                          ",
+
+                          description: "
+                          Raey’s svelte black pencil skirt is cut from jersey that’s composed of environmentally conscious recycled cotton and stretch fibres.
+                          ",
+                          image:  "https://assetsprx.matchesfashion.com/img/product/1300/1445047_1.jpg" ,
+                          price_cents: 52500,
+
+                          designer: designer15,
+                        )
+
+                        file1= URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1445047_2.jpg")
+                        file2 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1445047_3.jpg")
+                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1445047_5.jpg"),
+
+
+                        product81.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product81.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product81.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product82 = Product.create!(
+                          name: "Tiger-print silk wide-leg jumpsuit
 
 
 
 
 
 
+                          ",
+
+                          description: "
+                          Raey’s brown jumpsuit is embellished with a bold tiger-print pattern. It’s made in the UK from lightweight silk crepe de chine with a point collar, patch pocket and button front.
+                          ",
+                          image:  "https://assetsprx.matchesfashion.com/img/product/1300/1517034_1.jpg" ,
+                          price_cents: 52500,
+
+                          designer: designer15,
+                        )
+
+                        file1= URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1517034_2.jpg")
+                        file2 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1517034_3.jpg")
+                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1517034_4.jpg"),
+
+
+                        product82.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product82.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product82.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product83 = Product.create!(
+                          name: "V-neck leopard-print silk-satin maxi dress
 
 
 
 
 
+
+                          ",
+
+                          description: "
+                          Raey's low-key aesthetic informs this leopard-print maxi dress, which is shaped in the UK to a panelled construction. Crafted from shimmering silk satin, it has a V-neckline and is framed by slender straps.
+                          ",
+                          image:  "https://assetsprx.matchesfashion.com/img/product/1300/1504008_1.jpg" ,
+                          price_cents: 39500,
+
+                          designer: designer15,
+                        )
+
+                        file1= URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1504008_2.jpg")
+                        file2 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1504008_3.jpg")
+                        file3 = URI.open("https://assetsprx.matchesfashion.com/img/product/1300/1504008_4.jpg"),
+
+
+                        product83.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product83.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product83.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product84 = Product.create!(
+                          name: "NIRVARNA SPEECHLESS SHORT
+
+
+
+
+
+                          ",
+
+                          description: "
+                          Cheeky chic, our Nirvana Speechless Short loves the limelight.
+
+                          Our shortest cheekiest short.
+                          3"" inner leg length.
+                          Soft elastic waistband.
+                          Two tone ribbed knitted construction in organic cotton.
+                          Contrast top stitching detail
+                          ",
+                          image:  "https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2528/11975/USW322095_GREEN_01__24363.1656465565.jpg?c=1" ,
+                          price_cents: 12999,
+
+                          designer: designer16,
+                        )
+
+                        file1= URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2528/12077/USW322095_GREEN_02__55376.1656465582.jpg?c=1")
+                        file2 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2528/12174/USW322095_GREEN_03__53385.1656465615.jpg?c=1")
+                        file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2528/12082/USW322095_GREEN_04__32034.1656465583.jpg?c=1"),
+
+
+                        product84.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product84.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product84.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product85 = Product.create!(
+                          name: "SOUTHWEST LARRI BRA
+
+
+
+
+
+                          ",
+
+                          description: "
+                          You'll love this down to earth basic, the Southwest Larri Bra..
+
+                          Mid coverage Larri bra
+                          Colour blocked in our Matte Tech performance fabric
+                          Breathable, quick drying and moisture wicking
+                          Contrast printed arrow at centre back
+                          Removable bust cups
+                                                    ",
+                          image:  "https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2526/13680/USW322017_GREEN_01__60517.1659397363.jpg?c=1" ,
+                          price_cents: 7999,
+
+                          designer: designer16,
+                        )
+
+                        file1= URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2526/13700/USW322017_GREEN_02__22471.1659397370.jpg?c=1")
+                        file2 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2526/13724/USW322017_GREEN_03__50799.1659397376.jpg?c=1")
+                        file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2526/13648/USW322017_GREEN_04__85814.1659397353.jpg?c=1"),
+
+
+                        product85.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product85.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product85.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product86 = Product.create!(
+                          name: "PEACHED THIA CROP FLARE
+
+
+
+
+
+                          ",
+
+                          description: "
+                          Our Recycled Peached Thia Flare Pant is one smooth walker..
+
+                          High waisted 7/8 length flared pant.
+                          Angled soft folded waistband.
+                          Recycled soft peached with a brushed handfeel.
+                          Printed arrow logo at back waistband.
+                          Breathable, moisture wicking fabrication
+                                                                              ",
+                          image:  "https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2228/12193/USW022012_BLACK_01__84149.1657087320.jpg?c=1" ,
+                          price_cents: 7999,
+
+                          designer: designer16,
+                        )
+
+                        file1= URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2228/12194/USW022012_BLACK_02__26209.1656650735.jpg?c=1")
+                        file2 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2228/12197/USW022012_BLACK_03__60919.1656650735.jpg?c=1")
+                        file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2228/12196/USW022012_BLACK_04__60616.1656650735.jpg?c=1"),
+
+
+                        product86.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product86.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product86.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product87 = Product.create!(
+                          name: "NIRVARNA PIPPA TEE
+
+
+
+
+
+                          ",
+
+                          description: "
+                          Get zen in our Nirvana Pippa Tee.
+
+                          Organic cotton mid weight knit tee.
+                          Contrast knitted stripes down sleeves in azure blue & gingersnap.
+                          Relaxed silhouette.
+                          Embroidered arrow logo at back.
+                                                                              ",
+                          image:  "https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/640w/products/2481/11989/USW322082_NATURAL_01__16028.1656465570.jpg?c=1" ,
+                          price_cents: 12999,
+
+                          designer: designer16,
+                        )
+
+                        file1= URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2481/11984/USW322082_NATURAL_02__39548.1656465569.jpg?c=1")
+                        file2 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2481/11997/USW322082_NATURAL_03__44781.1656465571.jpg?c=1")
+                        file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2481/12004/USW322082_NATURAL_04__64345.1656465571.jpg?c=1"),
+
+
+                        product87.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product87.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product87.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product88 = Product.create!(
+                          name: "VALLEY OPHELIA KNIT TOP
+
+
+
+
+
+                          ",
+
+                          description: "
+                          Play hard to get in our Valley Ophelia Knit Top..
+
+                          Knitted striped scoop neck tank.
+                          Knitted navy stripes with ribbed hem.
+                          Contrast embroidered arrow at centre back.
+                          Combed organic cotton for chic comfort.
+                                                                              ",
+                          image:  "https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2364/9648/USW222005_NATURAL_01__68398.1649318912.jpg?c=1" ,
+                          price_cents: 9000,
+
+                          designer: designer16,
+                        )
+
+                        file1= URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2364/9649/USW222005_NATURAL_02__83227.1648987932.jpg?c=1")
+                        file2 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2364/9657/USW222005_NATURAL_03__96985.1648987940.jpg?c=1")
+                        file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2364/9658/USW222005_NATURAL_05__61924.1648987940.jpg?c=1"),
+
+
+                        product88.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product88.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product88.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product89 = Product.create!(
+                          name: "Indian Independence Day T-Shirt
+
+
+
+
+
+                          ",
+
+                          description: "
+                          To celebrate Indian Independence Day, Ahluwalia is proud to announce an exclusive drop of sustainably made limited-edition t-shirts made from organic cotton and deadstock fabric.
+
+Featuring the national flag of India, the top panel is of Saffron colour reflecting the courage and strength of the country. The middle white panel reflects peace and truth with Dharma Chakra (the wheel of the law). The last band is green in colour reflecting the fruitfulness and abundance of the land. All panels are made from deadstock fabric.
+                                                                              ",
+                          image:  "https://cdn.shopify.com/s/files/1/0537/9761/7859/products/RESIZED_768x.jpg?v=1660327597" ,
+                          price_cents: 14500,
+
+                          designer: designer17,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/RESIZED_768x.jpg?v=1660327597")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/BACKRESIZED_768x.jpg?v=1660327724")
+
+
+
+                        product89.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product89.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+
+                        product90 = Product.create!(
+                          name: "Priya Fitted Denim Jacket
+
+
+
+
+
+                          ",
+
+                          description: "
+                          Cut from 100% organic cotton, the Priya fitted denim jacket is laser-etched with the Ahluwalia emblem and branded hardware throughout.",
+                          image:  "https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2847_768x.jpg?v=1661124759" ,
+                          price_cents: 14500,
+
+                          designer: designer17,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/Priyafittedjacket_768x.jpg?v=1661124759")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2835_768x.jpg?v=1661124759")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2836_768x.jpg?v=1661124754"),
+
+
+
+
+                        product90.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product90.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product90.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product91 = Product.create!(
+                          name: "Harding Tailored Coat
+
+
+
+
+                          ",
+
+                          description: "
+                          Crafted from a wool blend and contrasting check corduroy, the double-breasted tailored Harding coat features a button belt fastening on the right-hand side and is fully lined in a tonal cupro.",
+                          image:  "https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2492_768x.jpg?v=1661123604" ,
+                          price_cents: 95000,
+
+                          designer: designer17,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/Hardingtailoredcoat_768x.jpg?v=1661123646")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2468_768x.jpg?v=1661123646")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2469_768x.jpg?v=1661123646"),
+
+
+
+
+                        product91.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product91.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product91.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product92 = Product.create!(
+                          name: "Tosin Tailored Jacket
+
+
+
+
+                          ",
+
+                          description: "
+                          The Tosin jacket continues the signature wave shape for AW22, the contrasting wave panels are finished with a clean line of piping. Cut from a glitter pinstripe fabric, and featuring a double-breasted button placket and classic three-pocket layout, it is softly tailored for maximum comfort and wearability.
+
+",
+                          image:  "https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_4059_768x.jpg?v=1661126021" ,
+                          price_cents: 14500,
+
+                          designer: designer17,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/Tosinblazer_768x.jpg?v=1661126021")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_4051_768x.jpg?v=1661126015")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_4052_768x.jpg?v=1661126015"),
+
+
+
+
+                        product92.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product92.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product92.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product93 = Product.create!(
+                          name: "Rani Cropped Polo Vest
+
+
+
+
+                          ",
+
+                          description: "
+                          Cut from 100% organic cotton pique, the Rani cropped polo vest utilises artisanal beadwork to accent the custom-printed cotton panels in bright shades of blue and green. The polo also features a contrasting collar, ribbed sleeves and a zip-up front fastening.
+
+
+",
+                          image:  "https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2704_768x.jpg?v=1656069451" ,
+                          price_cents: 43000,
+
+                          designer: designer17,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/Ranicroppedpolovest_768x.jpg?v=1656610698")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2688_768x.jpg?v=1656610698")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2690_768x.jpg?v=1656610698"),
+
+
+
+
+                        product93.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product93.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product93.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product94 = Product.create!(
+                          name: "Lateo Shirt
+
+
+
+                          ",
+
+                          description: "
+                          The Lateo short-sleeved shirt fuses together AW22’s boldest print with rum & raisin contrasting panels. Cut for a relaxed fit with back vents, faux mother of pearl buttons, and a camp collar.
+
+
+
+
+",
+                          image:  "https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_3495_768x.jpg?v=1661272728" ,
+                          price_cents: 43000,
+
+                          designer: designer17,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/Lateoshirt_768x.jpg?v=1661272728")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_3513_768x.jpg?v=1661272728")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_3498_768x.jpg?v=1661272728"),
+
+
+
+
+                        product94.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product94.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product94.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product95 = Product.create!(
+                          name: "SANTANA SATIN SET
+
+
+
+                          ",
+
+                          description: "
+                          She's perfect for your  summer evenings. This sexy piece is at it’s best finished with a simple strappy sandal.
+
+
+
+The best part about her coordinate features is you can re-match both the top and the skirt with other pieces from your wadrobe. What are you waitng for?
+
+
+
+To minimise wastage of fabric and in a bid to be more sustainable, we will not be using placement print. This means that each Santana set will have a slightly different placement from what is displayed. Also this way, no two sets are the exact same and yours is made specially for you.
+
+
+
+*Always keep the adjustable strings tied up.  If they go up into the holes, you will need a tailor to bring them out.
+
+
+
+",
+                          image:  "https://static.wixstatic.com/media/c5ebfd_b2590ec17df345f7a2b49baa6b415d38~mv2.jpg/v1/fill/w_405,h_611,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_b2590ec17df345f7a2b49baa6b415d38~mv2.jpg" ,
+                          price_cents: 12000,
+
+                          designer: designer18,
+                        )
+
+                        file1= URI.open("https://static.wixstatic.com/media/c5ebfd_144b9185c23f438a8b5c4c5d84a01255~mv2.jpg/v1/fill/w_407,h_611,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_144b9185c23f438a8b5c4c5d84a01255~mv2.jpg")
+                        file2 = URI.open("https://static.wixstatic.com/media/c5ebfd_f965f987f4954745a25bdcc66d7ad696~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_f965f987f4954745a25bdcc66d7ad696~mv2.webp")
+                        file3 = URI.open("https://static.wixstatic.com/media/c5ebfd_cc7029ca3c0043d19013845c459736b1~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_cc7029ca3c0043d19013845c459736b1~mv2.webp"),
+
+
+
+
+                        product95.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product95.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product95.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product96 = Product.create!(
+                          name: "SHAY SET - Blue
+
+
+
+                          ",
+
+                          description: "
+                          Shay is your showstopper this summer. Simple yet elevated. Style her with or without her scarf. Wear with heels for an elevated look
+
+
+",
+                          image:  "https://static.wixstatic.com/media/c5ebfd_b06e541767b245d09ed3bba2e926b9c3~mv2.png/v1/fill/w_500,h_667,al_c,q_90,usm_0.66_1.00_0.01/c5ebfd_b06e541767b245d09ed3bba2e926b9c3~mv2.webp" ,
+                          price_cents: 12000,
+
+                          designer: designer18,
+                        )
+
+                        file1= URI.open("https://static.wixstatic.com/media/c5ebfd_13a3944eea1f468ebca9b817689264b2~mv2.png/v1/fill/w_500,h_667,al_c,q_90,usm_0.66_1.00_0.01/c5ebfd_13a3944eea1f468ebca9b817689264b2~mv2.webp")
+                        file2 = URI.open("https://static.wixstatic.com/media/c5ebfd_9065fa014e8345e28246dd8ceb58859c~mv2.jpg/v1/fill/w_500,h_667,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_9065fa014e8345e28246dd8ceb58859c~mv2.webp")
+                        file3 = URI.open("https://static.wixstatic.com/media/c5ebfd_8e2b07a1d61a4446a71f02971c6e03d3~mv2.jpg/v1/fill/w_500,h_667,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_8e2b07a1d61a4446a71f02971c6e03d3~mv2.webp"),
+
+
+
+
+                        product96.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product96.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product96.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product97 = Product.create!(
+                          name: "LULETTE CORSET | Aurora Print
+
+
+
+                          ",
+
+                          description: "
+                          Does it get more bold and  sexy than the Lulette corset? It oozes sexiness and slots perfectly into your most glamorous party season favourites. The bodice is cut from lush satin in our all new print.  She features boning to really cinch the waist and lightly padded cups to enhance the bust for the most amazing cleavage. To top it off, she features hand sewn rhinestones for that extra glam.
+
+Corset features a zip up back.
+
+",
+                          image:  "https://static.wixstatic.com/media/c5ebfd_820fdf2669384f8886ed89fdd0eeb97b~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_820fdf2669384f8886ed89fdd0eeb97b~mv2.webp" ,
+                          price_cents: 6500,
+
+                          designer: designer18,
+                        )
+
+                        file1= URI.open("https://static.wixstatic.com/media/c5ebfd_58dcd0d6011e46ac8fa742ffdb0f5509~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_58dcd0d6011e46ac8fa742ffdb0f5509~mv2.webp")
+                        file2 = URI.open("https://static.wixstatic.com/media/c5ebfd_7d0cd4f45d3742cba7bbd48137583f72~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_7d0cd4f45d3742cba7bbd48137583f72~mv2.webp")
+
+
+
+
+
+                        product97.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product97.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+
+                        product98 = Product.create!(
+                          name: "AYRA DRESS
+
+
+
+
+                          ",
+
+                          description: "
+                          Ayra is that sexy faux suede mini dress with rhinestone details for extra glam.
+",
+                          image:  "https://static.wixstatic.com/media/c5ebfd_a1d1b8c67b6a4e7baec9ac6e16968f63~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_a1d1b8c67b6a4e7baec9ac6e16968f63~mv2.webp" ,
+                          price_cents: 12000,
+
+                          designer: designer18,
+                        )
+
+                        file1= URI.open("https://static.wixstatic.com/media/c5ebfd_13a3944eea1f468ebca9b817689264b2~mv2.png/v1/fill/w_500,h_667,al_c,q_90,usm_0.66_1.00_0.01/c5ebfd_13a3944eea1f468ebca9b817689264b2~mv2.webp")
+                        file2 = URI.open("https://static.wixstatic.com/media/c5ebfd_9065fa014e8345e28246dd8ceb58859c~mv2.jpg/v1/fill/w_500,h_667,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_9065fa014e8345e28246dd8ceb58859c~mv2.webp")
+                        file3 = URI.open("https://static.wixstatic.com/media/c5ebfd_b35288448e9a4cc19f696ea9cd52fd4c~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_b35288448e9a4cc19f696ea9cd52fd4c~mv2.webp"),
+
+
+
+
+                        product98.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product98.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product98.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product99 = Product.create!(
+                          name: "ZENA SET
+
+
+
+
+                          ",
+
+                          description: "
+                          In our New ZENA print, this set features a blouse with plisse details and oversized sleeves, and trousers with an elastic band waist.
+
+
+
+To minimise wastage of fabric and in a bid to be more sustainable, we will not be using placement print. This means that each set will have a slightly different placement from what is displayed.
+",
+                          image:  "https://static.wixstatic.com/media/c5ebfd_78c855e5f8b240c5aa2424194af75e21~mv2.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_78c855e5f8b240c5aa2424194af75e21~mv2.webp" ,
+                          price_cents: 14500,
+
+                          designer: designer18,
+                        )
+
+                        file1= URI.open("https://static.wixstatic.com/media/c5ebfd_35623b236f624372845b8a6a5f8fac4f~mv2.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_35623b236f624372845b8a6a5f8fac4f~mv2.webp")
+                        file2 = URI.open("https://static.wixstatic.com/media/c5ebfd_4a663499a044430e9378dd4298833d82~mv2.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_4a663499a044430e9378dd4298833d82~mv2.webp")
+                        file3 = URI.open("https://static.wixstatic.com/media/c5ebfd_d870a5bb26ab48f59dd12459398265d3~mv2.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_d870a5bb26ab48f59dd12459398265d3~mv2.webp"),
+
+
+
+
+                        product99.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product99.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product99.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product100 = Product.create!(
+                          name: "CAMILLE SET- GREEN
+
+
+
+
+                          ",
+
+                          description: "
+                          Camille is your staple Autumn co-ord set featuring a stretchy ribbed knit halter crop top vest and high waist slim comfy fit trousers. Perfect for colder climates by layering her up or warm climates by wearing her as she is.
+",
+                          image:  "https://static.wixstatic.com/media/c5ebfd_4da0e9c7c84e42c7941cf17a13ceb15f~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_4da0e9c7c84e42c7941cf17a13ceb15f~mv2.webp" ,
+                          price_cents: 10000,
+
+                          designer: designer18,
+                        )
+
+                        file1= URI.open("https://static.wixstatic.com/media/c5ebfd_1978f807c06942fca37f6c1938ce8c86~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_1978f807c06942fca37f6c1938ce8c86~mv2.webp")
+                        file2 = URI.open("https://static.wixstatic.com/media/c5ebfd_fb6ef138d77249ca8f7ffb35574d195b~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_fb6ef138d77249ca8f7ffb35574d195b~mv2.webp")
+                        file3 = URI.open("https://static.wixstatic.com/media/c5ebfd_6cf01478692e43ebafb88328bb9eb2ba~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01/c5ebfd_6cf01478692e43ebafb88328bb9eb2ba~mv2.webp"),
+
+
+
+
+                        product100.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product100.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product100.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product101 = Product.create!(
+                          name: "Jasmine BioWoven Huddle Windbreaker
+
+
+
+
+                          ",
+
+                          description: "
+                          Made from 100% recycled plastic bottles (RPET)
+                          Looks, feels, and performs just like our wind-breaking woven fabric, only with new environmental superpowers
+                          Utilizes proprietary technology to reduce plastic waste in landfills and plastic pollution in our oceans.
+                          Wind and water-resistant
+                          Boxy, cropped fit
+                          Hideable hood
+                          Cinchable waist
+                          Kangaroo pocket with zippered closure
+                          To take care of it, machine wash cold and hang to dry — we recommend using a microfiber filter or filtering wash bag (yes, even with the added CiCLO® technology). Please note colors may bleed at first, so always wash with like colors in cold water.
+",
+                          image:  "https://cdn.shopify.com/s/files/1/0019/2217/0943/products/6157_BioHummingbirdWindbreaker_JasmineGreen_1.jpg?v=1660595409" ,
+                          price_cents: 10000,
+
+                          designer: designer19,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/6157_BioHummingbirdWindbreaker_JasmineGreen_2.jpg?v=1660595409")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/6157_BioHummingbirdWindbreaker_JasmineGreen_3.jpg?v=1660595409")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/6157_BioHummingbirdWindbreaker_JasmineGreen_4.jpg?v=1660595409"),
+
+                        product101.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product101.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product101.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+
+
+
+                        product102 = Product.create!(
+                          name: "Turquoise BioCompressive Pocket Legging
+
+
+
+
+                          ",
+
+                          description: "
+                          Compressive, squat-proof, ultra-high rise recycled leggings with double side pockets and a new future-forward update: a sustainable technology that helps combat plastic pollution.",
+                          image:  "https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4067_BioHRPocketLegging_scubaBlue_2.jpg?v=1660595376" ,
+                          price_cents: 9200,
+
+
+                          designer: designer19,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4067_BioHRPocketLegging_scubaBlue_1.jpg?v=1660595376")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4067_BioHRPocketLegging_scubaBlue_3.jpg?v=1660595376")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4067_BioHRPocketLegging_scubaBlue_4.jpg?v=1660595376"),
+
+
+
+
+
+                        product102.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product102.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product102.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product103 = Product.create!(
+                          name: "Black Andy Split Strap Bra
+
+
+
+
+                          ",
+
+                          description: "
+                          A classic compressive sports bra with a support band and split back straps for better breathability and easier movin’ and groovin’.",
+                          image:  "https://cdn.shopify.com/s/files/1/0019/2217/0943/products/1067_AndySplitStrapBra_Black_28669.jpg?v=1661190028" ,
+                          price_cents: 9200,
+
+
+                          designer: designer19,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/1067_AndySplitStrapBra_Black_Front.jpg?v=1661190028")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/1067_AndySplitStrapBra_Black_28653.jpg?v=1661190028")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/1067_AndySplitStrapBra_Black_28675.jpg?v=1661190028"),
+
+
+
+
+
+                        product103.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product103.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product103.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product104 = Product.create!(
+                          name: "Black Andy Split Strap Bra
+
+
+
+
+                          ",
+
+                          description: "
+                          A classic compressive sports bra with a support band and split back straps for better breathability and easier movin’ and groovin’.",
+                          image:  "https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_2.jpg?v=1660595406" ,
+                          price_cents: 9200,
+
+
+                          designer: designer19,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_1.jpg?v=1660595406")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_3.jpg?v=1660595406")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_4.jpg?v=1660595406"),
+
+
+
+
+
+                        product104.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product104.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product104.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        product105 = Product.create!(
+                          name: "Cabaret BioCompressive Sport Skort
+
+
+
+
+                          ",
+
+                          description: "
+                          A sporty, high rise exercise skirt with built-in shorts, hidden pockets, and a new sustainable fabric technology that helps it break down faster.",
+                          image:  "https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_2.jpg?v=1660595406" ,
+                          price_cents: 9200,
+
+
+                          designer: designer19,
+                        )
+
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_1.jpg?v=1660595406")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_3.jpg?v=1660595406")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_4.jpg?v=1660595406"),
+
+                        product105.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        product105.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        product105.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
 puts "finished"
