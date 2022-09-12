@@ -270,7 +270,9 @@ product1 = Product.create!(
   The versatility of this jacket is endless as it can be dressed up or down depending on the occasion.
   Perfect for keeping you cool in hot temperatures.",
   image:"https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image.webp?v=1661178529",
-  price_cents: 210,
+
+  price_cents: 21000,
+
   designer: designer1
 )
 puts "product created"
@@ -293,7 +295,7 @@ product2 = Product.create!(
 
   ",
   image:"https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_808f1ad1-80a8-4c7b-8a64-34ff07eaf76c_720x.webp?v=1661178664",
-  price:131.25 ,
+  price_cents: 13100,
   designer: designer1
 )
 puts "product created"
@@ -312,7 +314,7 @@ product3= Product.create!(
   description: "Made from 100% Irish Linen cloth this blue suit is a perfect marriage between style and comfort.
   Perfect for a summers day as it can be dressed up or down depending on the occasion.",
   image: "https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9259_534ef530-2d37-4317-84a2-6a849868e364_720x.jpg?v=1644835300",
-  price: 425.00,
+  price_cents: 42500,
   designer: designer1
 )
 puts "product created"
@@ -333,7 +335,7 @@ product4 = Product.create!(
                  A navy gold button jacket will always be useful in the modern mans wardrobe,
                 when designing this piece we drew inspiration from the IV League preppy look.",
   image: "https://cdn.shopify.com/s/files/1/0582/5921/0426/products/86CBB048-7B99-4D4A-8DAC-35724B0FC272-2_720x.jpg?v=1654587643",
-  price: 210.00,
+  price_cents: 21000,
   designer: designer1
 
 )
@@ -354,7 +356,7 @@ product5 = Product.create!(
   description: "Made from 100% Linen cloth this jacket is a perfect marriage between style and comfort.
                 Perfect for a summers day as it can be dressed up or down depending on the occasion.",
   image: "https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9082_1_720x.jpg?v=1656285021",
-  price: 210.00,
+  price_cents: 21000,
   designer: designer1
 
   )
@@ -375,7 +377,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
                   Made from an electric blue linen cloth these pants give you the best of both worlds of street style & sartorial.
                   Can be dressed up with a well tailored blazer & shirt or dressed down with a t-shirt, perfect for warmer temperatures.",
     image: "https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9092_1.jpg?v=1656285813",
-    price: 210.00,
+    price_cents: 21000,
     designer: designer1
 
     )
@@ -397,7 +399,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
                     the durability of the shell, minimalistic design and versatility of the product not only makes it
                     ideal for autumn/winter but ensures that the garment can be enjoyed for many years to come.",
       image: "https://cdn.shopify.com/s/files/1/0278/7452/5262/products/OLIVEFINAL_1512x.jpg?v=1637893912",
-      price: 240.00,
+      price_cents: 24000,
       designer: designer2
 
       )
@@ -419,7 +421,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
                       with aesthetic detailing ranging from pleated pockets,
                       high shine zips to velcro tabs – This trouser can be styled at will in line with casual tailoring or streetwear.",
         image: "https://cdn.shopify.com/s/files/1/0278/7452/5262/products/UTILITY-COMBAT-TROUSER-GREY40_720x.jpg?v=1619728850",
-        price: 150.00,
+        price_cents: 15000,
         designer: designer2
       )
       puts "product created"
@@ -440,7 +442,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
                       aged black colour-way indicative of the early 90's era.
                       With a box fit silhouette incorporating subtle branding and graphic imagery - It is ideal for a relaxed look.",
         image: "https://cdn.shopify.com/s/files/1/0278/7452/5262/products/SST-SHIRT-THISISACOOBAT-SHIRT_Front1_720x.jpg?v=1631827933",
-        price: 85.00,
+        price_cents: 8500,
         designer: designer2
       )
       puts "product created"
@@ -459,7 +461,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
           description: "Made from 300GSM 100% cotton, our sweat shorts feature elongated strings and a slightly cropped raw hem.
                         As well as incorporating a detailed patch logo outlining our manifesto. These shorts have been garment dyed using a reactive process to achieve a wash that is available in three different colour-ways.",
           image: "https://cdn.shopify.com/s/files/1/0278/7452/5262/products/RAWHEMSHORTS-GREEN_F_1512x.jpg?v=1631838278",
-          price: 70.00,
+          price_cents: 7000,
           designer: designer2
       )
       puts "product created"
@@ -480,7 +482,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
                       and washed to achieve a marshmallow white colour-way indicative of the early 90's era.
                       with a box fit silhouette incorporating subtle branding and graphic imagery - it is ideal for a relaxed look.",
         image: "https://cdn.shopify.com/s/files/1/0278/7452/5262/products/SST-SHIRT-CREATINGOUTOFBODYAWARENESS_F_720x.jpg?v=1631830540",
-        price: 85.00,
+        price_cents: 8500,
         designer: designer2
     )
     puts "product created"
@@ -503,7 +505,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
                     this hoodie as a staple piece within our ongoing collections as such the design had to be timeless, contemporary and above all comfortable. Through the relaxed cropped hem, deep hood and durable choice fabric - we deliver on those points, as well as an unrivalled silhouette. The garment also features a minimalistic patch label on the left sleeve, outlining our manifesto and brand ethos.
                     Recommend dry clean only.",
       image: "https://cdn.shopify.com/s/files/1/0278/7452/5262/products/GH_720x.jpg?v=1637900933",
-      price: 125.00,
+      price_cents: 12500,
       designer: designer2
   )
   puts "product created"
@@ -527,7 +529,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
                   has been printed using a hand-cracked thick plastisol ink
                   which will only get better with wear..",
     image: "https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB_BULLDOG_T-SHIRT_WHITE_720x.jpg?v=1661451772",
-    price: 85.00,
+    price_cents: 8500,
     designer: designer3
 )
 
@@ -547,7 +549,7 @@ product14 = Product.create!(
                 are cut from a custom Cole Buxton branded jacquard-woven cupro and
                 double lined to add structure and create a truly luxury drape.",
   image: "https://cdn.shopify.com/s/files/1/0055/1023/4230/products/baby-blue-resort-pants_720x.jpg?v=1662060604",
-  price: 125.00,
+  price_cents: 12500,
   designer: designer3
 )
 
@@ -568,7 +570,7 @@ product15 = Product.create!(
                 and dyed to achieve a light refracting patina.
                 The stand out detail on these shorts is the oversized double logo print on each leg.",
   image: "https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB-DOUBLE-LOG-TECH-SHORTS_720x.jpg?v=1658932526",
-  price: 95.00,
+  price_cents: 9500,
   designer: designer3
 )
 
@@ -582,7 +584,7 @@ product16 = Product.create!(
                 ribbed edge kangaroo pocket and finished with a Swiss-made 2 way Riri zipper.
                 We have printed this one with our brand new Double Sports Logo screen print across the chest.",
   image: "https://cdn.shopify.com/s/files/1/0055/1023/4230/products/DOUBLE_LOGO_ZIPPED_HOODIE_GREY_720x.jpg?v=1657115966",
-  price: 165.00,
+  price_cents: 16500,
   designer: designer3
 )
 file1 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/DOUBLE_LOGO_ZIPPED_HOODIE_GREY_720x.jpg?v=1657115966")
@@ -600,7 +602,7 @@ product17 = Product.create!(
                 The silhouette is wide and boxy with sloped shoulders to compliment
                 the curve of the signature outer arm seam. We’ve heavily washed this jacket and subtly distressed the collar, pockets and cuffs for a broken in feel. Finished with Cole Buxton branded Cobrax buttons.",
   image: "https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB-DENIM-JACKET-BLUE-FRONT_720x.jpg?v=1658930445",
-  price: 245.00,
+  price_cents: 24500,
   designer: designer3
 )
 
@@ -622,7 +624,7 @@ product18 = Product.create!(
   - Short sleeves
   - Soft cotton 95% Organic Cotton, 5% Elastan",
   image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B1112.1050_HIGH_20RISK_20RED_01_1100x.png?v=1654687894",
-  price: 75.00,
+  price_cents: 7500,
   designer: designer4
 )
 
@@ -645,7 +647,7 @@ product19 = Product.create!(
   - Logo on the chest
   - 62% Polyester, 38% Cotton," ,
   image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/B1387.1016.611_101.jpg?v=1659529996",
-  price: 200.00,
+  price_cents: 20000,
   designer: designer4
 )
 
@@ -668,7 +670,7 @@ product20 = Product.create!(
   - Subtle metal BALR. logo on the front
   - 65% Polyester, 30% Viscose, 5% Elastane",
   image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567",
-  price: 155.00,
+  price_cents: 15500,
   designer: designer4
 )
 
@@ -691,7 +693,7 @@ product21 = Product.create!(
   - Adjustable backstrap
   - 100% Polyester Woven Oxford",
   image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B6110.1041_WHITE_20PEPPER_02_750x.png?v=1654860949",
-  price: 155.00,
+  price_cents: 15500,
   designer: designer4
 )
 file1 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B6110.1041_WHITE_20PEPPER_02_750x.png?v=1654860949")
@@ -711,8 +713,10 @@ product22 = Product.create!(
   - Model: Long
   - Branded reflected patron
   - 100% Polyester, Linning: 100% Nylon, Filling 90% Down, 10% Feather",
-  image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1382.1007.102_128_750x.jpg?v=1659529492",
-  price: 355.00,
+  
+  image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567",
+  price_cents: 35500,
+
   designer: designer4
 )
 
@@ -733,7 +737,7 @@ product23 = Product.create!(
   - Satin Logo on the front Round neck
   - 88% cotton, 12% polyester (350 g/m2 brushback )",
   image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567",
-  price: 355.00,
+  price_cents: 35500,
   designer: designer4
 )
 
@@ -752,7 +756,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
           Dusty Blue Signature Core Embroidered Hoody. Slim fit.
           Interlock jersey" ,
           image:  "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567" ,
-          price: 70.00,
+          price_cents: 7000,
           designer: designer5
         )
 
@@ -775,7 +779,11 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
               - Straight Hem
               - Button Cuffs" ,
               image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=16613515877" ,
-              price: 130.00,
+
+              price_cents: 13000,
+
+             
+
 
               designer: designer5
             )
@@ -798,7 +806,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                   - Straight Hem
                   - Prevu Branding" ,
                   image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=16613515877" ,
-                  price: 130.00,
+                  price_cents: 13000,
                   designer: designer5
                 )
 
@@ -823,7 +831,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       Button Cuffs" ,
 
                       image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=16613515877" ,
-                      price: 150.00,
+                      price_cents: 15000,
                       designer: designer5
                     )
 
@@ -846,7 +854,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       - Perforated detailing" ,
 
                       image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/191022_PREVU_STUDIO1_E2369_900x.jpg?v=1639046330" ,
-                      price: 140.00,
+                      price_cents: 14000,
                       designer: designer5
                     )
 
@@ -867,7 +875,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       The large embroidery on the front is a remixes of Amsterdam's coat of arms in the Pan-African colour way, to reflect the city's diverse culture. The hoody is a soft French terry which makes this a comfortable collectible item." ,
 
                       image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/191022_PREVU_STUDIO1_E2369_900x.jpg?v=1639046330" ,
-                      price: 110.00,
+                      price_cents: 11000,
 
                       designer: designer7
                     )
@@ -889,7 +897,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       This adidas football jersey is worn by Ajax players during warm up before kick off. Its intricate design fuses the colours of the Pan-African flag and the unique facade of Daily Paper's New York flagship store.
                         AEROREADY wicks moisture to keep you comfortable. Made with 100% recycled materials" ,
                       image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899" ,
-                      price: 110.00,
+                      price_cents: 11000,
 
                       designer: designer7
                     )
@@ -912,7 +920,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       a classic collar and slanted welt pockets.
                         Daily Paper emblem embroideries decorate front and back alongside an artwork representing the 3 founders, symbolised by 3 animals." ,
                       image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899" ,
-                      price: 435.00,
+                      price_cents: 43500,
 
                       designer: designer7,
                     )
@@ -934,7 +942,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       The style is equipped with a drawstring hood and a classic kangaroo pocket.
                       A special Daily Paper artwork featuring a shield logo and the 3 animals that represent the 3 founders decorates the front of the hoodie." ,
                       image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899" ,
-                      price: 115.00,
+                      price_cents: 11500,
 
                       designer: designer7,
                     )
@@ -950,7 +958,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       name: "White Nakato T-Shirt",
                       description: "The Nakato crewneck tee is crafted from a premium jersey fabric and comes in two seasonal colourways. A special Daily Paper artwork featuring a shield logo and the 3 animals that represent the 3 founders decorates the front of the tee." ,
                       image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225",
-                      price: 60.00,
+                      price_cents: 6000,
 
                       designer: designer7,
                     )
@@ -970,7 +978,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       description: "
                       Stay cosy with our seasonal beanie styles. The Neno Beanie is made from a ribbed knit and has a single fold. A recycled microfibre patch with the Daily Paper logo decorates the forehead. Available in two seasonal colourways. Pair with a matching Nescarf for a complete look.",
                       image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
-                      price: 45.00,
+                      price_cents: 4500,
 
                       designer: designer7,
                     )
@@ -995,7 +1003,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       cotton fabric with a button-up closure in white and a classic camp collar.
                         A Protect Paradise flower print decorates the back. Available in two different colourways.",
                       image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
-                      price: 120.00,
+                      price_cents: 12000,
 
                       designer: designer7,
                     )
@@ -1024,7 +1032,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                       Made in Europe.",
                       image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
-                      price: 105.00,
+                      price_cents: 10500,
 
                       designer: designer8,
                     )
@@ -1062,7 +1070,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                       Made in Europe.",
                       image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/set-baby-pants_832x1024.jpg?v=1647264742" ,
-                      price: 80,
+                      price_cents: 8000,
 
                       designer: designer8,
                     )
@@ -1088,8 +1096,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                       Made in Europe..",
                       image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/set-baby-pants_832x1024.jpg?v=1647264742" ,
-                      price: 50,
-
+                      price_cents: 5000,
                       designer: designer8,
                     )
 
@@ -1116,8 +1123,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
     ",
                       image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-starlight-cream-0_832x1024.jpg?v=1657547241" ,
-                      price: 50,
-
+                      price_cents: 5000,
                       designer: designer8,
                     )
 
@@ -1146,9 +1152,11 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
 ·                         Zip pocket at sleeve
 
-        ",
-                          image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/green-pack-front_832x1024.jpg?v=1648646424" ,
-                          price: 280.00,
+
+   
+                      image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/green-pack-front_832x1024.jpg?v=1648646424" ,
+                      price_cents: 28000,
+
 
                           designer: designer8,
                         )
@@ -1163,10 +1171,12 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                           name: "Killington Stripe Hat
                           ",
 
-                          description: "
-                          THIS HAT IS INSPIRED BY STRIP-WOVEN CLOTH FROM CÔTE D'IVOIRE, CIRCA 1960S. IT FEATURES A BROAD STRIPE PATTERN IN BLUE AND BURGUNDY AND AN EMBROIDERED BODE LOGO.",
-                          image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
-                          price_cents: 27000,
+
+                      description: "
+                      THIS HAT IS INSPIRED BY STRIP-WOVEN CLOTH FROM CÔTE D'IVOIRE, CIRCA 1960S. IT FEATURES A BROAD STRIPE PATTERN IN BLUE AND BURGUNDY AND AN EMBROIDERED BODE LOGO.",
+                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
+                      price_cents: 27000,
+
 
 
                           designer: designer9,
