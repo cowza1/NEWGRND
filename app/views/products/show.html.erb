@@ -7,10 +7,20 @@
     <h2>Brand: <%=@product.designer.name%></h2>
     <%end%>
     <p>Product: <%=@product.name%></p>
-    <p>Price: $<%=@product.price%></p>
+    <p>Price: <%=humanized_money_with_symbol @product.price%></p>
     <p>Size</p>
+    <%=link_to product_cart_items(@product) do%>
     <a class="add-to-cart-btn"href="#">Add to bag</a>
+    <%end%>
     <p class="product-show-description"><%=@product.description%></p>
   </div>
 </div>
 </div>
+
+
+
+
+<%= form_with url: orders_path do %>
+  <%= hidden_field_tag 'id', @product.id %>
+  <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
+<% end %>

@@ -35,6 +35,12 @@ gem "dotenv-rails", groups: %i[development test]
 
 gem "cloudinary"
 
+gem 'money-rails'
+
+gem 'stripe'
+
+gem 'stripe_event'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
