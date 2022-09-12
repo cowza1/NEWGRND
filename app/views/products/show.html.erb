@@ -9,7 +9,7 @@
     <p>Product: <%=@product.name%></p>
     <p>Price: <%=humanized_money_with_symbol @product.price%></p>
     <p>Size</p>
-    <%=link_to product_cart_items(@product) do%>
+    <%=link_to product_cart_items_path(@product) do%>
     <a class="add-to-cart-btn"href="#">Add to bag</a>
     <%end%>
     <p class="product-show-description"><%=@product.description%></p>

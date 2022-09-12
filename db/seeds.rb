@@ -713,7 +713,7 @@ product22 = Product.create!(
   - Model: Long
   - Branded reflected patron
   - 100% Polyester, Linning: 100% Nylon, Filling 90% Down, 10% Feather",
-  
+
   image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567",
   price_cents: 35500,
 
@@ -782,7 +782,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
               price_cents: 13000,
 
-             
+
 
 
               designer: designer5
@@ -1150,10 +1150,10 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
 ·                         Welt inside pocket
 
-·                         Zip pocket at sleeve
+·                         Zip pocket at sleeve",
 
 
-   
+
                       image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/green-pack-front_832x1024.jpg?v=1648646424" ,
                       price_cents: 28000,
 
