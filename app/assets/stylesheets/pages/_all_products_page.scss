@@ -26,7 +26,6 @@
 .card {
   border: none;
   text-align: center;
-  text-decoration: underline;
 }
 
 .product-img :hover {
@@ -36,4 +35,8 @@
 .card a {
   text-decoration: none;
   color: black;
+}
+
+.card p {
+  margin: 5px;
 }
