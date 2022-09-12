@@ -1150,8 +1150,10 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
 ·                         Welt inside pocket
 
-·                         Zip pocket at sleeve
-",
+
+·                         Zip pocket at sleeve",
+
+
 
 
                       image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/green-pack-front_832x1024.jpg?v=1648646424" ,
@@ -1183,13 +1185,13 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                         )
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__KILLINGTONSTRIPEHAT_031_720x.jpg?v=1654880661")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__KILLINGTONSTRIPEHAT_041_720x.jpg?v=1654880661"),
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__KILLINGTONSTRIPEHAT_041_720x.jpg?v=1654880661")
 
 
 
                         product41.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
                         product41.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product41.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                        #product41.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                         product42 = Product.create!(
                           name: "Gym Green Shorts",
@@ -1209,13 +1211,13 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                         )
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GYMRUGBYSHORTSGREEN_01_720x.jpg?v=1652192166")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__DELIVERY1_TEST_52_720x.jpg?v=1654188965"),
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__DELIVERY1_TEST_52_720x.jpg?v=1654188965")
 
 
 
                         product42.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
                         product42.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product42.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                        #product42.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                         product43 = Product.create!(
                           name: "Mosaic Shirt",
@@ -1233,7 +1235,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                         )
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__EASTERNMOSAICSSSHIRT_02_720x.jpg?v=1652454575")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__LOOK35_03_720x.jpg?v=1654203134"),
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__LOOK35_03_720x.jpg?v=1654203134")
 
 
 
@@ -1260,7 +1262,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__DOUBLEBREASTEDCARDIGANBLACK_014_720x.jpg?v=1659041472")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__CROCHETTOTEBLACK_0081_720x.jpg?v=1659041472")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__DOUBLEBREASTEDCARDIGANBLACK_0161_2fd5c78d-9e81-4a00-b2c2-399bdcd24879_720x.jpg?v=1659041472"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__DOUBLEBREASTEDCARDIGANBLACK_0161_2fd5c78d-9e81-4a00-b2c2-399bdcd24879_720x.jpg?v=1659041472")
 
 
                         product44.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1287,7 +1289,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__CIRCLEEMBROIDEREDJACKET_011_720x.jpg?v=1652455385")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__LOOK16_01_720x.jpg?v=1654196711")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__CIRCLEEMBROIDEREDJACKET_031_720x.jpg?v=1654196711"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__CIRCLEEMBROIDEREDJACKET_031_720x.jpg?v=1654196711")
 
 
                         product45.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1315,7 +1317,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GYMTRACKPANTSPURPLE_07_720x.jpg?v=1652192048")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__LOOK2_03_720x.jpg?v=1654184004")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GYMTRACKPANTSPURPLE_06_720x.jpg?v=1654184004"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GYMTRACKPANTSPURPLE_06_720x.jpg?v=1654184004")
 
 
                         product46.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1341,7 +1343,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_041_720x.jpg?v=1652474473")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_04_720x.jpg?v=1652474473")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_21_720x.jpg?v=1652474481"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_21_720x.jpg?v=1652474481")
 
 
                         product47.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1362,7 +1364,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/perforated-leather-jacket-lookbook-01_823x.jpg?v=1656509523")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/016_Back_823x.jpg?v=16565010013")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_21_720x.jpg?v=1652474481"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_21_720x.jpg?v=1652474481")
 
 
                         product49.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1383,7 +1385,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/perforated-leather-jacket-lookbook-01_823x.jpg?v=1656509523")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/016_Back_823x.jpg?v=16565010013")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_21_720x.jpg?v=1652474481"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_21_720x.jpg?v=1652474481")
 
 
                         product50.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1405,7 +1407,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26662copy_823x.jpg?v=1645458459")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26666copy_823x.jpg?v=1645458459")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26671copy_2_823x.jpg?v=1645459358"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26671copy_2_823x.jpg?v=1645459358")
 
 
                         product51.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1427,7 +1429,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-black-motto-tee-front_823x.jpg?v=1656515933")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-black-motto-tee-back_823x.jpg?v=1656515933")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-black-motto-tee-detail_823x.jpg?v=1656515933"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-black-motto-tee-detail_823x.jpg?v=1656515933")
 
 
                         product52.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1449,7 +1451,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKSEVEN20775copy_1.jpg?v=1648811211")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKSEVEN20755copy.jpg?v=1648811211")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKSEVEN20790copy.jpg?v=1648811211"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKSEVEN20790copy.jpg?v=1648811211")
 
 
                         product53.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1473,7 +1475,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKEIGHT20878copy_1.jpg?v=1645097854")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKEIGHT20880copy_1.jpg?v=1645097855")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKEIGHT20854copy_2.jpg?v=1645097854"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKEIGHT20854copy_2.jpg?v=1645097854")
 
 
                         product54.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1497,7 +1499,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-print-shorts-model_1100x.jpg?v=1656516502")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-print-short-back_1100x.jpg?v=1656516502")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-print-short-back-detail_1100x.jpg?v=1656516504"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-print-short-back-detail_1100x.jpg?v=1656516504")
 
 
                         product55.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1521,7 +1523,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-black-silk-shirt-model_823x.jpg?v=1656522950")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/black-due-diligence-shirt-back_823x.jpg?v=1656522949")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/black-due-diligence-shirt-detail_823x.jpg?v=1656522949"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/black-due-diligence-shirt-detail_823x.jpg?v=1656522949")
 
 
                         product56.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1544,7 +1546,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                         )
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-pink-bucket-hat_823x.jpg?v=1656509387")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-reversible-bucket-hat-pink_823x.jpg?v=1656509387"),
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/due-diligence-reversible-bucket-hat-pink_823x.jpg?v=1656509387")
 
 
 
@@ -1569,7 +1571,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKEIGHT20792copy_823x.jpg?v=1645098139")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKEIGHT20842copy_823x.jpg?v=1645098139")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKEIGHT20813copy_823x.jpg?v=1645098139"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/LOOKEIGHT20813copy_823x.jpg?v=1645098139")
 
 
                         product58.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1595,7 +1597,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26736v2copy_823x.jpg?v=1645540526")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26744v2copy_823x.jpg?v=1645540526")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26758v2copy_823x.jpg?v=1645540526"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26758v2copy_823x.jpg?v=1645540526")
 
 
                         product59.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1623,7 +1625,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/OW334_LD086_BR418_1_1600x.jpg?v=1655740555")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/OW334_LD086_BR418_5_1600x.jpg?v=1655740049")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/OW334_LD086_BR418_9_1600x.jpg?v=1655740755"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/OW334_LD086_BR418_9_1600x.jpg?v=1655740755")
 
 
                         product60.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1651,7 +1653,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_2_1600x.jpg?v=1655739890")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_3_1600x.jpg?v=1655740411")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_4_1600x.jpg?v=1655740195"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_4_1600x.jpg?v=1655740195")
 
 
                         product61.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1678,7 +1680,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_2_1600x.jpg?v=1655739890")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_3_1600x.jpg?v=1655740411")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_4_1600x.jpg?v=1655740195"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_4_1600x.jpg?v=1655740195")
 
 
                         product62.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1703,7 +1705,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_2_1600x.jpg?v=1655739890")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_3_1600x.jpg?v=1655740411")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_4_1600x.jpg?v=1655740195"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_4_1600x.jpg?v=1655740195")
 
 
                         product63.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1729,7 +1731,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/PA330_LD086_WH015_2_1600x.jpg?v=1655740216")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/PA330_LD086_WH015_3_1600x.jpg?v=1655740355")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/PA330_LD086_WH015_4_1600x.jpg?v=1655740039"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/PA330_LD086_WH015_4_1600x.jpg?v=1655740039")
 
 
                         product64.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1756,7 +1758,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JE310_LJ089_BR425_3_1600x.jpg?v=1655740025")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JE310_LJ089_BR425_4_1600x.jpg?v=1655740424")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JE310_LJ089_BR425_PS1_1600x.jpg?v=1655740399"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JE310_LJ089_BR425_PS1_1600x.jpg?v=1655740399")
 
 
                         product65.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1782,7 +1784,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("   https://cdn.shopify.com/s/files/1/0267/6051/1530/products/FO313_LL185_BK999_PS2_1600x.jpg?v=1658931153")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/FO313_LL185_BK999_PS3_1600x.jpg?v=1658931153")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/FO313_LL185_BK999_PS4_1600x.jpg?v=1658931153"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/FO313_LL185_BK999_PS4_1600x.jpg?v=1658931153")
 
 
                         product66.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1810,7 +1812,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("   https://husbands-paris.com/wp-content/uploads/2022/05/COSTUME-CROISE-EN-LIN-BLEU-VERT_2.jpg")
                         file2 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/05/COSTUME-CROISE-EN-LIN-BLEU-VERT_3.jpg")
-                        file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/05/COSTUME-CROISE-EN-LIN-BLEU-VERT_4.jpg"),
+                        file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/05/COSTUME-CROISE-EN-LIN-BLEU-VERT_4.jpg")
 
 
                         product67.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1840,7 +1842,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("   https://husbands-paris.com/wp-content/uploads/2022/06/COSTUME-DROIT-EN-GABARDINE-DE-COTON-BEIGE-MIEL_3-1.jpg")
                         file2 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/COSTUME-DROIT-EN-GABARDINE-DE-COTON-BEIGE-MIEL_4.jpg")
-                        file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/6-1.jpg"),
+                        file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/6-1.jpg")
 
 
                         product68.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1865,7 +1867,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("  https://husbands-paris.com/wp-content/uploads/2022/05/VESTE-DROITE-EN-LAINE-SOIE-ET-LIN-IVOIRE-A%CC%80-RAYURES-BLEUES_2-scaled.jpg")
                         file2 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/05/VESTE-DROITE-EN-LAINE-SOIE-ET-LIN-IVOIRE-A%CC%80-RAYURES-BLEUES_3-scaled.jpg")
-                        file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/05/VESTE-DROITE-EN-LAINE-SOIE-ET-LIN-IVOIRE-A%CC%80-RAYURES-BLEUES_6-scaled.jpg"),
+                        file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/05/VESTE-DROITE-EN-LAINE-SOIE-ET-LIN-IVOIRE-A%CC%80-RAYURES-BLEUES_6-scaled.jpg")
 
 
                         product69.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1892,7 +1894,7 @@ handmade detailing: Australian mother-of-pearl sewn in zampa di gallina.",
 
                         file1= URI.open("  https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-COL-CLASSIQUE-EN-SERGE%CC%81-BLANCHE-A%CC%80-RAYURES-BLUE-PA%CC%82LE_2.jpg")
                         file2 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-COL-CLASSIQUE-EN-SERGE%CC%81-BLANCHE-A%CC%80-RAYURES-BLUE-PA%CC%82LE_3.jpg")
-                        file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-COL-CLASSIQUE-EN-SERGE%CC%81-BLANCHE-A%CC%80-RAYURES-BLUE-PA%CC%82LE_6.jpg"),
+                        file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-COL-CLASSIQUE-EN-SERGE%CC%81-BLANCHE-A%CC%80-RAYURES-BLUE-PA%CC%82LE_6.jpg")
 
 
                         product70.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1922,7 +1924,7 @@ handmade detailing: Australian mother-of-pearl sewn in zampa di gallina.",
 
                         file1= URI.open("  https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-WESTERN-EN-DENIM-SELVEDGE-BLEU-DE%CC%81LAVE%CC%81_2-1.jpg")
                         file2 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-WESTERN-EN-DENIM-SELVEDGE-BLEU-DE%CC%81LAVE%CC%81_3-1.jpg")
-                        file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-WESTERN-EN-DENIM-SELVEDGE-BLEU-DE%CC%81LAVE%CC%81_6-1.jpg"),
+                        file3 = URI.open("https://husbands-paris.com/wp-content/uploads/2022/06/CHEMISE-WESTERN-EN-DENIM-SELVEDGE-BLEU-DE%CC%81LAVE%CC%81_6-1.jpg")
 
 
                         product71.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -1953,7 +1955,7 @@ Wear it as a tunic to expose the right side slit and convenient left side pocket
 
                         file1= URI.open("  https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M011c.jpg?v=1639459327")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M011d.jpg?v=1639459327")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling11.jpg?v=1639459327"),
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling11.jpg?v=1639459327")
 
 
                         product72.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
