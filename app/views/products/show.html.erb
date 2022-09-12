@@ -16,8 +16,10 @@
   </div>
 </div>
 </div>
-
-
+<%= simple_form_for [@product, @cart_item] do |f| %>
+  <%= f.input :quantity %>
+  <%= f.button :submit, "Submit"%>
+<% end %>
 
 
 <%= form_with url: orders_path do %>
