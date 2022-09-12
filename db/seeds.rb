@@ -1150,7 +1150,9 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
 ·                         Welt inside pocket
 
+
 ·                         Zip pocket at sleeve",
+
 
 
 
