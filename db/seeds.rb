@@ -5,7 +5,14 @@ Product.destroy_all
 
 puts "deleting designers"
 Designer.destroy_all
+
+puts"deleteing Users"
+User.destroy_all
+
 puts "creating designers"
+
+
+
 designer1 = Designer.create!(
   name: "Albert.",
   image: "https://cdn.shopify.com/s/files/1/0582/5921/0426/files/ALBERT_LOGO_320x.png?v=1644865712",
@@ -1191,7 +1198,8 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         product41.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
                         product41.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        #product41.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        
 
                         product42 = Product.create!(
                           name: "Gym Green Shorts",
