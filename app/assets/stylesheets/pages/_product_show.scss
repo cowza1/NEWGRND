@@ -11,6 +11,11 @@
 .product-show-card {
   display: flex;
 
+  // height: 400px;
+}
+
+
+.product-show-card>img {
   height: 400px;
 }
 
@@ -18,8 +23,12 @@
 .product-show-info {
   margin-left: 20px;
   border-left: 1px solid black;
-  padding: 10px 10px 0 10px;
-  background-color: #F0E68C;
+  padding: 10px 20px 0;
+  background-color: whitesmoke;
+  h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+  }
 }
 
 .product-show-description {
@@ -42,4 +51,18 @@
 
 .product-show-info a {
   text-decoration: none;
+}
+
+.was-validated .form-control:valid, .form-control.is-valid, .form-select {
+  border-color: black;
+  background-image: none;
+}
+
+.was-validated .form-control:valid:focus, .form-control.is-valid:focus {
+  box-shadow: none;
+}
+
+.btn1 {
+  background-color: black;
+  color: white;
 }
