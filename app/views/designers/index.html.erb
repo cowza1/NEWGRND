@@ -6,7 +6,7 @@
     <div class="designer-index-card d-flex col-4">
       <div class="designer-index-info">
       <%=link_to designer_path(designer) do %>
-        <h1><%=designer.name%></h1>
+        <img src="<%= designer.image%>" alt="">
         <% end %>
       </div>
     </div>

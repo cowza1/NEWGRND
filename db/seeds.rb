@@ -1,5 +1,8 @@
 require "open-uri"
 
+puts "destoy matches"
+Match.destroy_all
+
 puts "destroying products"
 Product.destroy_all
 
@@ -81,7 +84,7 @@ designer5 = Designer.create!(
 )
 designer6 = Designer.create!(
   name: "Daniel Diyepriye",
-  image: "https://www.danieldiyepriye.com/wp-content/uploads/2020/05/Daniel-Diyepriye-white-smaller.png",
+  image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8AAADp6en8/Pz4+Pi/v7/Dw8N5eXmOjo7c3Nw0NDQqKirg4ODs7OxLS0tra2udnZ1gYGDU1NTy8vKjo6OysrKqqqrMzMxSUlKGhobW1tZiYmJ+fn5FRUUeHh4XFxc3NzchISEQEBBzc3M+Pj7u4hJXAAADVklEQVR4nO3X63KqMBSGYRcnj6iVKq30SHv/17iTtULAVjpOmb1n9sz7/FCDScgHJMbZDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACuS798SMcqTj5D+suuY7vb2u/EWR9jWWRpH5by5N8WktphNdevHqxQW4PXkZ4ffZ3XkxXurInW3cu9f6tlH6uJHcr048pGk2thu9HCOQzg4D5XInrsVfpq0owmnMumPOzsZM5GZNEllEqHowmTpJSmSir9qpHEs0u4Xo30vJBDeX6SRy24ps9tlZRaeJHMvb63odq5dJ1llnBXbYqtHG3ox3JzFDt/mpRHV7ZznvR6nKTwhUJOvn31Q8JMx5xZce9uaEz40Sd0ZNe1uZNBBz8kTNzrk75629iq8I9HGKCrVsYmmT0kbWsJC33NY6uiq/fqBpXKczicz35kCc8SntO3t8cwpKVsZTM9YRIfjz7h7Nl9FQYYql0k/JA+4TnmGiT0l2gRptONCWdhhpWyqG1KuIS53E1POPOdfE24lGbfzfcr9/BhkHARzz9I6C7RoRvOzQkftHSUc3dxl1LvXelawkY2TnJbwvX6e0K/vu1itdr3NkhY6vRwCWu/HN13bYYJ3RTqLkwh9675cnxd7RJaLH/1Gl1hXCeFP3o9ofd2W8JVeyVhFQfoqqmQ0E3QurUh5bL6/JR+lR8mdJdoEQ+r/kEYS6j3MPXXMLdefcKT1PdTn9KXa/dwtlr11fpl0H4tGjuQy2P+PvjyIuFRfzfs8I1P6ZN1WqRpaTPHJ5y1n6fJ87D7pdpeb3W50jTL+Lz5p/QQZo9FmZIwrKUf4Xc17RIe5WHyWtpNpJsSzvsqutLs+vFPS9jY2eUuq6pqr11pwtlaJiacx+dsNOG3tdRowkwGv6K/Tbgp653dwoO9JXoeS1jI+J4mC2Ot+g3OZcJDeZiHW3ixp/mS8Bz3JN8Tuig6fy72NF8S6p5mfKXRfekqD2ktwYtoQj24Gt+X2paztcL5W8+64XwPa+FwX6r9tRfVxHJk/XMSdzNvmmW4L/VOYVcc96UvowmHLv9W/LX/FreMYFi4OoJ/OiwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5M/0ZggmI/FxRMAAAAASUVORK5CYII=",
   description: "Daniel Diyepriye is a luxury African heritage fashion house and brand.
                 Envisioned by Tubonimi Nkari Dokubo, who sadly passed away in April of 2020.",
   social: "https://www.instagram.com/danieldiyepriye/?hl=en",
