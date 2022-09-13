@@ -4,14 +4,22 @@
   <img src="<%=@product.image%>" alt="">
   <div class="product-show-info">
   <%=link_to product_designer_path(@product, @designer) do %>
-    <h2>Brand: <%=@product.designer.name%></h2>
+    <h2><%=@product.designer.name.upcase%></h2>
     <%end%>
-    <p>Product: <%=@product.name%></p>
-    <p>Price: <%=humanized_money_with_symbol @product.price%></p>
-    <p>Size</p>
+    <p><%=@product.name%></p>
+    <p><%=humanized_money_with_symbol @product.price%></p>
+    <select id="size" name="size" class="form-select mb-3">
+    <option value="0">Select Size</option>
+    <option value="1">XS</option>
+    <option value="2">S</option>
+    <option value="3">M</option>
+    <option value="4">L</option>
+    <option value="5">XL</option>
+    <option value="6">XXL</option>
+    </select>
     <%= simple_form_for [@product, @cart_item] do |f| %>
     <%= f.input :quantity %>
-    <%= f.button :submit, "Add to bag"%>
+    <%= f.button :submit, "Add to bag", class:"btn1"%>
     <% end %>
     <p class="product-show-description"><%=@product.description%></p>
   </div>
