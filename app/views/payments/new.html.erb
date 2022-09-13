@@ -1,14 +1,15 @@
-<div class="container">
-  <div class="row py-4">
-    <div class="col">
+<div class="payment-container">
+  <div class="payment-card row py-4">
+    <div class="payment-card-summary col">
       <h1>Checkout summary</h1>
-      <h3>Total: <%= @order.price %></h3>
-
-      <p>By item</p>
-
+      <div class="payment-card-info">
+      <p><strong>Payment for the following </strong></p>
       <%@order.cart_items.each do |item|%>
-        <p><%= item.product.name %> <strong> x <%= item.quantity %>: <%= item.product.price * item.quantity %></p>
+        <p><%= item.product.name %> x <%= item.quantity %></p>
+        <p><%= humanized_money_with_symbol item.product.price * item.quantity %></p>
       <%end%>
+      <h3>Total: <%=humanized_money_with_symbol @order.price %></h3>
+      </div>
       <button id="pay" class="btn btn-primary">Pay</button>
       <script src="https://js.stripe.com/v3/"></script>
       <script>

@@ -26,7 +26,8 @@ Rails.application.routes.draw do
       end
      end
 
-    resources :orders, only: [:show, :create] do
+    resources :orders, only: [:show] do
+      post :create_session
      resources :payments, only: :new
   end
   resources :cart_items, only: [:destroy]
