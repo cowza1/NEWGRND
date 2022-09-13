@@ -3,11 +3,16 @@
 <div class="product-show-card">
   <img src="<%=@product.image%>" alt="">
   <div class="product-show-info">
+  <%=link_to product_designer_path(@product, @designer) do %>
     <h2>Brand: <%=@product.designer.name%></h2>
+    <%end%>
     <p>Product: <%=@product.name%></p>
-    <p>Price: £<%=@product.price%></p>
+    <p>Price: <%=humanized_money_with_symbol @product.price%></p>
     <p>Size</p>
-    <a href="#">Add to bag</a>
+    <%= simple_form_for [@product, @cart_item] do |f| %>
+    <%= f.input :quantity %>
+    <%= f.button :submit, "Add to bag"%>
+    <% end %>
     <p class="product-show-description"><%=@product.description%></p>
   </div>
 </div>

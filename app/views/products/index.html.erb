@@ -9,7 +9,9 @@
           <%=link_to product_path(product) do%>
             <div class="product-img" style="background-image: url('<%=product.image%>')">
             </div>
-            <p>£<%= product.price%></p>
+            <p><strong><%=product.designer.name.upcase%></strong></p>
+            <p><%=product.name%></p>
+            <p><%=humanized_money_with_symbol product.price%></p>
             <% end %>
           </div>
         </div>
@@ -17,6 +19,3 @@
     </div>
   </div>
 </div>
-
-
- do
