@@ -2,9 +2,6 @@ class OrdersController < ApplicationController
   def create_session
     order = Order.find(params[:order_id])
 
-    # line_items = order.cart_items.map do |item|
-
-    # end
     session = Stripe::Checkout::Session.create(
       payment_method_types: ['card'],
       line_items: [
@@ -25,6 +22,8 @@ class OrdersController < ApplicationController
     order.update(checkout_session_id: session.id)
     redirect_to new_order_payment_path(order)
   end
+
+  # Order.new if @order = Order.where(state: :complete)
 
   def show
     @order = current_user.orders.find(params[:id])
