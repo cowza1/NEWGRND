@@ -1,30 +1,34 @@
-<div class="order-page">
-  <div class=" order-container row py-4">
-  <h1>Shopping Bag</h1>
-  <%@order.cart_items.each do |cart_item|%>
-  <div class="order-card-box">
-  <div class="order-img">
-    <%= cl_image_tag cart_item.product.photos.first.key%>
-    </div>
-      <div class="order-list-info">
-      <br>
-        <p><strong>Brand:</strong> <%= cart_item.product.designer.name %></p>
-        <p><strong>Product:</strong> <%= cart_item.product.name %></p>
-         <p><strong>Quantity:</strong> <%= cart_item.quantity %></p>
-        <p><strong>TOTAL</strong> <%= humanized_money_with_symbol cart_item.product.price * cart_item.quantity %></p>
-        <p><%= link_to "Remove from bag", cart_item_path(cart_item), data: {turbo_method: :delete} %></p>
+<% if @order.state == "pending" %>
+  <div class="order-page">
+    <div class=" order-container row py-4">
+    <h1>Shopping Bag</h1>
+    <%@order.cart_items.each do |cart_item|%>
+    <div class="order-card-box">
+    <div class="order-img">
+      <%= cl_image_tag cart_item.product.photos.first.key%>
       </div>
-      </div>
-       <% end %>
-       <div class="checkout-info">
-       <h3>Order Summary</h3>
-       <p>Total: <strong><%= humanized_money_with_symbol @order.price%></strong></p>
-       <p>Estimated delivery in <strong>2 business days</strong></p>
-       <p>Shipping: <strong>FREE</strong></p>
-       <%= button_to order_create_session_path(@order), class: "checkout" do %>
-        Proceed to checkout
-      <%end%>
+        <div class="order-list-info">
+        <br>
+          <p><strong>Brand:</strong> <%= cart_item.product.designer.name %></p>
+          <p><strong>Product:</strong> <%= cart_item.product.name %></p>
+          <p><strong>Quantity:</strong> <%= cart_item.quantity %></p>
+          <p><strong>TOTAL</strong> <%= humanized_money_with_symbol cart_item.product.price * cart_item.quantity %></p>
+          <p><%= link_to "Remove from bag", cart_item_path(cart_item), data: {turbo_method: :delete} %></p>
+        </div>
+        </div>
+        <% end %>
+        <div class="checkout-info">
+        <h3>Order Summary</h3>
+        <p>Total: <strong><%= humanized_money_with_symbol @order.price%></strong></p>
+        <p>Estimated delivery in <strong>2 business days</strong></p>
+        <p>Shipping: <strong>FREE</strong></p>
+        <%= button_to order_create_session_path(@order), class: "checkout" do %>
+          Proceed to checkout
+        <%end%>
+        </div>
       </div>
     </div>
   </div>
-</div>
+<% else %>
+  <h1>Order completed</h1>
+<% end %>
