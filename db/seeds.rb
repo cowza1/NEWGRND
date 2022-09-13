@@ -235,7 +235,7 @@ designer17 = Designer.create!(
   style: "Avant-Garde",
   budget: "High",
   colour_palette: "Vibrant",
-  gender: "Female"
+  gender: "Male"
 )
 designer18 = Designer.create!(
   name: "Rendoll",

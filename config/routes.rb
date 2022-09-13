@@ -16,12 +16,14 @@ Rails.application.routes.draw do
       resources :products, only: [:index, :show]
     end
 
-    resources :products, only:[:show] do
-      resources :designers, only:[:show]
-    end
 
      resources :products, only: [:show, :index] do
+      resources :designers, only:[:show]
       resources :cart_items, only:[:create]
+      collection do
+        get :mens
+        get :womens
+      end
      end
 
     resources :orders, only: [:show, :create] do
