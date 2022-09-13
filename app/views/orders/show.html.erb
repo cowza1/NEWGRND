@@ -1,20 +1,30 @@
-<div class="container">
-  <div class="row py-4">
-  <h1>Order #<%= @order.id %></h1>
+<div class="order-page">
+  <div class=" order-container row py-4">
+  <h1>Shopping Bag</h1>
   <%@order.cart_items.each do |cart_item|%>
-    <div class="col-md-3"><%= cl_image_tag cart_item.product.photos.first.key, width: '100%' %></div>
-       <%# <small><span class="badge badge-primary"><%= @order.state</span></small>  %>
-      <ul class="list-info">
-        <%# <li><strong>ISSUED ON</strong> <%= @order.created_at.to_date</li>  %>
-        <li><strong>Product:</strong> <%= cart_item.product.name %></li>
-        <li><strong>TOTAL</strong> <%= humanized_money_with_symbol cart_item.product.price * cart_item.quantity %></li>
-        <li><%= link_to "Delete", cart_item_path(cart_item), data: {turbo_method: :delete} %></li>
-      </ul>
-      <% end %>
-      <p>Estimated delivery in <strong>2 business days</strong></p>
+  <div class="order-card-box">
+  <div class="order-img">
+    <%= cl_image_tag cart_item.product.photos.first.key%>
+    </div>
+      <div class="order-list-info">
+      <br>
+        <p><strong>Brand:</strong> <%= cart_item.product.designer.name %></p>
+        <p><strong>Product:</strong> <%= cart_item.product.name %></p>
+         <p><strong>Quantity:</strong> <%= cart_item.quantity %></p>
+        <p><strong>TOTAL</strong> <%= humanized_money_with_symbol cart_item.product.price * cart_item.quantity %></p>
+        <p><%= link_to "Remove from bag", cart_item_path(cart_item), data: {turbo_method: :delete} %></p>
+      </div>
+      </div>
+       <% end %>
+       <div class="checkout-info">
+       <h3>Order Summary</h3>
+       <p>Total: <strong><%= humanized_money_with_symbol @order.price%></strong></p>
+       <p>Estimated delivery in <strong>2 business days</strong></p>
+       <p>Shipping: <strong>FREE</strong></p>
+       <%= button_to order_create_session_path(@order), class: "checkout" do %>
+        Proceed to checkout
+      <%end%>
+      </div>
     </div>
   </div>
 </div>
-    <%=link_to new_order_payment_path(@order) do %>
-      <button>Checkout</button>
-      <%end%>

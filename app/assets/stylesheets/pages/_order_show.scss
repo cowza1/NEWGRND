@@ -1,7 +1,47 @@
-.order-product-img {
-  height: 200px;
+// .order-card img {
+//   height: 350px;
+//   width: 300px;
+// }
+
+.order-container {
+  background-color: white;
+  margin: 0 20px;
+  margin-top: 20px;
+  justify-content: space-between
 }
 
-.order-card {
-  height: 200px;
+.order-img img {
+  height: 300px;
+  width: 220px;
+  object-fit: contain;
+}
+
+.order-card-box {
+  display: flex;
+  margin: 20px;
+}
+
+.order-card-box {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  width: fit-content;
+}
+
+.order-list-info a {
+  text-decoration: none;
+  color: grey;
+}
+
+.checkout {
+  background-color: black;
+  color: white;
+}
+
+.checkout-info {
+  margin-left: 20px;
+}
+
+.order-page {
+  width: 90%;
+  margin: 0 auto
 }
