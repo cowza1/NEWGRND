@@ -22,6 +22,47 @@
     <%= f.button :submit, "Add to bag", class:"btn1"%>
     <% end %>
     <p class="product-show-description"><%=@product.description%></p>
+
+  <div class="product-show-card">
+    <%# <img src="<%=@product.image%>
+    <%# carousel  %>
+
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <% @product.photos.each_with_index do |photo,index| %>
+          <div class="carousel-item <%= 'active' if index==0 %>">
+            <%# <img src="..." class="d-block w-100" alt="..."> %>
+            <%= cl_image_tag photo.key, class: "d-block w-100 carousel-img", alt: "slide"  %>
+          </div>
+        <% end %>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+    <%# end of carousel %>
+
+    <div class="product-show-info">
+      <%=link_to product_designer_path(@product, @designer) do %>
+        <h2>Brand: <%=@product.designer.name%></h2>
+      <%end%>
+      <p>Product: <%=@product.name%></p>
+      <p>Price: <%=humanized_money_with_symbol @product.price%></p>
+      <p>Size</p>
+      <%= simple_form_for [@product, @cart_item] do |f| %>
+        <%= f.input :quantity %>
+        <%= f.button :submit, "Add to bag"%>
+      <% end %>
+      <p class="product-show-description"><%=@product.description%></p>
+    </div>
+
   </div>
-</div>
 </div>
