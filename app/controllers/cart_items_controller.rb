@@ -2,7 +2,7 @@ class CartItemsController < ApplicationController
   def create
     @cart_item = CartItem.new(cart_item_params)
     @cart_item.product = Product.find(params[:product_id])
-    @cart_item.order = current_user.orders.last
+    @cart_item.order = current_user.orders.last || current_user.orders.create!  
     @cart_item.save!
     update_order_total
     redirect_to order_path(@cart_item.order)

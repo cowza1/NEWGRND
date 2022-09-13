@@ -1,17 +1,19 @@
 class OrdersController < ApplicationController
-  def create
-    prod = Product.find(params[:id])
-    order = Order.create!(product: prod, price: prod.price, state: 'pending', user: current_user)
+  def create_session
+    order = Order.find(params[:order_id])
 
+    # line_items = order.cart_items.map do |item|
+
+    # end
     session = Stripe::Checkout::Session.create(
       payment_method_types: ['card'],
       line_items: [
         quantity: 1,
         price_data: {
-          unit_amount: prod.price_cents,
+          unit_amount: order.price_cents,
           currency: 'gbp',
           product_data: {
-            name: prod.name
+            name: "NEWGRND order"
           }
         }
       ],
