@@ -12,4 +12,23 @@ class ProductsController < ApplicationController
     @designer = Designer.find(@product.designer_id)
     @cart_item = CartItem.new
   end
+
+  def mens
+    if params[:query].present?
+      @products = Product.where("name ILIKE ?", "%#{params[:query]}%").and(Product.where(designer_id: Designer.where(gender: 'Male').pluck(:id)))
+    else
+      @products = Product.where(designer_id: Designer.where(gender: 'Male').pluck(:id))
+    end
+    render :index
+  end
+
+  def womens
+    if params[:query].present?
+      @products = Product.where("name ILIKE ?", "%#{params[:query]}%").and(Product.where(designer_id: Designer.where(gender: 'Female').pluck(:id)))
+    else
+      @products = Product.where(designer_id: Designer.where(gender: 'Female').pluck(:id))
+    end
+    render :index
+  end
+
 end
