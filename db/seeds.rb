@@ -9,12 +9,10 @@ Product.destroy_all
 puts "deleting designers"
 Designer.destroy_all
 
-puts"deleteing Users"
+puts "deleteing Users"
 User.destroy_all
 
 puts "creating designers"
-
-
 
 designer1 = Designer.create!(
   name: "Albert.",
@@ -266,19 +264,12 @@ designer19 = Designer.create!(
   gender: "Female"
 )
 
-
-
-
-
-
-
-
 puts "creating products"
 product1 = Product.create!(
-  name: "Blazer",
-  description: "Moss Green blazer made from a beautiful Seersucker cloth this jacket is a perfect marriage between style and comfort.
-  The versatility of this jacket is endless as it can be dressed up or down depending on the occasion.
-  Perfect for keeping you cool in hot temperatures.",
+  name: "Moss Green Blazer",
+  description: "Moss Green Blazer made from a beautiful Seersucker cloth. This jacket is a perfect marriage between style and comfort.
+                The versatility of this jacket is endless as it can be dressed up or down depending on the occasion.
+                Perfect for keeping you cool in hot temperatures.",
   image:"https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image.webp?v=1661178529",
 
   price_cents: 21000,
@@ -297,15 +288,14 @@ product1.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
 
 # product 2
 product2 = Product.create!(
-  name: "Pants",
-  description: "Moss Green Alban Seersucker Pants
-  are an essential for any fashion forward mans wardrobe.
-  Made from a beautiful Cotton Seersucker cloth these pants give you the best of both worlds of street style & sartorial.
-  Can be dressed up with a well tailored blazer & shirt or dressed down with a t-shirt, perfect for warmer temperatures.
-
-  ",
+  name: "Moss Green Pants",
+  description: "Moss Green Pants are an essential for any fashion forward mans wardrobe.
+                Made from a beautiful cotton seersucker cloth these pants give you the best of both worlds of street style & sartorial.
+                Can be dressed up with a well tailored blazer & shirt or dressed down with a t-shirt, perfect for warmer temperatures.",
   image:"https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_808f1ad1-80a8-4c7b-8a64-34ff07eaf76c_720x.webp?v=1661178664",
+
   price_cents: 13100,
+
   designer: designer1
 )
 puts "product created"
@@ -320,18 +310,18 @@ product2.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
 #product3
 
 product3= Product.create!(
-  name: "Bellagio Shawl Suit",
+  name: "Aqua Blue Blazer",
   description: "Made from 100% Irish Linen cloth this blue suit is a perfect marriage between style and comfort.
-  Perfect for a summers day as it can be dressed up or down depending on the occasion.",
-  image: "https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9259_534ef530-2d37-4317-84a2-6a849868e364_720x.jpg?v=1644835300",
-  price_cents: 42500,
+                Perfect for a summers day as it can be dressed up or down depending on the occasion.",
+  image: "https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9082_1_720x.jpg?v=1656285021",
+  price_cents: 21000,
   designer: designer1
 )
 puts "product created"
 
-file1 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9259_534ef530-2d37-4317-84a2-6a849868e364_720x.jpg?v=1644835300")
-file2 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/Untitled-design-63_aa21a841-f4c5-421c-9870-ef43414b8370_460x.jpg?v=1644835300")
-file3 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/Untitled-design-64_416fd12e-4de8-4fe4-bf6f-eb735cd25d91_460x.jpg?v=1644835300")
+file1 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9082_1_720x.jpg?v=1656285021")
+file2 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_a40538e7-fe72-45fb-8932-f62fb9427173_720x.jpg?v=1656287926")
+file3 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_3cfabbae-352c-449e-9bf2-51dc47e3e8a5_720x.jpg?v=1656287926")
 
 product3.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
 product3.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
@@ -340,9 +330,9 @@ product3.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
 #product4
 
 product4 = Product.create!(
-  name: "Albert Academy DB Blazer" ,
-  description: " The Academy Blazer is cut from a medium weight navy pure wool fabric.
-                 A navy gold button jacket will always be useful in the modern mans wardrobe,
+  name: "Albert Academy DB Blazer",
+  description: "The Academy Blazer is cut from a medium weight navy pure wool fabric.
+                A navy gold button jacket will always be useful in the modern mans wardrobe,
                 when designing this piece we drew inspiration from the IV League preppy look.",
   image: "https://cdn.shopify.com/s/files/1/0582/5921/0426/products/86CBB048-7B99-4D4A-8DAC-35724B0FC272-2_720x.jpg?v=1654587643",
   price_cents: 21000,
@@ -352,9 +342,9 @@ product4 = Product.create!(
 puts "product created"
 
 
-file1 =URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/86CBB048-7B99-4D4A-8DAC-35724B0FC272-2_720x.jpg?v=1654587643")
-file2 = URI.open ("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/CE5B48BE-0ABE-4003-9A9E-9AFFB4D7C3B8_946163a9-1cb3-49a0-b0b0-7c34d41a2a9e_720x.jpg?v=1654587632")
-file3 = URI.open ("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/8531E50A-CECF-4AA3-B16F-8EC63D3CEA95_720x.jpg?v=1654587631")
+file1 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/86CBB048-7B99-4D4A-8DAC-35724B0FC272-2_720x.jpg?v=1654587643")
+file2 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/CE5B48BE-0ABE-4003-9A9E-9AFFB4D7C3B8_946163a9-1cb3-49a0-b0b0-7c34d41a2a9e_720x.jpg?v=1654587632")
+file3 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/8531E50A-CECF-4AA3-B16F-8EC63D3CEA95_720x.jpg?v=1654587631")
 
 product4.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
 product4.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
@@ -362,19 +352,20 @@ product4.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
 
 #product 5
 product5 = Product.create!(
-  name: "Aqua Blue Blazer" ,
-  description: "Made from 100% Linen cloth this jacket is a perfect marriage between style and comfort.
-                Perfect for a summers day as it can be dressed up or down depending on the occasion.",
-  image: "https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9082_1_720x.jpg?v=1656285021",
-  price_cents: 21000,
+  name: "Hamilton Plaid Blazer",
+  description: "The Hamilton Blazer is hugely inspired by the 70's era and is the ultimate stand out jacket.
+                The Hamilton Blazer is a vibrant spring jacket. The Hamilton Blazer is cut from a pure wool plaid fabric.
+                Our Hamilton Blazer is very versatile and can be styled in so many ways.",
+  image: "https://cdn.shopify.com/s/files/1/0582/5921/0426/products/66AF0A87-CC52-4597-8D69-8810882A62F7-2_1296x.jpg?v=1654592284",
+  price_cents: 29000,
   designer: designer1
 
   )
   puts "product created"
 
-  file1 =URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9082_1_720x.jpg?v=1656285021")
-  file2 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_a40538e7-fe72-45fb-8932-f62fb9427173_720x.jpg?v=1656287926")
-  file3 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_3cfabbae-352c-449e-9bf2-51dc47e3e8a5_720x.jpg?v=1656287926")
+  file1 =URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/66AF0A87-CC52-4597-8D69-8810882A62F7-2_1296x.jpg?v=1654592284")
+  file2 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/5765ACE2-F938-482B-9A4E-698E42A97A2C_1296x.jpg?v=1654592271")
+  file3 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/35E5575C-8766-4B83-AF93-9DF9ADEB5A73_1296x.jpg?v=1654592284")
 
 product5.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
 product5.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
@@ -382,7 +373,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
 
   #product 6
   product6 = Product.create!(
-    name: "Aqua Blue Pants" ,
+    name: "Aqua Blue Pants",
     description: "Our Aqua Blue Pants are an essential for any fashion forward mans wardrobe.
                   Made from an electric blue linen cloth these pants give you the best of both worlds of street style & sartorial.
                   Can be dressed up with a well tailored blazer & shirt or dressed down with a t-shirt, perfect for warmer temperatures.",
