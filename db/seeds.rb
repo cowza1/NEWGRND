@@ -654,8 +654,8 @@ file2 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/onli
 file3 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B1412.1017_High_20Risk_20Red_103_2_36f12afb-15b3-4281-a73e-07a0affbbb54_750x.png?v=1655201290")
 
 product19.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-    product19.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-    product19.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+product19.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+product19.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
 
 
@@ -1005,12 +1005,10 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                     )
 
                     file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/2213132_2213118_male_front_1.jpg?v=1661869939")
-                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/2213132_2213118_male_back_1.jpg?v=1661869939")
-                    file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/2213132_front.jpg?v=1661869939")
+                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/2213132_front.jpg?v=1661869939")
 
                     product35.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
                     product35.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                    product35.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
 
                     product36 = Product.create!(

@@ -13,9 +13,11 @@
 
   </head>
 
-  <body>
+  <body class="d-flex flex-column min-vh-100" >
     <%= render "shared/navbar" %>
-    <%= yield %>
+    <article class="flex-grow-1">
+      <%= yield %>
+    </article>
     <%= render "shared/footer" %>
   </body>
 </html>
