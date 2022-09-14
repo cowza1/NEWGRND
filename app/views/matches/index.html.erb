@@ -1,22 +1,23 @@
+<div class="result-page-body">
 <div class="result-page-title">
-<h1>Take at look at your matches!</h1>
+<h1>Take a look at your matches!</h1>
 </div>
+
 <div class="result-container">
-<%@questionnaire.matches.each do |match|%>
- <div class="brand-selector">
- <div class="brand-container">
-        <div class="brand-card">
-            <div class="face face1">
-                <img src="<%=match.designer.image%>">
-            </div>
-            <div class="face face2">
+  <div class="brand-page">
+   <div class="result-brand-container row">
+      <%@questionnaire.matches.each do |match|%>
+        <div class="brand-card col-md-6">
+          <div class="result-brand-image">
+              <img src="<%=match.designer.image%>">
+           </div>
                 <div class="brand-content">
                   <p><%=link_to "Take a closer look", designer_path(match.designer_id)%></p>
-                    <p><%=match.designer.description%></p>
+                  <p><%=match.designer.description%></p>
                 </div>
-            </div>
         </div>
-       </div>
+     <%end%>
     </div>
-  <%end%>
+  </div>
+</div>
 </div>

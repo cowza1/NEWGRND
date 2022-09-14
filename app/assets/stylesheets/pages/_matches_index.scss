@@ -1,136 +1,179 @@
-.result-container {
+// .result-container {
+//   text-align: center;
+//   margin: 20px;
+//   height: fit-content;
+//   background-color: #fff;
+//   height: 700px;
+// }
+
+// .brand-selector {
+//   padding: 0;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-family: consolas;
+//   margin-bottom: 15px
+// }
+
+// .brand-container {
+//   margin: 0 20px;
+//   width: 80%;
+//   position: relative;
+//   display: flex;
+//   justify-content: space-between;
+//   bottom: 80px;
+// }
+
+// .brand-container .brand-card {
+//   position: relative;
+//   cursor: pointer;
+// }
+
+// .brand-container .brand-card .face {
+//   height: fit-content;
+//   transition: 0.5s;
+//   background-position: center;
+//   background-size: contain;
+// }
+
+// .brand-container .brand-card .face h1 {
+//   font-size: 60px;
+//   font-family: 'Antonio', sans-serif;
+// }
+
+// .brand-container .brand-card .face.face1 {
+//   position: relative;
+//   background: #d0cab6;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   z-index: 1;
+//   transform: translateY(100px);
+//   background-position: center;
+//   background-size: contain;
+//   height: 150px;
+// }
+
+
+// .brand-container .brand-card:hover .face.face1 {
+//   background: #F0E68C;
+//   background-position: center;
+//   background-size: contain;
+// }
+
+// .brand-container .brand-card:hover .face.face1>h1 {
+//   font-size: 60px;
+// }
+
+
+// .brand-container .brand-card .face.face1 .brand-content {
+//   opacity: 0.2;
+//   transition: 0.5s;
+//   background-position: center;
+//   background-size: contain;
+// }
+
+// .brand-container .brand-card:hover .face.face1 .brand-content {
+//   opacity: 1;
+//   background-position: center;
+//   background-size: contain;
+// }
+
+// .brand-container .brand-card .face.face1 img {
+//   background-position: center;
+//   background-size: contain;
+//   height: 80px;
+// }
+
+// .brand-container .brand-card .face.face1 .brand-content h3 {
+//   margin: 10px 0 0;
+//   padding: 0;
+//   color: #fff;
+//   text-align: center;
+//   font-size: 1.5em;
+// }
+
+// .brand-container .brand-card .face.face2 {
+//   position: relative;
+//   background: #fff;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   box-sizing: border-box;
+//   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+//   transform: translateY(-50px);
+
+// }
+
+// .brand-container .brand-card:hover .face.face2 {
+//   transform: translateY(100px);
+
+// }
+
+// .brand-container .brand-card .face.face2 .brand-content p {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .brand-container .brand-card .face.face2 .brand-content a {
+//   margin: 15px 0 0;
+//   display: inline-block;
+//   text-decoration: none;
+//   font-weight: 900;
+//   color: #333;
+//   padding: 5px;
+// }
+
+// .brand-container .brand-card .face.face2 .brand-content a:hover {
+//   background: #333;
+//   color: #fff;
+// }
+
+// .result-page-title h1 {
+//   padding-top: 10px;
+//   font-weight: 400;
+//   font-family: 'Bodoni Moda', serif;
+// }
+
+.brand-card {
+  width: 300px;
   text-align: center;
-  margin: 20px;
+  background-color: #F5F5F5;
+  margin-bottom: 20px
+}
+
+.result-brand-image img {
+  width: 100%;
+  margin: auto 0;
+}
+
+.result-brand-container {
+  justify-content: space-evenly;
+}
+
+.result-brand-container {
   height: fit-content;
-  background-color: #fff;
-  height: 700px;
 }
 
-.brand-selector {
-  padding: 0;
+
+.result-brand-image {
+  height: 200px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: consolas;
-  margin-bottom: 15px
 }
 
-.brand-container {
-  margin: 0 20px;
-  width: 80%;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  bottom: 80px;
+.result-page-body {
+  background-color: white;
 }
 
-.brand-container .brand-card {
-  position: relative;
-  cursor: pointer;
-}
-
-.brand-container .brand-card .face {
-  height: fit-content;
-  transition: 0.5s;
-  background-position: center;
-  background-size: contain;
-}
-
-.brand-container .brand-card .face h1 {
-  font-size: 60px;
-  font-family: 'Antonio', sans-serif;
-}
-
-.brand-container .brand-card .face.face1 {
-  position: relative;
-  background: #d0cab6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  transform: translateY(100px);
-  background-position: center;
-  background-size: contain;
-  height: 150px;
-}
-
-
-.brand-container .brand-card:hover .face.face1 {
-  background: #F0E68C;
-  background-position: center;
-  background-size: contain;
-}
-
-.brand-container .brand-card:hover .face.face1>h1 {
-  font-size: 60px;
-}
-
-
-.brand-container .brand-card .face.face1 .brand-content {
-  opacity: 0.2;
-  transition: 0.5s;
-  background-position: center;
-  background-size: contain;
-}
-
-.brand-container .brand-card:hover .face.face1 .brand-content {
-  opacity: 1;
-  background-position: center;
-  background-size: contain;
-}
-
-.brand-container .brand-card .face.face1 img {
-  background-position: center;
-  background-size: contain;
-  height: 80px;
-}
-
-.brand-container .brand-card .face.face1 .brand-content h3 {
-  margin: 10px 0 0;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.brand-container .brand-card .face.face2 {
-  position: relative;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
-  transform: translateY(-50px);
-
-}
-
-.brand-container .brand-card:hover .face.face2 {
-  transform: translateY(100px);
-
-}
-
-.brand-container .brand-card .face.face2 .brand-content p {
-  margin: 0;
-  padding: 0;
-}
-
-.brand-container .brand-card .face.face2 .brand-content a {
-  margin: 15px 0 0;
-  display: inline-block;
+.brand-content a {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
   text-decoration: none;
-  font-weight: 900;
-  color: #333;
-  padding: 5px;
+  margin-bottom: 10px;
 }
 
-.brand-container .brand-card .face.face2 .brand-content a:hover {
-  background: #333;
-  color: #fff;
-}
-
-.result-page-title h1 {
-  padding-top: 10px;
-  font-weight: 400;
-  font-family: 'Bodoni Moda', serif;
+.result-page-title {
+  margin-bottom: 20px;
+  padding: 15px;
 }
