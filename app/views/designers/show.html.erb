@@ -14,9 +14,9 @@
       <img src="<%=p.image%>" alt="">
       <% end %>
       <ul>
-       <li><%=humanized_money_with_symbol p.price%></li>
-       <br>
+       <li><%=p.designer.name.upcase%></li>
        <li><%=p.name%></li>
+       <li><%=humanized_money_with_symbol p.price%></li>
       </ul>
    </div>
   </div>
