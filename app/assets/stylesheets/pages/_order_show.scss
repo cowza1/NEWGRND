@@ -25,11 +25,15 @@
   border-bottom: 1px solid black;
   padding-bottom: 20px;
   width: fit-content;
+  align-items: center
 }
 
 .order-list-info a {
   text-decoration: none;
-  color: grey;
+  color: white;
+  border: 1px solid black;
+  background-color: black;
+  padding: 5px 15px;
 }
 
 .checkout {
@@ -39,9 +43,34 @@
 
 .checkout-info {
   margin-left: 20px;
+  margin-top: 20px;
+  background-color: white;
+  height: fit-content;
+  padding: 16px;
+  width: fit-content;
+  position: sticky;
+  top: 135px;
 }
 
 .order-page {
   width: 90%;
   margin: 0 auto
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-image img {
+  height: 30px;
+  margin-top: 15px
+}
+
+.checkout-info p {
+  margin-left: 6px;
+}
+
+.checkout-info .form .btn {
+  margin-left: 6px;
 }

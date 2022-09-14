@@ -23,8 +23,6 @@ class OrdersController < ApplicationController
     redirect_to new_order_payment_path(order)
   end
 
-  # Order.new if @order = Order.where(state: :complete)
-
   def show
     @order = current_user.orders.find(params[:id])
   end
