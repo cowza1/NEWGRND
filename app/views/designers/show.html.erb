@@ -1,20 +1,20 @@
 <div class="designer-container">
-<img src="<%=@designer.image%>">
-<div class="designer-info">
-<h2><%=@designer.name%></h2>
-<p><%=@designer.description%></P>
-</div>
+  <img src="<%=@designer.image%>">
+  <div class="designer-info">
+    <h2><%=@designer.name%></h2>
+    <p><%=@designer.description%></P>
+  </div>
 </div>
 
 <div class="designer-product-container row">
-<%@designer.product.each do |p|%>
-<div class="designer-product-card col-6 justify-content-center">
-<div class="designer-product-info">
-<%=link_to product_path(p) do %>
-        <img src="<%=p.image%>" alt="">
-        <% end %>
-<p>Price: <%=humanized_money_with_symbol p.price%></p>
-</div>
-</div>
-<%end%>
+  <%@designer.product.each do |p|%>
+  <div class="designer-product-card col-6 justify-content-center">
+    <div class="designer-product-info">
+    <%=link_to product_path(p) do %>
+      <img src="<%=p.image%>" alt="">
+      <% end %>
+      <p>Price: <%=humanized_money_with_symbol p.price%></p>
+   </div>
+  </div>
+  <%end%>
 </div>
