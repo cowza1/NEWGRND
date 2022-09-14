@@ -696,7 +696,7 @@ product21 = Product.create!(
   - BALR. Metal Badge on the front
   - Adjustable backstrap
   - 100% Polyester Woven Oxford",
-  image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B6110.1041_WHITE_20PEPPER_02_750x.png?v=1654860949",
+  image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B6110.1041_WHITE_20PEPPER_03_750x.png?v=1654860949",
   price_cents: 15500,
   designer: designer4
 )
@@ -718,18 +718,16 @@ product22 = Product.create!(
   - Branded reflected patron
   - 100% Polyester, Linning: 100% Nylon, Filling 90% Down, 10% Feather",
 
-  image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567",
+  image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1382.1007.102_128_750x.jpg?v=1659529492",
   price_cents: 35500,
 
   designer: designer4
 )
 
 file1 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1382.1007.102_128_750x.jpg?v=1659529492")
-file2 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567")
 file3 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1382.1007.102_127_750x.jpg?v=1659529492")
 
 product22.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-product22.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
 product22.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
 
@@ -740,7 +738,7 @@ product23 = Product.create!(
   - Straight Fit
   - Satin Logo on the front Round neck
   - 88% cotton, 12% polyester (350 g/m2 brushback )",
-  image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567",
+  image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/B1262.1035_GreyMelange_101_1_750x.jpg?v=1660210106",
   price_cents: 35500,
   designer: designer4
 )
@@ -759,7 +757,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
           description: "
           Dusty Blue Signature Core Embroidered Hoody. Slim fit.
           Interlock jersey" ,
-          image:  "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/Shopify-B1412.1016.520_101_1100x.jpg?v=1659531567" ,
+          image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRH1-002-452flatfront_900x.jpg?v=1643644314" ,
           price_cents: 7000,
           designer: designer5
         )
@@ -809,7 +807,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                   - Side Entry Pockets
                   - Straight Hem
                   - Prevu Branding" ,
-                  image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=16613515877" ,
+                  image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRH2-022-258modelfullfront_f499f7a0-c9a5-4bcd-8899-d368d4750fb6_900x.jpg?v=1650360143" ,
                   price_cents: 13000,
                   designer: designer5
                 )
@@ -834,7 +832,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       - Straight Hem
                       Button Cuffs" ,
 
-                      image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=16613515877" ,
+                      image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-099-813flatback_900x.jpg?v=1661350980" ,
                       price_cents: 15000,
                       designer: designer5
                     )
@@ -878,7 +876,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       A tribute to Amsterdam, the city Ajax calls home. This comfortable hoody is part of our collaboration with adidas.
                       The large embroidery on the front is a remixes of Amsterdam's coat of arms in the Pan-African colour way, to reflect the city's diverse culture. The hoody is a soft French terry which makes this a comfortable collectible item." ,
 
-                      image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/191022_PREVU_STUDIO1_E2369_900x.jpg?v=1639046330" ,
+                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_09_1122.jpg?v=1662631312" ,
                       price_cents: 11000,
 
                       designer: designer7
@@ -923,7 +921,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       fits hip-length and comes with branded snapbuttons,
                       a classic collar and slanted welt pockets.
                         Daily Paper emblem embroideries decorate front and back alongside an artwork representing the 3 founders, symbolised by 3 animals." ,
-                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899" ,
+                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/BLACKNEVINJACKETMENFRONT.jpg?v=1662643970" ,
                       price_cents: 43500,
 
                       designer: designer7,
@@ -945,7 +943,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       The Nakato hoody is made from soft, brushed fleece and comes in two seasonal colourways.
                       The style is equipped with a drawstring hood and a classic kangaroo pocket.
                       A special Daily Paper artwork featuring a shield logo and the 3 animals that represent the 3 founders decorates the front of the hoodie." ,
-                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899" ,
+                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-hoody-front_0fe25917-8806-44e7-b182-8eda6f35f111.jpg?v=1662640856" ,
                       price_cents: 11500,
 
                       designer: designer7,
@@ -981,7 +979,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                       description: "
                       Stay cosy with our seasonal beanie styles. The Neno Beanie is made from a ribbed knit and has a single fold. A recycled microfibre patch with the Daily Paper logo decorates the forehead. Available in two seasonal colourways. Pair with a matching Nescarf for a complete look.",
-                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
+                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nenohat-back.jpg?v=1662467910" ,
                       price_cents: 4500,
 
                       designer: designer7,
@@ -1006,7 +1004,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       Designed with an all-over Protect Paradise print, the Povan shirt is made from a lightweight
                       cotton fabric with a button-up closure in white and a classic camp collar.
                         A Protect Paradise flower print decorates the back. Available in two different colourways.",
-                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
+                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/2213132_2213118_male_front_1.jpg?v=1661869939" ,
                       price_cents: 12000,
 
                       designer: designer7,
@@ -1035,7 +1033,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                       Composition: 90% Cotton, 10% Polyester.
 
                       Made in Europe.",
-                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
+                      image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/hoodie-back-1_cdca70fd-1c5e-47bd-905a-4a945dbd3d45_832x1024.jpg?v=1648635814" ,
                       price_cents: 10500,
 
                       designer: designer8,
@@ -1180,7 +1178,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                       description: "
                       THIS HAT IS INSPIRED BY STRIP-WOVEN CLOTH FROM CÔTE D'IVOIRE, CIRCA 1960S. IT FEATURES A BROAD STRIPE PATTERN IN BLUE AND BURGUNDY AND AN EMBROIDERED BODE LOGO.",
-                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225" ,
+                      image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__KILLINGTONSTRIPEHAT_031_720x.jpg?v=1654880661" ,
                       price_cents: 27000,
 
 
@@ -1340,14 +1338,15 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                           - LEATHER SOLE
                           - MADE IN ITALY
 ",
-                          image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__BLACKCOUNTYCLAIRESHOE_32_720x.jpg?v=1652474478" ,
+                          image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_041_720x.jpg?v=1652474473" ,
                           price_cents: 80500,
+
 
                           designer: designer9,
                         )
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_041_720x.jpg?v=1652474473")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_04_720x.jpg?v=1652474473")
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_04_720x.jpg?v=1652474473")
+                        file2= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__BLACKCOUNTYCLAIRESHOE_32_720x.jpg?v=1652474478")
                         file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_21_720x.jpg?v=1652474481")
 
 
@@ -1376,26 +1375,7 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                         product49.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
                         product49.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                        product50 = Product.create!(
-                          name: "PERFORATED LEATHER TRACK JACKET
-                          ",
 
-                          description: "
-                          Cream coloured Leather Jacket",
-                          image:  "https://cdn.shopify.com/s/files/1/0020/3361/4892/products/016_Front_823x.jpg?v=1656509523" ,
-                          price_cents: 132500,
-
-                          designer: designer10,
-                        )
-
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/perforated-leather-jacket-lookbook-01_823x.jpg?v=1656509523")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/016_Back_823x.jpg?v=16565010013")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_21_720x.jpg?v=1652474481")
-
-
-                        product50.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product50.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product50.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                         product51 = Product.create!(
                           name: "MID WASH JEANS
@@ -1665,57 +1645,9 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                         product61.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
                         product61.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                        product62 = Product.create!(
-                          name: "Dispatch Jacket
 
 
 
-
-                          ",
-
-                          description: "
-                          This unisex jacket is made of dry silk, a classic Lemaire fabric with a soft hand and tonic texture. This Lemaire staple is worn loose, with a convertible shawl collar and matching belt to adjust its volume at the waist. The shoulders are long and the sleeves are slightly ironed.
-
-",
-                          image:  "https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_1_1600x.jpg?v=1655740264" ,
-                          price_cents: 84000,
-
-                          designer: designer11,
-                        )
-
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_2_1600x.jpg?v=1655739890")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_3_1600x.jpg?v=1655740411")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_4_1600x.jpg?v=1655740195")
-
-
-                        product62.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product62.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product62.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
-
-                        product63 = Product.create!(
-                          name: "Dispatch Jacket
-
-
-                          ",
-
-                          description: "
-                          This unisex jacket is made of dry silk, a classic Lemaire fabric with a soft hand and tonic texture. This Lemaire staple is worn loose, with a convertible shawl collar and matching belt to adjust its volume at the waist. The shoulders are long and the sleeves are slightly ironed.
-
-",
-                          image:  "https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_1_1600x.jpg?v=1655740264" ,
-                          price_cents: 84000,
-
-                          designer: designer11,
-                        )
-
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_2_1600x.jpg?v=1655739890")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_3_1600x.jpg?v=1655740411")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0267/6051/1530/products/JA146_LF208_BR475_4_1600x.jpg?v=1655740195")
-
-
-                        product63.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product63.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product63.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                         product64 = Product.create!(
                           name: "Seamless Jeans
@@ -2095,36 +2027,6 @@ Fully lined, the panel cut and side pockets give these shorts a chic feel, simpl
                         product76.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
                         product76.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                        product77 = Product.create!(
-                          name: "MILES HIGH WAIST SHORTS - BLACK
-
-
-
-
-
-                          ",
-
-                          description: "
-                          Every wardrobe needs a pair of naturally classic shorts that pair with anything. Constructed of a cotton-linen blend with herringbone weave suiting fabric and concealed back zipper, you can easily wear these shorts for a picnic or add a blazer for evening out on the town with friends.
-
-Fully lined, the panel cut and side pockets give these shorts a chic feel, simplistic details that make this garment so versatile. The high-waist and flattering fit are just the cherries on top, so you’ll not only feel good wearing them, you’ll look amazing too.
-
-
-                          .",
-                          image:  "https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M01styling10_0bf1ff4e-c8d1-4029-8e67-1db6bb567dbb.jpg?v=1638204215" ,
-                          price_cents: 4600,
-
-                          designer: designer14,
-                        )
-
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012a.jpg?v=1638204215")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012b_a01e2357-8555-403d-8ead-87a11e4fc8db.jpg?v=1638204215")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0608/2717/3076/products/M012c.jpg?v=1638204212")
-
-
-                        product77.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product77.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product77.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                         product78 = Product.create!(
                           name: "Daffodil & lily-print knot-front silk day dress
@@ -2409,7 +2311,7 @@ Fully lined, the panel cut and side pockets give these shorts a chic feel, simpl
                           Relaxed silhouette.
                           Embroidered arrow logo at back.
                                                                               ",
-                          image:  "https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/640w/products/2481/11989/USW322082_NATURAL_01__16028.1656465570.jpg?c=1" ,
+                          image:  "https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2481/11984/USW322082_NATURAL_02__39548.1656465569.jpg?c=1" ,
                           price_cents: 12999,
 
                           designer: designer16,
@@ -2540,7 +2442,7 @@ Featuring the national flag of India, the top panel is of Saffron colour reflect
                         product91.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                         product92 = Product.create!(
-                          name: "Tosin Tailored Jacket
+                          name: "Cotton jacquard zip cardigan
 
 
 
@@ -2548,18 +2450,20 @@ Featuring the national flag of India, the top panel is of Saffron colour reflect
                           ",
 
                           description: "
-                          The Tosin jacket continues the signature wave shape for AW22, the contrasting wave panels are finished with a clean line of piping. Cut from a glitter pinstripe fabric, and featuring a double-breasted button placket and classic three-pocket layout, it is softly tailored for maximum comfort and wearability.
+                          Made in Italy from select 100% organically grown cotton yarn, this zip-front cardigan is part of the Ahluwalia &PaulSmith capsule collection.
+
+This knitwear design is taken from the all over shirt print and translated into a jacquard. With placement sleeve stripes and collar it also references the cycle jerseys from the original inspiration. The zip through cardigan style is a hybrid of vintage knitwear and sportswear references.
 
 ",
-                          image:  "https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_4059_768x.jpg?v=1661126021" ,
-                          price_cents: 14500,
+                          image:  "https://cdn.shopify.com/s/files/1/0537/9761/7859/products/M1R-153X-H01771-19_1_768x.jpg?v=1649173063" ,
+                          price_cents: 59500,
 
                           designer: designer17,
                         )
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/Tosinblazer_768x.jpg?v=1661126021")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_4051_768x.jpg?v=1661126015")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_4052_768x.jpg?v=1661126015")
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/M1R-153X-H01771-19_10_768x.jpg?v=1649173063")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/M1R-153X-H01771-19_30_768x.jpg?v=1649173062")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/M1R-153X-H01771-19_20_768x.jpg?v=1649173062")
 
 
 
@@ -2569,7 +2473,7 @@ Featuring the national flag of India, the top panel is of Saffron colour reflect
                         product92.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                         product93 = Product.create!(
-                          name: "Rani Cropped Polo Vest
+                          name: "Kike Track Pant
 
 
 
@@ -2577,19 +2481,20 @@ Featuring the national flag of India, the top panel is of Saffron colour reflect
                           ",
 
                           description: "
-                          Cut from 100% organic cotton pique, the Rani cropped polo vest utilises artisanal beadwork to accent the custom-printed cotton panels in bright shades of blue and green. The polo also features a contrasting collar, ribbed sleeves and a zip-up front fastening.
+                          The Kike Track Pants are cut for a relaxed fit with an adjustable waistband and contrast piped panel seams. Deadstock materials have been combined to construct the track pants shell, with full inner lining.
+
 
 
 ",
-                          image:  "https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2704_768x.jpg?v=1656069451" ,
+                          image:  "https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2425_768x.jpg?v=1656070082" ,
                           price_cents: 43000,
 
                           designer: designer17,
                         )
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/Ranicroppedpolovest_768x.jpg?v=1656610698")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2688_768x.jpg?v=1656610698")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2690_768x.jpg?v=1656610698")
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2425_768x.jpg?v=1656070082")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/KikeTrackPant_768x.jpg?v=1656612217")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0537/9761/7859/products/15JAN22_Ahluwalia_AW22c_2422_768x.jpg?v=1656612217")
 
 
 
@@ -2912,7 +2817,7 @@ To minimise wastage of fabric and in a bid to be more sustainable, we will not b
                         product103.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                         product104 = Product.create!(
-                          name: "Black Andy Split Strap Bra
+                          name: "Jasmine BioCompressive Tommy Tank
 
 
 
@@ -2920,17 +2825,17 @@ To minimise wastage of fabric and in a bid to be more sustainable, we will not b
                           ",
 
                           description: "
-                          A classic compressive sports bra with a support band and split back straps for better breathability and easier movin’ and groovin’.",
-                          image:  "https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_2.jpg?v=1660595406" ,
+                          A sweat-wicking, medium-support workout tank that diverts water bottles from landfills and combats microplastic pollution. Ooh.",
+                          image:  "https://cdn.shopify.com/s/files/1/0019/2217/0943/products/1081_BioTommyTank_JasmineGreen_1.jpg?v=1660595375" ,
                           price_cents: 9200,
 
 
                           designer: designer19,
                         )
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_1.jpg?v=1660595406")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_3.jpg?v=1660595406")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/4062_BioSportSkort_Cabaret_4.jpg?v=1660595406")
+                        file1= URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/1081_BioTommyTank_JasmineGreen_Front.jpg?v=1660595375")
+                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/1081_BioTommyTank_JasmineGreen_2.jpg?v=1660595375")
+                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0019/2217/0943/products/1081_BioTommyTank_JasmineGreen_3.jpg?v=1660595375")
 
 
 
