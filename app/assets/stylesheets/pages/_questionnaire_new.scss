@@ -5,7 +5,7 @@
 
 #new_questionnaire {
   border: 3px solid black;
-  box-shadow: 5px 10px;
+  box-shadow: 5px 3px;
   background-color: whitesmoke;
   margin-bottom: 20px;
 }
@@ -91,7 +91,7 @@
 
 .style-selector:checked+label {
   opacity: 1;
-  border: 5px solid #4770C4;
+  border: 3px solid #C0CEDB;
 }
 
 .form-check-input[type="radio"] {
@@ -164,4 +164,10 @@
 
 .form-control {
   border: 1px solid black;
+}
+
+#q-btn {
+  background-color: black;
+  color: white;
+  margin: 20px 0;
 }

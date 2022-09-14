@@ -13,7 +13,11 @@
     <%=link_to product_path(p) do %>
       <img src="<%=p.image%>" alt="">
       <% end %>
-      <p>Price: <%=humanized_money_with_symbol p.price%></p>
+      <ul>
+       <li><%=humanized_money_with_symbol p.price%></li>
+       <br>
+       <li><%=p.name%></li>
+      </ul>
    </div>
   </div>
   <%end%>
