@@ -34,22 +34,21 @@
           <li class="nav-item">
             <i class="fa-regular fa-heart"></i>
           </li>
-
-          <li class="nav-item">
-            <i class="fa-solid fa-bag-shopping"></i>
-          </li>
-
-          <li class="nav-item dropdown">
+              <%=link_to order_path(@order) do%>
+              <li class="nav-item">
+              <i class="fa-solid fa-bag-shopping"></i>
+              </li>
+              <% end %>
+            <li class="nav-item dropdown">
             <i class="fa-regular fa-user"></i><%= image_tag "", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
 
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
               <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
             </div>
 
           </li>
-        <% else %>
+
+           <% else %>
           <li class="nav-item">
             <%= link_to "Login", new_user_session_path, class: "nav-link" %>
           </li>
@@ -65,5 +64,5 @@
   <h1><%=link_to "WOMENS", womens_products_path%></h1>
   <h1><%=link_to "BRANDS", designers_path%></h1>
   <h1><%=link_to"DISCOVER", new_questionnaire_path%></h1>
-  
+
 </div>
