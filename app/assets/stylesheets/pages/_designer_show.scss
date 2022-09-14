@@ -27,9 +27,13 @@
   margin: 0 20px
 }
 
-.designer-product-info p {
+.designer-product-info li {
   margin: auto 0;
-  border-bottom: 1px solid black;
+  list-style: none
+}
+
+.designer-product-info ul {
+  margin: auto;
 }
 
 .designer-product-info img {
