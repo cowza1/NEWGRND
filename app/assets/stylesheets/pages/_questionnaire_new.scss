@@ -91,7 +91,8 @@
 
 .style-selector:checked+label {
   opacity: 1;
-  border: 3px solid #C0CEDB;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 4px 4px black;
 }
 
 .form-check-input[type="radio"] {
@@ -105,7 +106,7 @@
 #questionnaire_style_streetwear+label {
   height: 300px;
   width: 150px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://res.cloudinary.com/dpt3b8spa/image/upload/v1662479453/fashion/Off-White_Fall_2019_Menswear_Fashion_Show_u2mq7m.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("https://res.cloudinary.com/dpt3b8spa/image/upload/v1662479453/fashion/Off-White_Fall_2019_Menswear_Fashion_Show_u2mq7m.jpg");
   background-size: cover;
   background-position: center
 }
@@ -113,7 +114,7 @@
 #questionnaire_style_sportswear+label {
   height: 300px;
   width: 150px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://res.cloudinary.com/dpt3b8spa/image/upload/v1662479453/fashion/Gosha_Rubchinskiy_Fall_2018_Menswear_Fashion_Show_rslcar.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://res.cloudinary.com/dpt3b8spa/image/upload/v1662479453/fashion/Gosha_Rubchinskiy_Fall_2018_Menswear_Fashion_Show_rslcar.jpg");
   background-size: cover;
   background-position: center
 }
@@ -121,7 +122,7 @@
 #questionnaire_style_smartwear+label {
   height: 300px;
   width: 150px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://res.cloudinary.com/dpt3b8spa/image/upload/v1662479453/fashion/Light_Grey_Stripe_Lazio_Suit___Pure_Tropical_Wool_Three_Piece_qd5xsa.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://res.cloudinary.com/dpt3b8spa/image/upload/v1662479453/fashion/Light_Grey_Stripe_Lazio_Suit___Pure_Tropical_Wool_Three_Piece_qd5xsa.png");
   background-size: cover;
   background-position: center
 }
@@ -137,7 +138,7 @@
 #questionnaire_style_preppy+label {
   height: 300px;
   width: 150px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://res.cloudinary.com/dpt3b8spa/image/upload/v1662481870/fashion/Polo_Ralph_Lauren_Fall_2020_Menswear_Collection_a5ri1f.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("https://res.cloudinary.com/dpt3b8spa/image/upload/v1662481870/fashion/Polo_Ralph_Lauren_Fall_2020_Menswear_Collection_a5ri1f.jpg");
   background-size: cover;
   background-position: center
 }
@@ -145,7 +146,7 @@
 #questionnaire_style_avant-garde+label {
   height: 300px;
   width: 150px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://res.cloudinary.com/dpt3b8spa/image/upload/v1663089126/fashion/Rick_Owens_Men_s_SS18_-_Paris_qh79j9.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://res.cloudinary.com/dpt3b8spa/image/upload/v1663089126/fashion/Rick_Owens_Men_s_SS18_-_Paris_qh79j9.jpg");
   background-size: cover;
   background-position: center;
 }
