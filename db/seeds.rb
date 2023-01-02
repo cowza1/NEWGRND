@@ -746,51 +746,51 @@ product23.photos.attach(io: file2 , filename: "nes.png", content_type: "image/pn
 product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
 
-        product24 = Product.create!(
-          name: "Hoody" ,
-          description: "
-          Dusty Blue Signature Core Embroidered Hoody. Slim fit.
-          Interlock jersey" ,
-          image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRH1-002-452flatfront_900x.jpg?v=1643644314" ,
-          price_cents: 7000,
-          designer: designer5
-        )
+        # product24 = Product.create!(
+        #   name: "Hoody" ,
+        #   description: "
+        #   Dusty Blue Signature Core Embroidered Hoody. Slim fit.
+        #   Interlock jersey" ,
+        #   image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRH1-002-452flatfront_900x.jpg?v=1643644314" ,
+        #   price_cents: 7000,
+        #   designer: designer5
+        # )
 
-        file1= URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH1-002-452flatfront_900x.jpg?v=1643644314")
-        file2 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH1-002-452modelfront_900x.jpg?v=1643987328")
-        file3 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH1-002-452modelback_900x.jpg?v=1643987328")
+        # file1= URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH1-002-452flatfront_900x.jpg?v=1643644314")
+        # file2 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH1-002-452modelfront_900x.jpg?v=1643987328")
+        # file3 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRH1-002-452modelback_900x.jpg?v=1643987328")
 
-        product24.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-            product24.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-            product24.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+        # product24.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+        #     product24.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+        #     product24.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-            product25 = Product.create!(
-              name: "Black Maurizio SS Shirt " ,
-              description: "
-              - Regular Fit
-              - Printed Woven
-              - Short Sleeve
-              - Button Through Front
-              - Revere Collar
-              - Straight Hem
-              - Button Cuffs" ,
-              image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=16613515877" ,
+            # product25 = Product.create!(
+            #   name: "Black Maurizio SS Shirt " ,
+            #   description: "
+            #   - Regular Fit
+            #   - Printed Woven
+            #   - Short Sleeve
+            #   - Button Through Front
+            #   - Revere Collar
+            #   - Straight Hem
+            #   - Button Cuffs" ,
+            #   image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=16613515877" ,
 
-              price_cents: 13000,
-
-
+            #   price_cents: 13000,
 
 
-              designer: designer5
-            )
 
-            file1= URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=1661351587")
-            file2 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/Maurizo_SS_front2_900x.jpg?v=1661351587")
-            file3 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/Maurizo_SS_back2_900x.jpg?v=1661351587")
 
-            product25.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                product25.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                product25.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+            #   designer: designer5
+            # )
+
+            # file1= URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-096-010flatfront_900x.jpg?v=1661351587")
+            # file2 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/Maurizo_SS_front2_900x.jpg?v=1661351587")
+            # file3 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/Maurizo_SS_back2_900x.jpg?v=1661351587")
+
+            # product25.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+            #     product25.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+            #     product25.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                 product26 = Product.create!(
                   name: "Brown Antrim Trousers " ,
@@ -814,30 +814,30 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                     product26.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
                     product26.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                    product27 = Product.create!(
-                      name: "Orange Hutton LS Shirt",
+                    # product27 = Product.create!(
+                    #   name: "Orange Hutton LS Shirt",
 
-                      description: "
-                      - Regular Fit
-                      - Printed Woven
-                      - Long Sleeve
-                      - Button Through Front
-                      - Revere Collar
-                      - Straight Hem
-                      Button Cuffs" ,
+                    #   description: "
+                    #   - Regular Fit
+                    #   - Printed Woven
+                    #   - Long Sleeve
+                    #   - Button Through Front
+                    #   - Revere Collar
+                    #   - Straight Hem
+                    #   Button Cuffs" ,
 
-                      image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-099-813flatback_900x.jpg?v=1661350980" ,
-                      price_cents: 15000,
-                      designer: designer5
-                    )
+                    #   image:  "https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-099-813flatback_900x.jpg?v=1661350980" ,
+                    #   price_cents: 15000,
+                    #   designer: designer5
+                    # )
 
-                    file1= URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-099-813flatback_900x.jpg?v=1661350980")
-                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/Hutton_Ls_shirt_900x.jpg?v=1661350980")
-                    file3 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/Hutton_Ls_shirt_detail_900x.jpg?v=1661350980")
+                    # file1= URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/PRI2-099-813flatback_900x.jpg?v=1661350980")
+                    # file2 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/Hutton_Ls_shirt_900x.jpg?v=1661350980")
+                    # file3 = URI.open("https://cdn.shopify.com/s/files/1/0685/9051/products/Hutton_Ls_shirt_detail_900x.jpg?v=1661350980")
 
-                    product27.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                    product27.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                    product27.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                    # product27.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    # product27.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                    # product27.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                     product28 = Product.create!(
                       name: "White Annecy Leather Shoes",
@@ -901,11 +901,11 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                     file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_798.jpg?v=1662559899")
                     file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/20220803_DailyPaper_Ajax_Adidas_Ecom_06_766.jpg?v=1662559899")
-                    file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/Pre-Match-Jersey-Front.jpg?v=1662559899")
+                    # file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/Pre-Match-Jersey-Front.jpg?v=1662559899")
 
                     product30.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
                     product30.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                    product30.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                    # product30.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                     product31 = Product.create!(
                       name: "Black Nevin Jacket",
@@ -930,25 +930,22 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                     product31.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
 
-                    product32 = Product.create!(
-                      name: "Fiery Brick Red Nakato Hoody",
+                    # product32 = Product.create!(
+                    #   name: "Fiery Brick Red Nakato Hoody",
 
-                      description: "
-                      The Nakato hoody is made from soft, brushed fleece and comes in two seasonal colourways.
-                      The style is equipped with a drawstring hood and a classic kangaroo pocket.
-                      A special Daily Paper artwork featuring a shield logo and the 3 animals that represent the 3 founders decorates the front of the hoodie." ,
-                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-hoody-front_0fe25917-8806-44e7-b182-8eda6f35f111.jpg?v=1662640856" ,
-                      price_cents: 11500,
+                    #   description: "
+                    #   The Nakato hoody is made from soft, brushed fleece and comes in two seasonal colourways.
+                    #   The style is equipped with a drawstring hood and a classic kangaroo pocket.
+                    #   A special Daily Paper artwork featuring a shield logo and the 3 animals that represent the 3 founders decorates the front of the hoodie." ,
+                    #   image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-hoody-front_0fe25917-8806-44e7-b182-8eda6f35f111.jpg?v=1662640856" ,
+                    #   price_cents: 11500,
 
-                      designer: designer7,
-                    )
+                    #   designer: designer7,
+                    # )
 
-                    file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-hoody-front_0fe25917-8806-44e7-b182-8eda6f35f111.jpg?v=1662640856")
-                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-hoody-back_c1f36be9-2dad-4deb-9cae-dad0513eb508.jpg?v=1662640856")
+                    # file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-hoody-front_0fe25917-8806-44e7-b182-8eda6f35f111.jpg?v=1662640856")
+                    # file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-hoody-back_c1f36be9-2dad-4deb-9cae-dad0513eb508.jpg?v=1662640856")
 
-
-                    product32.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                    product32.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
 
                     product33 = Product.create!(
                       name: "White Nakato T-Shirt",
@@ -968,25 +965,25 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                     product33.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
                     product33.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                    product34 = Product.create!(
-                      name: "Black Neno Beanie",
+                    # product34 = Product.create!(
+                    #   name: "Black Neno Beanie",
 
-                      description: "
-                      Stay cosy with our seasonal beanie styles. The Neno Beanie is made from a ribbed knit and has a single fold. A recycled microfibre patch with the Daily Paper logo decorates the forehead. Available in two seasonal colourways. Pair with a matching Nescarf for a complete look.",
-                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nenohat-back.jpg?v=1662467910" ,
-                      price_cents: 4500,
+                    #   description: "
+                    #   Stay cosy with our seasonal beanie styles. The Neno Beanie is made from a ribbed knit and has a single fold. A recycled microfibre patch with the Daily Paper logo decorates the forehead. Available in two seasonal colourways. Pair with a matching Nescarf for a complete look.",
+                    #   image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nenohat-back.jpg?v=1662467910" ,
+                    #   price_cents: 4500,
 
-                      designer: designer7,
-                    )
-                    puts "product 34 created"
+                    #   designer: designer7,
+                    # )
+                    # puts "product 34 created"
 
-                    file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/neno-hat-front.jpg?v=1662467910")
-                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nenohat-back.jpg?v=1662467910")
-                    file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/NENOBEANIEDETAIL.jpg?v=1662467910")
+                    # file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/neno-hat-front.jpg?v=1662467910")
+                    # file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nenohat-back.jpg?v=1662467910")
+                    # file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/NENOBEANIEDETAIL.jpg?v=1662467910")
 
-                    product34.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                    product34.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                    product34.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                    # product34.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    # product34.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                    # product34.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
 
 
@@ -1005,10 +1002,10 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                     )
 
                     file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/2213132_2213118_male_front_1.jpg?v=1661869939")
-                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/2213132_front.jpg?v=1661869939")
+                    # file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/2213132_front.jpg?v=1661869939")
 
                     product35.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                    product35.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                    # product35.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
 
 
                     product36 = Product.create!(
@@ -1214,82 +1211,82 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                         product42.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
                         #product42.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                        product43 = Product.create!(
-                          name: "Mosaic Shirt",
+#                         product43 = Product.create!(
+#                           name: "Mosaic Shirt",
 
 
-                          description: "
-                          THIS SHORT-SLEEVE SHIRT IS INSPIRED BY A DOMESTIC TABLECLOTH, CIRCA 1940S.
-                          THIS IS A HISTORICAL REPRODUCTION OF A TABLECLOTH-EMBROIDERED MOSAIC MOTIF THAT IS COMMONLY SEEN IN VARIOUS EASTERN EUROPEAN CULTURES.
-",
-                          image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__EASTERNMOSAICSSSHIRT_02_720x.jpg?v=1652454575" ,
-                          price_cents: 65000,
+#                           description: "
+#                           THIS SHORT-SLEEVE SHIRT IS INSPIRED BY A DOMESTIC TABLECLOTH, CIRCA 1940S.
+#                           THIS IS A HISTORICAL REPRODUCTION OF A TABLECLOTH-EMBROIDERED MOSAIC MOTIF THAT IS COMMONLY SEEN IN VARIOUS EASTERN EUROPEAN CULTURES.
+# ",
+#                           image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__EASTERNMOSAICSSSHIRT_02_720x.jpg?v=1652454575" ,
+#                           price_cents: 65000,
 
 
-                          designer: designer9,
-                        )
+#                           designer: designer9,
+#                         )
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__EASTERNMOSAICSSSHIRT_02_720x.jpg?v=1652454575")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__LOOK35_03_720x.jpg?v=1654203134")
-
-
-
-                        product43.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product43.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        #product43.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
-
-                        product44 = Product.create!(
-                          name: "Double Breasted Cardigan - Black
-                          ",
-
-                          description: "
-                          THIS DOUBLE-BREASTED CARDIGAN IS INSPIRED BY CHILDREN'S CLOTHING, CIRCA 1960S-1970S. THE ORIGINAL TEXTILE WAS MADE FROM A POLYESTER BLEND FOR NOVELTY CHILDREN’S CLOTHING. WE REIMAGINED THE FABRIC IN MORE DESIRABLE COTTON.
-
-                          -CLASSIC FIT
-                          -100% COTTON
-                          -MADE IN PERU
-                          -DRY CLEAN ONLY.",
-                          image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__CROCHETTOTEBLACK_0081_720x.jpg?v=1659041472" ,
-                          price_cents: 10500,
-
-                          designer: designer9,
-                        )
-
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__DOUBLEBREASTEDCARDIGANBLACK_014_720x.jpg?v=1659041472")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__CROCHETTOTEBLACK_0081_720x.jpg?v=1659041472")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__DOUBLEBREASTEDCARDIGANBLACK_0161_2fd5c78d-9e81-4a00-b2c2-399bdcd24879_720x.jpg?v=1659041472")
+#                         file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__EASTERNMOSAICSSSHIRT_02_720x.jpg?v=1652454575")
+#                         file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__LOOK35_03_720x.jpg?v=1654203134")
 
 
-                        product44.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product44.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product44.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                        product45 = Product.create!(
-                          name: "Circle Embroidered Jacket
-                          ",
+#                         product43.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+#                         product43.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+#                         #product43.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                          description: "
-                          THIS JACKET IS INSPIRED BY BEDDING, CIRCA 1940S. THIS HEAVILY EMBROIDERED STYLE FEATURES A CROSS-STITCH GRID, SATIN STITCH, AND CHAIN STITCH CIRCLES.
+                        # product44 = Product.create!(
+                        #   name: "Double Breasted Cardigan - Black
+                        #   ",
 
-                          - OVERSIZED FIT
-                          - FIVE FRONT BUTTONS
-                          - THREE FRONT POCKETS
-                          - MADE IN INDIA
-                          - DRY CLEAN ON",
-                          image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__LOOK16_03_720x.jpg?v=1654196707" ,
-                          price_cents: 130000,
+                        #   description: "
+                        #   THIS DOUBLE-BREASTED CARDIGAN IS INSPIRED BY CHILDREN'S CLOTHING, CIRCA 1960S-1970S. THE ORIGINAL TEXTILE WAS MADE FROM A POLYESTER BLEND FOR NOVELTY CHILDREN’S CLOTHING. WE REIMAGINED THE FABRIC IN MORE DESIRABLE COTTON.
 
-                          designer: designer9,
-                        )
+                        #   -CLASSIC FIT
+                        #   -100% COTTON
+                        #   -MADE IN PERU
+                        #   -DRY CLEAN ONLY.",
+                        #   image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__CROCHETTOTEBLACK_0081_720x.jpg?v=1659041472" ,
+                        #   price_cents: 10500,
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__CIRCLEEMBROIDEREDJACKET_011_720x.jpg?v=1652455385")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__LOOK16_01_720x.jpg?v=1654196711")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__CIRCLEEMBROIDEREDJACKET_031_720x.jpg?v=1654196711")
+                        #   designer: designer9,
+                        # )
+
+                        # file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__DOUBLEBREASTEDCARDIGANBLACK_014_720x.jpg?v=1659041472")
+                        # file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__CROCHETTOTEBLACK_0081_720x.jpg?v=1659041472")
+                        # file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__DOUBLEBREASTEDCARDIGANBLACK_0161_2fd5c78d-9e81-4a00-b2c2-399bdcd24879_720x.jpg?v=1659041472")
 
 
-                        product45.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product45.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product45.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                        # product44.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        # product44.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        # product44.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+
+                        # product45 = Product.create!(
+                        #   name: "Circle Embroidered Jacket
+                        #   ",
+
+                        #   description: "
+                        #   THIS JACKET IS INSPIRED BY BEDDING, CIRCA 1940S. THIS HEAVILY EMBROIDERED STYLE FEATURES A CROSS-STITCH GRID, SATIN STITCH, AND CHAIN STITCH CIRCLES.
+
+                        #   - OVERSIZED FIT
+                        #   - FIVE FRONT BUTTONS
+                        #   - THREE FRONT POCKETS
+                        #   - MADE IN INDIA
+                        #   - DRY CLEAN ON",
+                        #   image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__LOOK16_03_720x.jpg?v=1654196707" ,
+                        #   price_cents: 130000,
+
+                        #   designer: designer9,
+                        # )
+
+                        # file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__CIRCLEEMBROIDEREDJACKET_011_720x.jpg?v=1652455385")
+                        # file2 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/PF22ECOM_MODEL__LOOK16_01_720x.jpg?v=1654196711")
+                        # file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__CIRCLEEMBROIDEREDJACKET_031_720x.jpg?v=1654196711")
+
+
+                        # product45.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        # product45.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        # product45.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                         product46 = Product.create!(
                           name: "Purple Gym Track Pants
@@ -1369,27 +1366,27 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
 
 
-                        product51 = Product.create!(
-                          name: "MID WASH JEANS
+                        # product51 = Product.create!(
+                        #   name: "MID WASH JEANS
 
-                          ",
+                        #   ",
 
-                          description: "
-                          Jeans",
-                          image:  "https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26660copy_823x.jpg?v=1645458459" ,
-                          price_cents: 59000,
+                        #   description: "
+                        #   Jeans",
+                        #   image:  "https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26660copy_823x.jpg?v=1645458459" ,
+                        #   price_cents: 59000,
 
-                          designer: designer10,
-                        )
+                        #   designer: designer10,
+                        # )
 
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26662copy_823x.jpg?v=1645458459")
-                        file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26666copy_823x.jpg?v=1645458459")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26671copy_2_823x.jpg?v=1645459358")
+                        # file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26662copy_823x.jpg?v=1645458459")
+                        # file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26666copy_823x.jpg?v=1645458459")
+                        # file3 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/RAWDESIGN26671copy_2_823x.jpg?v=1645459358")
 
 
-                        product51.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product51.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product51.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                        # product51.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        # product51.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        # product51.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                         product52 = Product.create!(
                           name: "Hand Drawn Print T-Shirt
@@ -2318,37 +2315,37 @@ Fully lined, the panel cut and side pockets give these shorts a chic feel, simpl
                         product87.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
                         product87.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                        product88 = Product.create!(
-                          name: "VALLEY OPHELIA KNIT TOP
+                        # product88 = Product.create!(
+                        #   name: "VALLEY OPHELIA KNIT TOP
 
 
 
 
 
-                          ",
+                        #   ",
 
-                          description: "
-                          Play hard to get in our Valley Ophelia Knit Top..
+                        #   description: "
+                        #   Play hard to get in our Valley Ophelia Knit Top..
 
-                          Knitted striped scoop neck tank.
-                          Knitted navy stripes with ribbed hem.
-                          Contrast embroidered arrow at centre back.
-                          Combed organic cotton for chic comfort.
-                                                                              ",
-                          image:  "https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2364/9648/USW222005_NATURAL_01__68398.1649318912.jpg?c=1" ,
-                          price_cents: 9000,
+                        #   Knitted striped scoop neck tank.
+                        #   Knitted navy stripes with ribbed hem.
+                        #   Contrast embroidered arrow at centre back.
+                        #   Combed organic cotton for chic comfort.
+                        #                                                       ",
+                        #   image:  "https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2364/9648/USW222005_NATURAL_01__68398.1649318912.jpg?c=1" ,
+                        #   price_cents: 9000,
 
-                          designer: designer16,
-                        )
+                        #   designer: designer16,
+                        # )
 
-                        file1= URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2364/9649/USW222005_NATURAL_02__83227.1648987932.jpg?c=1")
-                        file2 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2364/9657/USW222005_NATURAL_03__96985.1648987940.jpg?c=1")
-                        file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2364/9658/USW222005_NATURAL_05__61924.1648987940.jpg?c=1")
+                        # file1= URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2364/9649/USW222005_NATURAL_02__83227.1648987932.jpg?c=1")
+                        # file2 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2364/9657/USW222005_NATURAL_03__96985.1648987940.jpg?c=1")
+                        # file3 = URI.open("https://cdn11.bigcommerce.com/s-24ynh8qaxf/images/stencil/1280x1280/products/2364/9658/USW222005_NATURAL_05__61924.1648987940.jpg?c=1")
 
 
-                        product88.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product88.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product88.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                        # product88.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                        # product88.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                        # product88.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                         product89 = Product.create!(
                           name: "Indian Independence Day T-Shirt
