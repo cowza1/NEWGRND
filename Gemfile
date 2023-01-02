@@ -41,8 +41,6 @@ gem 'stripe'
 
 gem 'stripe_event'
 
-gem 'aws-sdk'
-
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
