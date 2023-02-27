@@ -88,3 +88,22 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.order-page {
+  width: 70%;
+}
+
+@media screen and (max-width: 420px) {
+  .order-page {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .order-container {
+    margin: 0
+  }
+
+  .order-card-box {
+    margin: 20px 0
+  }
+}

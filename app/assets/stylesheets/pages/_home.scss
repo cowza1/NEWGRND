@@ -49,6 +49,7 @@
 }
 
 footer {
+
   // background: #F4F4F4;
   // display: flex;
   // align-items: center;
@@ -58,6 +59,7 @@ footer {
   p {
     margin-bottom: 6px;
   }
+
   // color: rgba(0, 0, 0, 0.3);
 }
 
@@ -92,4 +94,32 @@ h1 {
 
 .order-complete-notification {
   text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+
+
+  .home-img-women {
+    margin: 0;
+    padding: 0;
+  }
+
+  .home-img-men {
+    margin: 0;
+    padding: 0;
+  }
+
+  .home-page-img {
+    width: 100%;
+    margin: 0;
+    // padding: 0
+  }
+
+  .mens {
+    padding: 0;
+  }
+
+  .womens {
+    padding: 0
+  }
 }

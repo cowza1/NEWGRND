@@ -25,6 +25,7 @@
   border-left: 1px solid black;
   padding: 10px 20px 0;
   background-color: whitesmoke;
+
   h2 {
     font-family: 'Bodoni Moda', serif;
     font-weight: 700;
@@ -53,16 +54,49 @@
   text-decoration: none;
 }
 
-.was-validated .form-control:valid, .form-control.is-valid, .form-select {
+.was-validated .form-control:valid,
+.form-control.is-valid,
+.form-select {
   border-color: black;
   background-image: none;
 }
 
-.was-validated .form-control:valid:focus, .form-control.is-valid:focus {
+.was-validated .form-control:valid:focus,
+.form-control.is-valid:focus {
   box-shadow: none;
 }
 
 .btn1 {
   background-color: black;
   color: white;
+}
+
+
+@media screen and (max-width: 420px) {
+  .product-row {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .product-show-card {
+    display: inline;
+    padding: 0
+  }
+
+  .product-show-container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .product-show-info {
+    padding: 10px;
+    margin: 0;
+    border: none
+  }
+
+  .carousel-img {
+    height: 400px;
+    width: 100% !important
+  }
 }

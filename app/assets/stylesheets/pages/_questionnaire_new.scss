@@ -172,3 +172,15 @@
   color: white;
   margin: 20px 0;
 }
+
+
+@media screen and (max-width: 420px) {
+
+  .optional.questionnaire_gender,
+  .optional.questionnaire_age,
+  .optional.questionnaire_location,
+  .optional.questionnaire_budget,
+  .optional.questionnaire_colour_palette {
+    width: 300px;
+  }
+}

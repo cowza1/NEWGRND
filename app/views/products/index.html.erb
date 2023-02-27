@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       <%@products.each do |product|%>
-        <div class="col-3">
+        <div class="col-md-3 col-sm-12">
           <div class="card">
           <%=link_to product_path(product) do%>
             <div class="product-img" style="background-image: url('<%=product.image%>')">

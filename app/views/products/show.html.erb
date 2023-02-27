@@ -1,7 +1,8 @@
 
-<div class="product-show-container">
+<div class="product-show-container row">
   <div class="product-show-card">
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+    <div id="carouselExampleControls" class="carousel slide col-md-6 col-sm-12" data-bs-ride="carousel">
       <div class="carousel-inner">
         <% @product.photos.each_with_index do |photo,index| %>
           <div class="carousel-item <%= 'active' if index == 0 %>">
@@ -19,7 +20,8 @@
         </button>
       </div>
     </div>
-    <div class="product-show-info">
+
+    <div class="product-show-info col-md-6 col-sm-12">
       <%= link_to product_designer_path(@product, @designer) do %>
         <h2><%=@product.designer.name.upcase%></h2>
       <% end %>

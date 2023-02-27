@@ -44,3 +44,17 @@
 .designer-product-container {
   align-items: center;
 }
+
+@media screen and (max-width: 420px) {
+  .designer-product-info ul {
+    padding: 0;
+  }
+
+  .designer-product-card {
+    padding: 0
+  }
+
+  .designer-container img {
+    margin: auto;
+  }
+}

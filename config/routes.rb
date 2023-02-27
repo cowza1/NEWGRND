@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
+
+
+  resources :guests do
+    collection do
+      post 'create_guest', to: 'guests#create_guest', as: "guest"
+    end
+  end
+
   mount StripeEvent::Engine, at: '/stripe-webhooks'
 
   root to: "pages#home"
@@ -7,6 +15,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+
+
 
   resources :questionnaires, only: [:create, :new] do
     resources :matches, only: [:create, :show, :index]
