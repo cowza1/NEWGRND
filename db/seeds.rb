@@ -276,7 +276,7 @@ product1 = Product.create!(
 
   designer: designer1
 )
-puts "product created"
+puts "product created1"
 
 file1 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image.webp?v=1661178529")
 file2 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_0e1f68fe-7641-4c21-b72b-8749df86605b_720x.jpg?v=1661178529")
@@ -298,7 +298,7 @@ product2 = Product.create!(
 
   designer: designer1
 )
-puts "product created"
+puts "product created2"
 file1 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_808f1ad1-80a8-4c7b-8a64-34ff07eaf76c_720x.webp?v=1661178664")
 file2 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_e2e59974-3108-4e0a-8742-d8a015a70023_720x.jpg?v=1661178664")
 file3 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_27b8d95d-4fbe-4e07-b773-4b42f2e73f04_720x.jpg?v=1661178664")
@@ -317,7 +317,7 @@ product3= Product.create!(
   price_cents: 21000,
   designer: designer1
 )
-puts "product created"
+puts "product created3"
 
 file1 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9082_1_720x.jpg?v=1656285021")
 file2 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_a40538e7-fe72-45fb-8932-f62fb9427173_720x.jpg?v=1656287926")
@@ -339,7 +339,7 @@ product4 = Product.create!(
   designer: designer1
 
 )
-puts "product created"
+puts "product created4"
 
 
 file1 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/86CBB048-7B99-4D4A-8DAC-35724B0FC272-2_720x.jpg?v=1654587643")
@@ -361,7 +361,7 @@ product5 = Product.create!(
   designer: designer1
 
   )
-  puts "product created"
+  puts "product created5"
 
   file1 =URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/66AF0A87-CC52-4597-8D69-8810882A62F7-2_1296x.jpg?v=1654592284")
   file2 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/5765ACE2-F938-482B-9A4E-698E42A97A2C_1296x.jpg?v=1654592271")
@@ -382,7 +382,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
     designer: designer1
 
     )
-    puts "product created"
+    puts "product created6"
 
     file1 =URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/IMG_9092_1_720x.jpg?v=1656285813")
     file2 = URI.open("https://cdn.shopify.com/s/files/1/0582/5921/0426/products/image_aa289009-e734-44ac-92ad-d4aea99bf3a0_720x.jpg?v=1656286912")
@@ -404,7 +404,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
       designer: designer2
 
       )
-      puts "product created"
+      puts "product created7"
 
       file1 =URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/OLIVEFINAL_1512x.jpg?v=1637893912")
       file2 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/OLIVE2_1512x.jpg?v=1637893912")
@@ -425,7 +425,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
         price_cents: 15000,
         designer: designer2
       )
-      puts "product created"
+      puts "product created8"
 
       file1 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/UTILITY-COMBAT-TROUSER-GREY40_720x.jpg?v=1619728850")
       file2 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/UTILITY-COMBAT-TROUSER-GREY11_720x.jpg?v=1619736210")
@@ -446,7 +446,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
         price_cents: 8500,
         designer: designer2
       )
-      puts "product created"
+      puts "product created9"
 
       file1 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/SST-SHIRT-THISISACOOBAT-SHIRT_Front1_720x.jpg?v=1631827933")
       file2 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/SST-SHIRT-THISISACOOBAT-SHIRT_Back_720x.jpg?v=1631828001")
@@ -465,7 +465,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
           price_cents: 7000,
           designer: designer2
       )
-      puts "product created"
+      puts "product created10"
 
 
       file1 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/RAWHEMSHORTS-GREEN_F_720x.jpg?v=1631838278")
@@ -486,7 +486,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
         price_cents: 8500,
         designer: designer2
     )
-    puts "product created"
+    puts "product created11"
 
     file1 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/SST-SHIRT-CREATINGOUTOFBODYAWARENESS_F_720x.jpg?v=1631830540")
       file2 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/rsz_1ss_t-shirt_-_creating_out_of_body_awareness_s_2_720x.jpg?v=1631830540")
@@ -509,7 +509,7 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
       price_cents: 12500,
       designer: designer2
   )
-  puts "product created"
+  puts "product created12"
 
 
   file1 = URI.open("https://cdn.shopify.com/s/files/1/0278/7452/5262/products/GH_720x.jpg?v=1637900933")
@@ -530,14 +530,13 @@ product5.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png
     price_cents: 8500,
     designer: designer3
 )
+puts "product created13"
 
 file1 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/SPORTSWEAR_TSHIRT_WHITE_900x.jpg?v=1653052906")
 file2 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/SPORTSWEAR_TSHIRT_WHITE_BACK_1080x.jpg?v=1653052907")
-file3 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CBSportswearWhitetee1.jpg?v=1653597582")
 
   product13.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-    product13.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-    product13.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+  product13.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
 
 
 
@@ -586,7 +585,7 @@ product16 = Product.create!(
   designer: designer3
 )
 file1 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/DOUBLE_LOGO_ZIPPED_HOODIE_GREY_720x.jpg?v=1657115966")
-file2 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB6thJuly37_720x.jpg?v=1658937547")
+# file2 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB6thJuly37_720x.jpg?v=1658937547")
 file3 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB6thJuly38_720x.jpg?v=1658937547")
 
 product16.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
@@ -650,11 +649,9 @@ product19 = Product.create!(
 )
 
 file1 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/B1387.1016.611_101.jpg?v=1659529996")
-file2 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B1412.1017_High_20Risk_20Red_103_1_750x.png?v=1655201345")
 file3 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B1412.1017_High_20Risk_20Red_103_2_36f12afb-15b3-4281-a73e-07a0affbbb54_750x.png?v=1655201290")
 
 product19.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-product19.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
 product19.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
 
@@ -690,16 +687,16 @@ product21 = Product.create!(
   - BALR. Metal Badge on the front
   - Adjustable backstrap
   - 100% Polyester Woven Oxford",
-  image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B6110.1041_WHITE_20PEPPER_03_750x.png?v=1654860949",
+  image: "https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B6110.1041_WHITE_20PEPPER_02_750x.png?v=16548609499",
   price_cents: 15500,
   designer: designer4
 )
 file1 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B6110.1041_WHITE_20PEPPER_02_750x.png?v=1654860949")
-file2 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B6110.1041_WHITE_20PEPPER_03_750x.png?v=1654860949")
+# file2 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B6110.1041_WHITE_20PEPPER_03_750x.png?v=1654860949")
 file3 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/online-B6110.1041_WHITE_20PEPPER_04_750x.png?v=1654860949")
 
     product21.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-    product21.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+    # product21.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
     product21.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
 
@@ -739,11 +736,11 @@ product23 = Product.create!(
 
 file1= URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/B1262.1035_GreyMelange_101_1_750x.jpg?v=1660210106")
 file2 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/B1262.1035_GreyMelang_101_2_750x.jpg?v=1660210106")
-file3 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/B1262.1035_GreyMelang_103_750x.jpg?v=1660210106")
+# file3 = URI.open("https://cdn.shopify.com/s/files/1/0273/3113/3576/products/B1262.1035_GreyMelang_103_750x.jpg?v=1660210106")
 
 product23.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
 product23.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+# product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
 
         # product24 = Product.create!(
@@ -947,23 +944,23 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                     # file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-hoody-back_c1f36be9-2dad-4deb-9cae-dad0513eb508.jpg?v=1662640856")
 
 
-                    product33 = Product.create!(
-                      name: "White Nakato T-Shirt",
-                      description: "The Nakato crewneck tee is crafted from a premium jersey fabric and comes in two seasonal colourways. A special Daily Paper artwork featuring a shield logo and the 3 animals that represent the 3 founders decorates the front of the tee." ,
-                      image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225",
-                      price_cents: 6000,
+                    # product33 = Product.create!(
+                    #   name: "White Nakato T-Shirt",
+                    #   description: "The Nakato crewneck tee is crafted from a premium jersey fabric and comes in two seasonal colourways. A special Daily Paper artwork featuring a shield logo and the 3 animals that represent the 3 founders decorates the front of the tee." ,
+                    #   image:  "https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225",
+                    #   price_cents: 6000,
 
-                      designer: designer7,
-                    )
-                    puts "product 33 created"
+                    #   designer: designer7,
+                    # )
+                    # puts "product 33 created"
 
-                    file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-tee-white-front_aeab443e-f4d6-4c88-b2cb-02c06776ff10.jpg?v=1662645225")
-                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-tee-white-back.jpg?v=1662645225")
-                    file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225")
+                    # file1= URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-tee-white-front_aeab443e-f4d6-4c88-b2cb-02c06776ff10.jpg?v=1662645225")
+                    # file2 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/nakato-tee-white-back.jpg?v=1662645225")
+                    # file3 = URI.open("https://cdn.shopify.com/s/files/1/0507/8201/1597/products/WHITENAKATOSSTEE.jpg?v=1662645225")
 
-                    product33.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                    product33.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                    product33.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                    # product33.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+                    # product33.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+                    # product33.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                     # product34 = Product.create!(
                     #   name: "Black Neno Beanie",
@@ -1097,32 +1094,32 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                     product38.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
                     product38.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
 
-                    product39 = Product.create!(
-                      name: "All Day T-Shirt ",
+    #                 product39 = Product.create!(
+    #                   name: "All Day T-Shirt ",
 
 
-                      description: "
-                      Short sleeve cotton jersey T-shirt in cream.
+    #                   description: "
+    #                   Short sleeve cotton jersey T-shirt in cream.
 
-                      Gender-free sizing, designed for oversized fit.
+    #                   Gender-free sizing, designed for oversized fit.
 
-                      Super soft fabric.
+    #                   Super soft fabric.
 
-                    Composition: 100% Cotton.
+    #                 Composition: 100% Cotton.
 
-                    Made in Europe.
+    #                 Made in Europe.
 
-    ",
-                      image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-starlight-cream-0_832x1024.jpg?v=1657547241" ,
-                      price_cents: 5000,
-                      designer: designer8,
-                    )
+    # ",
+    #                   image:  "https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-starlight-cream-0_832x1024.jpg?v=1657547241" ,
+    #                   price_cents: 5000,
+    #                   designer: designer8,
+    #                 )
 
-                    file1= URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-starlight-cream-0_832x1024.jpg?v=1657547241")
-                    file2 = URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-starlight-cream-1_832x1024.jpg?v=1657547241")
+    #                 file1= URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-starlight-cream-0_832x1024.jpg?v=1657547241")
+    #                 file2 = URI.open("https://cdn.shopify.com/s/files/1/0310/5426/6500/products/t-starlight-cream-1_832x1024.jpg?v=1657547241")
 
-                    product39.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                    product39.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+    #                 product39.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+    #                 product39.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
 
                     product40 = Product.create!(
                       name: "Bomber Jacket ",
@@ -1316,32 +1313,32 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
                         product46.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
                         product46.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
-                        product47 = Product.create!(
-                          name: "Green Suede Shoes
-                          ",
+#                         product47 = Product.create!(
+#                           name: "Green Suede Shoes
+#                           ",
 
-                          description: "
-                          THE BODE HOUSE SHOE IS MADE BY A THIRD-GENERATION ITALIAN SHOE FACTORY THAT WAS ONCE A SMALL ARTISAN SHOP. THIS STYLE IS MADE FROM GREEN SUEDE. THE BODE HOUSE SHOE IS MADE TO BE WORN OUTDOORS BUT INSPIRED BY LIFE WITHIN THE DOMESTIC SPACE AND TRADITIONAL HOUSE SHOES.
+#                           description: "
+#                           THE BODE HOUSE SHOE IS MADE BY A THIRD-GENERATION ITALIAN SHOE FACTORY THAT WAS ONCE A SMALL ARTISAN SHOP. THIS STYLE IS MADE FROM GREEN SUEDE. THE BODE HOUSE SHOE IS MADE TO BE WORN OUTDOORS BUT INSPIRED BY LIFE WITHIN THE DOMESTIC SPACE AND TRADITIONAL HOUSE SHOES.
 
-                          - 100% SUEDE LEATHER
-                          - LEATHER SOLE
-                          - MADE IN ITALY
-",
-                          image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_041_720x.jpg?v=1652474473" ,
-                          price_cents: 80500,
-
-
-                          designer: designer9,
-                        )
-
-                        file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_04_720x.jpg?v=1652474473")
-                        file2= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__BLACKCOUNTYCLAIRESHOE_32_720x.jpg?v=1652474478")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_21_720x.jpg?v=1652474481")
+#                           - 100% SUEDE LEATHER
+#                           - LEATHER SOLE
+#                           - MADE IN ITALY
+# ",
+#                           image:  "https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_041_720x.jpg?v=1652474473" ,
+#                           price_cents: 80500,
 
 
-                        product47.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-                        product47.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product47.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+#                           designer: designer9,
+#                         )
+
+#                         file1= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_04_720x.jpg?v=1652474473")
+#                         file2= URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__BLACKCOUNTYCLAIRESHOE_32_720x.jpg?v=1652474478")
+#                         file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_21_720x.jpg?v=1652474481")
+
+
+#                         product47.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
+#                         product47.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+#                         product47.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
                         product49 = Product.create!(
                           name: "PERFORATED LEATHER TRACK JACKET
@@ -1357,12 +1354,12 @@ product23.photos.attach(io: file3 , filename: "nes.png", content_type: "image/pn
 
                         file1= URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/perforated-leather-jacket-lookbook-01_823x.jpg?v=1656509523")
                         file2 = URI.open("https://cdn.shopify.com/s/files/1/0020/3361/4892/products/016_Back_823x.jpg?v=16565010013")
-                        file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_21_720x.jpg?v=1652474481")
+                        # file3 = URI.open("https://cdn.shopify.com/s/files/1/1218/8970/products/BODE_PF22_ECOM__GREENSUEDEHOUSESHOE_21_720x.jpg?v=1652474481")
 
 
                         product49.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
                         product49.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
-                        product49.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
+                        # product49.photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
 
 
