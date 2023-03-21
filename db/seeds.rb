@@ -589,7 +589,7 @@ file1 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/DOUB
 file3 = URI.open("https://cdn.shopify.com/s/files/1/0055/1023/4230/products/CB6thJuly38_720x.jpg?v=1658937547")
 
 product16.photos.attach(io: file1 , filename: "nes.png", content_type: "image/png")
-    product16.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
+    # product16.photos.attach(io: file2 , filename: "nes.png", content_type: "image/png")
     product16 .photos.attach(io: file3 , filename: "nes.png", content_type: "image/png")
 
 
