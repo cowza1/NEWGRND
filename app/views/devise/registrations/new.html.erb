@@ -1,6 +1,9 @@
 <div class="devise-container">
-  <h2>Sign up</h2>
-      <p><strong><%="Create a Guest Account: email: guest#{rand(10000)}@gmail.com, password: #{6.times.map{rand(10)}.join}"%></strong></p>
+  <h2></h2>
+      <p><strong>Create a Guest Account:</strong></p>
+      <p><strong><%="Guest email: guest#{rand(10000)}@gmail.com"%></strong></p>
+      <p><strong><%="Guest password: #{6.times.map{rand(10)}.join}"%></strong></p>
+
 <div class="devise-form">
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name),
     data: {turbo: false}) do |f| %>
